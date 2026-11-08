@@ -1,0 +1,254 @@
+/* PeteteItinerarioPostIt.css - Cuaderno Post-it Interactivo con Efecto 3D Realista */
+
+.petete-postit-container {
+  margin: 1.6rem 0 2.4rem;
+  width: 100%;
+}
+
+.petete-postit {
+  position: relative;
+  background: linear-gradient(145deg, #fffbeb 0%, #fef3c7 40%, #fef08a 100%);
+  border: 1.5px solid #fde047;
+  border-left: 6px solid #d97706;
+  border-radius: 16px;
+  padding: 1.8rem 1.6rem 1.5rem;
+  box-shadow: 
+    0 10px 25px -5px rgba(217, 119, 6, 0.16),
+    0 8px 10px -6px rgba(0, 0, 0, 0.05),
+    0 1px 3px rgba(0, 0, 0, 0.08);
+  transform: rotate(-0.35deg);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s ease;
+}
+
+.petete-postit:hover {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 
+    0 16px 32px -5px rgba(217, 119, 6, 0.22),
+    0 12px 16px -6px rgba(0, 0, 0, 0.08);
+}
+
+/* Efecto cinta adhesiva (tape translúcido) superior */
+.petete-postit-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 26px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(217, 119, 6, 0.25);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  pointer-events: none;
+}
+
+/* Cabecera del post-it */
+.petete-postit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1.5px dashed rgba(217, 119, 6, 0.35);
+}
+
+.petete-postit-title-group {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.petete-postit-pin {
+  font-size: 1.4rem;
+  line-height: 1;
+  filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.15));
+}
+
+.petete-postit-title {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 850;
+  color: #78350f;
+  letter-spacing: -0.2px;
+}
+
+.petete-postit-badge {
+  background: rgba(217, 119, 6, 0.14);
+  color: #92400e;
+  border: 1px solid rgba(217, 119, 6, 0.3);
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  letter-spacing: 0.3px;
+}
+
+/* Grid de los 6 bloques */
+.petete-postit-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 0.95rem;
+}
+
+.petete-postit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.9rem 1.05rem;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(253, 224, 71, 0.75);
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.petete-postit-item:hover {
+  background: #ffffff;
+  border-color: #f59e0b;
+  transform: translateY(-2.5px);
+  box-shadow: 0 6px 16px rgba(217, 119, 6, 0.15);
+}
+
+.petete-postit-item:focus-visible {
+  outline: 2px solid #d97706;
+  outline-offset: 2px;
+}
+
+/* Estado activo cuando la lección actual coincide con el bloque */
+.petete-postit-item.is-active {
+  background: #ffffff;
+  border-color: #d97706;
+  box-shadow: 0 0 0 2px rgba(217, 119, 6, 0.3), 0 6px 14px rgba(217, 119, 6, 0.14);
+}
+
+.petete-postit-item.is-active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #d97706;
+  border-radius: 2px 0 0 2px;
+}
+
+.petete-postit-item-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #fef08a;
+  border: 1px solid #fde047;
+  border-radius: 10px;
+  flex-shrink: 0;
+  font-size: 1.15rem;
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+
+.petete-postit-item:hover .petete-postit-item-badge {
+  transform: scale(1.08);
+}
+
+.petete-postit-item-num {
+  font-size: 0.68rem;
+  font-weight: 800;
+  color: #92400e;
+  margin-top: 1px;
+}
+
+.petete-postit-item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.petete-postit-item-title {
+  margin: 0 0 0.25rem;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #78350f;
+  line-height: 1.35;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.petete-postit-active-pill {
+  font-size: 0.65rem;
+  background: #d97706;
+  color: #ffffff;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.petete-postit-item-desc {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #92400e;
+  line-height: 1.45;
+  opacity: 0.95;
+}
+
+/* Footer con CTA a Quiz */
+.petete-postit-footer {
+  margin-top: 1.3rem;
+  padding-top: 1rem;
+  border-top: 1.5px dashed rgba(217, 119, 6, 0.35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.petete-postit-footer-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: #78350f;
+  font-weight: 700;
+}
+
+.petete-postit-footer-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  border: none;
+  padding: 0.45rem 1rem;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.petete-postit-footer-btn:hover {
+  transform: translateY(-1.5px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.35);
+}
+
+@media (max-width: 640px) {
+  .petete-postit {
+    padding: 1.3rem 1.1rem;
+    transform: none;
+  }
+  .petete-postit:hover {
+    transform: none;
+  }
+  .petete-postit-grid {
+    grid-template-columns: 1fr;
+  }
+}

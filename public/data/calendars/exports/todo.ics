@@ -1,0 +1,69 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//MiCampus//NONSGML v1.0//EN
+BEGIN:VEVENT
+UID:eac1-desp@micampus.local
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261022
+SUMMARY:Entrega EAC 1: Servidores Web, ProFTPD y DNS (45% AC) [DESP]
+DESCRIPTION:Entrega pendiente de la asignatura Despliegue de Aplicaciones Web
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio de entrega de DESP
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eac2-desp@micampus.local
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261119
+SUMMARY:Entrega EAC 2: Git, WordPress (LAMP) y Apache Tomcat (30% AC) [DESP]
+DESCRIPTION:Entrega pendiente de la asignatura Despliegue de Aplicaciones Web
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio de entrega de DESP
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eac1_p2-digi@micampus.local
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261113
+SUMMARY:Entrega Quiz EAC1 (Parte 2): Big Data, IA i Impacte (62.5% AC) [DIGI]
+DESCRIPTION:Entrega pendiente de la asignatura Digitalización Aplicada
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio de entrega de DIGI
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eac2-ent@micampus.local
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261117
+SUMMARY:Entrega EAC 2: Desenvolupament de programari (Swing, Spring & Copilot) [ENT]
+DESCRIPTION:Entrega pendiente de la asignatura Entornos de Desarrollo
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio de entrega de ENT
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:eaf2-ipo2@micampus.local
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261211
+SUMMARY:Entrega EAF 2: Proyecto Emprendedor & Video-Pitch [IPO2]
+DESCRIPTION:Entrega pendiente de la asignatura Itinerario Personal para la Empleabilidad II
+STATUS:CONFIRMED
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Recordatorio de entrega de IPO2
+END:VALARM
+END:VEVENT
+END:VCALENDAR

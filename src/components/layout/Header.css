@@ -1,0 +1,164 @@
+/* ==========================================================================
+   Header Component Styles
+   ========================================================================== */
+
+.header-wrapper {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+.header-inner {
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Campus Navigation Buttons Container */
+.header-campus-nav {
+  display: flex;
+  gap: 0.45rem;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Base Nav Button */
+.header-nav-btn {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-md, 10px);
+  background: var(--bg-card);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 0.88rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header-nav-btn:hover {
+  background: var(--bg-hover, rgba(255, 255, 255, 0.06));
+  border-color: var(--border-focus, rgba(255, 255, 255, 0.18));
+  color: var(--text-title);
+  transform: translateY(-1px);
+}
+
+.header-nav-btn img {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+/* Specialized Buttons */
+.header-nav-btn-quiz {
+  border-color: rgba(16, 185, 129, 0.4);
+  background: rgba(16, 185, 129, 0.08);
+  color: #10b981;
+  font-weight: 700;
+}
+
+.header-nav-btn-quiz:hover {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: #10b981;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+.header-nav-btn-ia {
+  border-color: rgba(2, 132, 199, 0.4);
+  background: rgba(2, 132, 199, 0.08);
+  color: #0284c7;
+  font-weight: 700;
+}
+
+.header-nav-btn-ia:hover {
+  background: rgba(2, 132, 199, 0.15);
+  border-color: #0284c7;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.2);
+}
+
+/* Brand Link */
+.brand-link {
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Clock Pill Base Style */
+.header-clock-pill {
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-purple, #8b5cf6);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.header-search-container {
+  position: relative;
+  flex: 1 1 240px;
+  max-width: 380px;
+  margin: 0 0.5rem;
+}
+
+/* Mobile Responsive Optimization (< 768px) */
+@media (max-width: 767px) {
+  .nav-text {
+    display: none !important;
+  }
+
+  .header-campus-nav {
+    justify-content: center !important;
+    gap: 0.5rem !important;
+    width: 100% !important;
+    margin-top: 0.5rem;
+    order: 3;
+  }
+
+  .header-search-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0.5rem 0 !important;
+    order: 2;
+  }
+
+  .header-nav-btn,
+  .theme-btn {
+    padding: 0.4rem !important;
+    min-width: 38px !important;
+    height: 38px !important;
+    justify-content: center !important;
+    border-radius: 12px !important;
+  }
+
+  .main-header {
+    position: relative;
+  }
+
+  .header-clock-pill {
+    position: absolute !important;
+    top: 1.5rem !important;
+    right: 1.5rem !important;
+    font-size: 1.1rem !important;
+    padding: 0.3rem 0.8rem !important;
+    margin-right: 0 !important;
+  }
+
+  .brand-heading {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

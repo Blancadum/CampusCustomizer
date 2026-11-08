@@ -1,0 +1,76 @@
+/* Dracula Theme for highlight.js */
+pre code.hljs,
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 1em;
+  background: #282a36;
+  color: #f8f8f2;
+}
+
+/* Comments */
+.hljs-comment,
+.hljs-quote {
+  color: #6272a4;
+  font-style: italic;
+}
+
+/* Constants, Attributes, Variables */
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-literal,
+.hljs-type,
+.hljs-addition {
+  color: #8be9fd; /* Cyan */
+}
+
+/* JSON Keys (attr) and Variables */
+.hljs-attr,
+.hljs-variable,
+.hljs-template-variable,
+.hljs-link {
+  color: #8be9fd; /* Cyan for keys */
+}
+
+/* Strings, Regex, Symbols */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: #f1fa8c; /* Yellow for values/strings */
+}
+
+/* Numbers and Booleans */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal {
+  color: #bd93f9; /* Purple for numbers and true/false/null */
+}
+
+/* Titles, Function names, Tags */
+.hljs-title,
+.hljs-section,
+.hljs-name {
+  color: #50fa7b; /* Green for function names */
+}
+
+/* Punctuation (colons, braces) and Operators */
+.hljs-punctuation,
+.hljs-operator {
+  color: #ff00ff; /* Fuchsia/Magenta for structure like colons! */
+}
+
+/* Meta, Keywords (Class, function keywords) */
+.hljs-keyword,
+.hljs-meta {
+  color: #ff00ff; /* Fuchsia/Magenta for Java keywords */
+}
+
+/* Emphasis and Strong */
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: bold;
+}

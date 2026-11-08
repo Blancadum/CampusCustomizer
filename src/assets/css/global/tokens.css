@@ -1,0 +1,475 @@
+
+/* ==========================================================================
+   Campus Global · Design Tokens Compartidos (Shared Design System)
+   Predeterminado: TEMA CLARO (☀️ Claro / Soft Light Slate)
+   ========================================================================== */
+
+:root, [data-theme="light"], [data-theme="soft"] {
+  /* Fondo general y paneles */
+  --bg-primary: #f6f7fb;
+  --bg-secondary: #ffffff;
+  --bg-header: rgba(246, 247, 251, 0.94);
+  --bg-nav: rgba(238, 241, 246, 0.96);
+  --bg-card: #ffffff;
+  --bg-card-hover: #fafbfc;
+  --bg-input: #edf2f7;
+  --bg-code: #f1f4f9;
+
+  /* Bordes sutiles y enfoque */
+  --border-subtle: #e2e8f0;
+  --border-focus: rgba(139, 92, 246, 0.45);
+
+  /* Acentos cromáticos armónicos */
+  --accent-purple: #7c3aed;
+  --accent-purple-light: #8b5cf6;
+  --accent-blue: #2563eb;
+  --accent-cyan: #0284c7;
+  --accent-green: #10b981;
+  --accent-emerald: #059669;
+  --accent-gold: #d97706;
+  --accent-rose: #e11d48;
+  --accent-orange: #ea580c;
+
+  /* Jerarquía tipográfica */
+  --text-title: #1e293b;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --text-dim: #94a3b8;
+
+  --font-main: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  /* Radios */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Sombras suaves y limpias */
+  --shadow-sm: 0 2px 8px rgba(100, 116, 139, 0.06);
+  --shadow-md: 0 6px 20px rgba(100, 116, 139, 0.08);
+  --shadow-lg: 0 12px 32px rgba(100, 116, 139, 0.1);
+}
+
+/* Modo oscuro mantenido solo como soporte legacy */
+[data-theme="dark"] {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-header: rgba(10, 14, 23, 0.9);
+  --bg-nav: rgba(17, 24, 39, 0.95);
+  --bg-card: rgba(17, 24, 39, 0.85);
+  --bg-card-hover: rgba(30, 41, 59, 0.9);
+  --bg-input: #1e293b;
+  --bg-code: #050811;
+
+  --border-subtle: rgba(255, 255, 255, 0.08);
+  --border-focus: rgba(59, 130, 246, 0.5);
+
+  --text-title: #ffffff;
+  --text-main: #cbd5e1;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.65);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.8);
+}
+
+/* ==========================================================================
+   COMPONENTE REUTILIZABLE: Cabecera Unificada (Campus Blanca Header)
+   ========================================================================== */
+.main-header,
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg-header);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  transition: all 0.3s ease;
+}
+
+.header-inner,
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.brand-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
+  flex-shrink: 0;
+}
+
+.brand-titles h1,
+.brand-heading {
+  font-size: 1.55rem;
+  font-weight: 850;
+  color: var(--text-title);
+  letter-spacing: -0.5px;
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.btn-sync-pill {
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.22rem 0.65rem;
+  background: rgba(139, 92, 246, 0.12);
+  color: var(--accent-purple);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: all 0.2s ease;
+  vertical-align: middle;
+  line-height: 1.3;
+}
+
+.btn-sync-pill:hover {
+  background: var(--accent-purple);
+  color: #ffffff;
+  border-color: var(--accent-purple);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 10px rgba(139, 92, 246, 0.3);
+}
+
+.brand-titles .tag-version {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  background: rgba(139, 92, 246, 0.15);
+  color: var(--accent-purple);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+}
+
+.brand-titles p {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 0.15rem;
+  margin-bottom: 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   COMPONENTE REUTILIZABLE: Navegación de Campus (Header Campus Nav)
+   ========================================================================== */
+.header-campus-nav {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-campus-nav .theme-btn,
+.header-campus-nav .btn-nav-home,
+.campus-nav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.65rem 1.2rem;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-main);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.header-campus-nav .theme-btn:hover,
+.header-campus-nav .btn-nav-home:hover,
+.campus-nav-pill:hover {
+  border-color: var(--accent-purple);
+  color: var(--text-title);
+  background: var(--bg-card-hover);
+  transform: translateY(-1px);
+}
+
+/* Estados Activos por Campus */
+.header-campus-nav .theme-btn.active,
+.header-campus-nav .btn-nav-home.active {
+  font-weight: 700;
+  border-color: var(--accent-purple);
+  color: var(--accent-purple);
+  background: rgba(124, 58, 237, 0.12);
+}
+
+.header-campus-nav .theme-btn.active-blue,
+.header-campus-nav .btn-nav-home.active-blue {
+  font-weight: 700;
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background: rgba(37, 99, 235, 0.12);
+}
+
+.header-campus-nav .theme-btn.active-green,
+.header-campus-nav .btn-nav-home.active-green {
+  font-weight: 700;
+  border-color: var(--accent-green);
+  color: var(--accent-green);
+  background: rgba(16, 185, 129, 0.12);
+}
+
+.header-campus-nav .theme-btn.active-orange,
+.header-campus-nav .btn-nav-home.active-orange {
+  font-weight: 700;
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
+  background: rgba(234, 88, 12, 0.12);
+}
+
+/* Botón Sincronizar Hub (.ics) */
+.btn-header-sync {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.35);
+  color: var(--accent-green);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.btn-header-sync:hover {
+  background: rgba(16, 185, 129, 0.22);
+  border-color: var(--accent-green);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   COMPONENTE REUTILIZABLE: Pill Badges & Feature Tags
+   ========================================================================== */
+.pill-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  letter-spacing: 0.2px;
+}
+
+.pill-purple { background: rgba(124, 58, 237, 0.12); color: var(--accent-purple); border: 1px solid rgba(124, 58, 237, 0.28); }
+.pill-blue   { background: rgba(37, 99, 235, 0.12); color: var(--accent-blue); border: 1px solid rgba(37, 99, 235, 0.28); }
+.pill-green  { background: rgba(16, 185, 129, 0.12); color: var(--accent-green); border: 1px solid rgba(16, 185, 129, 0.28); }
+.pill-gold   { background: rgba(217, 119, 6, 0.12); color: var(--accent-gold); border: 1px solid rgba(217, 119, 6, 0.28); }
+.pill-orange { background: rgba(234, 88, 12, 0.12); color: var(--accent-orange); border: 1px solid rgba(234, 88, 12, 0.28); }
+.pill-cyan   { background: rgba(2, 132, 199, 0.12); color: var(--accent-cyan); border: 1px solid rgba(2, 132, 199, 0.28); }
+.pill-rose   { background: rgba(225, 29, 72, 0.12); color: var(--accent-rose); border: 1px solid rgba(225, 29, 72, 0.28); }
+.pill-accenture { background: rgba(161, 0, 255, 0.12); color: #7500c0; border: 1px solid rgba(161, 0, 255, 0.28); }
+
+.feature-tag {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #475569;
+  background: #f1f5f9;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 0.25rem 0.55rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.feature-tag-purple {
+  background: rgba(124, 58, 237, 0.08);
+  border-color: rgba(124, 58, 237, 0.22);
+  color: #6d28d9;
+}
+
+/* ==========================================================================
+   COMPONENTE REUTILIZABLE: Reloj Sincronizado en Vivo
+   ========================================================================== */
+.live-clock-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full, 9999px);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text-main);
+  box-shadow: var(--shadow-sm);
+  font-family: var(--font-mono, monospace);
+  letter-spacing: 0.3px;
+}
+
+.live-clock-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-green);
+  box-shadow: 0 0 8px var(--accent-green);
+  animation: pulse-clock-dot 2s infinite;
+}
+
+@keyframes pulse-clock-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.35; transform: scale(0.85); }
+}
+
+/* ==========================================================================
+   COMPONENTE REUTILIZABLE: Hero Banner de Bienvenida Personalizado
+   ========================================================================== */
+.hero-banner {
+  margin: 1.15rem 0 1.5rem 0;
+  padding: 1.35rem 1.85rem;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.08) 0%, rgba(59, 130, 246, 0.05) 100%), var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-sm);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  right: -50px;
+  width: 250px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.16) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.25rem 0.75rem;
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  border-radius: 20px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent-purple);
+  margin-bottom: 0.6rem;
+}
+
+.hero-title {
+  font-size: 1.85rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.2;
+  letter-spacing: -0.4px;
+  margin-bottom: 0.4rem;
+}
+
+.hero-title .gradient-text {
+  background: linear-gradient(135deg, #a855f7, #3b82f6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  max-width: 820px;
+  line-height: 1.45;
+  margin-bottom: 1.15rem;
+}
+
+/* Grid de Quick Stats dentro del Hero */
+.hero-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 0.75rem;
+}
+
+.hero-stat-card {
+  padding: 0.7rem 1rem;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  box-shadow: 0 2px 8px rgba(100, 116, 139, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(100, 116, 139, 0.08);
+}
+
+.stat-icon-wrap {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  background: #f8fafc;
+  border: 1px solid #edf2f7;
+  flex-shrink: 0;
+}
+
+.stat-val {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.2;
+}
+
+.stat-label {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  margin-top: 0.15rem;
+}

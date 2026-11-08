@@ -1,0 +1,265 @@
+/* LessonNotebookSidebar.css - Estilos dedicados para el panel de cuaderno y notas */
+
+.notebook-sidebar {
+  position: fixed;
+  top: 126px;
+  right: 0;
+  bottom: 0;
+  width: 460px;
+  max-width: calc(100vw - 42px);
+  background: var(--bg-card);
+  border-left: 1px solid var(--border-subtle);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+}
+
+.notebook-sidebar.is-open {
+  transform: translateX(0);
+  box-shadow: -8px 0 28px rgba(0, 0, 0, 0.25);
+  z-index: 980;
+}
+
+/* Pestaña flotante a la izquierda */
+.notebook-sidebar-tab-trigger {
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 46px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -4px 2px 10px rgba(0, 0, 0, 0.12);
+  color: var(--text-main);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  z-index: 961;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.notebook-sidebar-tab-trigger:hover {
+  background: var(--bg-hover);
+  color: var(--accent-purple, #8b5cf6);
+}
+
+/* Header del panel */
+.notebook-sidebar-header {
+  padding: 1rem 1.2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-card);
+}
+
+.notebook-sidebar-header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.notebook-sidebar-title {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-title);
+  font-weight: 700;
+}
+
+.notebook-sidebar-subtitle {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.notebook-sidebar-actions {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.notebook-action-btn-secondary {
+  background: transparent;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.notebook-action-btn-secondary:hover {
+  background: var(--bg-hover);
+  color: var(--text-title);
+}
+
+.notebook-action-btn-primary {
+  padding: 0.35rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 6px;
+  background: var(--accent-purple, #8b5cf6);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.notebook-action-btn-primary:active {
+  transform: scale(0.97);
+}
+
+.notebook-action-btn-primary.is-copied {
+  background: #10b981;
+}
+
+/* Sub-header de metadatos */
+.notebook-sidebar-meta {
+  padding: 0.7rem 1.2rem;
+  background: var(--bg-hover);
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.notebook-meta-file {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-main);
+  font-weight: 600;
+}
+
+.notebook-meta-code {
+  background: var(--bg-card);
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+  color: var(--accent-blue);
+  font-size: 0.76rem;
+}
+
+.notebook-meta-branch {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+/* Cuerpo con scroll */
+.notebook-sidebar-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  box-sizing: border-box;
+}
+
+/* Tarjeta Hero */
+.notebook-hero-card {
+  background: var(--bg-main);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid var(--accent-purple, #8b5cf6);
+}
+
+.notebook-hero-title {
+  margin: 0 0 0.3rem;
+  font-size: 0.95rem;
+  color: var(--text-title);
+  font-weight: 700;
+}
+
+.notebook-hero-desc {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+/* Secciones */
+.notebook-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.notebook-section-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.notebook-item-card {
+  background: var(--bg-main);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+}
+
+.notebook-item-question {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-title);
+  margin-bottom: 0.4rem;
+}
+
+.notebook-item-answer {
+  font-size: 0.82rem;
+  color: var(--text-main);
+  line-height: 1.5;
+  padding-left: 0.6rem;
+}
+
+/* Vista raw markdown */
+.notebook-raw-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.notebook-raw-pre {
+  flex: 1;
+  background: var(--bg-main);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+  overflow-y: auto;
+  color: var(--text-main);
+  font-family: var(--font-mono, monospace);
+}
+
+/* Footer hint */
+.notebook-footer-hint {
+  margin-top: auto;
+  padding: 0.8rem;
+  background: var(--bg-hover);
+  border-radius: 8px;
+  border: 1px dashed var(--border-subtle);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}

@@ -1,0 +1,104 @@
+{
+  "id": "asig-1",
+  "title": "Asignatura IOC 1 (Ejemplo con Libro y EAC)",
+  "themeColor": "#2563eb",
+  "icon": "🛠️",
+  "progress": 0,
+  "theoryRoute": "/ioc/asig-1/lecciones-asig-1",
+  "blocks": [
+    {
+      "id": "bloque1",
+      "label": "BLOQUE 1: Fundamentos y EAC 1"
+    },
+    {
+      "id": "bloque2",
+      "label": "BLOQUE 2: Práctica Avanzada y EAC 2"
+    },
+    {
+      "id": "bloque3",
+      "label": "BLOQUE 3: Proyecto Final y EAC 3"
+    }
+  ],
+  "eacs": [
+    {
+      "id": "eac1",
+      "title": "EAC 1: Primera Entrega Evaluable (35% AC)",
+      "status": "pending",
+      "dueDate": "2026-11-20",
+      "theorySlug": "intro-unidad",
+      "weight": "35% AC",
+      "description": "Plantilla limpia para la EAC 1 de Asignatura IOC 1 (Ejemplo con Libro y EAC). Pon el PDF del enunciado en public/eacs/ioc/asig-1/ y pídele al agente que rellene automáticamente esta guía paso a paso.",
+      "checklist": [
+        "Parte 1: Configuración del entorno y primeros pasos (capturas en el PDF)",
+        "Parte 2: Desarrollo de los ejercicios prácticos (EAC 1)",
+        "Parte 3: Grabación del vídeo demostrativo (con guion hablado incluido)"
+      ],
+      "exercicis": [
+        {
+          "num": 1,
+          "label": "Parte 1 · Preparación",
+          "points": "3,0 puntos",
+          "title": "Parte 1: Configuración inicial y estructura del proyecto",
+          "desc": "Ejemplo de apartado paso a paso con comandos listos para copiar y pegar.",
+          "steps": [
+            {
+              "title": "Apartado 1 · Verificar entorno en terminal",
+              "desc": "Ejecuta este comando en tu terminal y haz captura donde se vea tu usuario@equipo.",
+              "code": "git --version\nnode --version"
+            }
+          ],
+          "deliverables": [
+            "📸 Captura de pantalla en el PDF mostrando la salida del comando",
+            "✍️ Breve explicación técnica de los pasos realizados"
+          ]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac2",
+      "title": "EAC 2: Segunda Entrega Evaluable (35% AC)",
+      "status": "pending",
+      "dueDate": "2026-12-10",
+      "theorySlug": "intro-unidad",
+      "weight": "35% AC",
+      "description": "Espacio reservado para la EAC 2. Se actualizará automáticamente cuando subas el enunciado PDF.",
+      "checklist": [
+        "Subir el PDF del enunciado a public/eacs/",
+        "Generar el paso a paso y el guion de vídeo con el agente"
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac3",
+      "title": "EAC 3: Entrega Final (30% AC)",
+      "status": "pending",
+      "dueDate": "2027-01-10",
+      "theorySlug": "intro-unidad",
+      "weight": "30% AC",
+      "description": "Espacio reservado para la EAC 3.",
+      "checklist": [
+        "Subir el PDF del enunciado a public/eacs/",
+        "Marcar como entregado para actualizar el calendario .ics"
+      ],
+      "nota": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-20",
+      "title": "Entrega EAC 1",
+      "type": "eac"
+    },
+    {
+      "date": "2026-12-10",
+      "title": "Entrega EAC 2",
+      "type": "eac"
+    },
+    {
+      "date": "2027-01-10",
+      "title": "Entrega EAC 3",
+      "type": "eac"
+    }
+  ]
+}

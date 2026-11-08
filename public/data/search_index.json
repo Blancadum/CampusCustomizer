@@ -1,0 +1,50 @@
+[
+  {
+    "id": "asig1-1-1",
+    "title": "1.1 Fundamentos y Arquitectura con Analogías",
+    "category": "IOC · Asignatura 1",
+    "badge": "IOC1",
+    "url": "/ioc/asig-1/lecciones-asig-1/1-1-fundamentos-y-arquitectura",
+    "keywords": [
+      "arquitectura",
+      "cliente",
+      "servidor",
+      "capas",
+      "mvc",
+      "rest",
+      "http"
+    ],
+    "summary": "Introducción con analogías del mundo real, modelización paso a paso y código limpio."
+  },
+  {
+    "id": "uoc1-1-1",
+    "title": "1.1 Conceptos Clave para la PEC 1",
+    "category": "UOC · Asignatura 1",
+    "badge": "UOC1",
+    "url": "/uoc/uoc-1/lecciones-uoc-1/1-1-conceptos-clave-pec",
+    "keywords": [
+      "pec",
+      "uoc",
+      "metodologia",
+      "arquitectura",
+      "practica"
+    ],
+    "summary": "Guía teórica y práctica orientada a resolver el reto de la PEC 1."
+  },
+  {
+    "id": "wb-eac",
+    "title": "@Workbench Paso a Paso EAC / PEC (Con Guion de Vídeo)",
+    "category": "Herramienta",
+    "badge": "EAC",
+    "url": "/ioc/asig-1/eac1",
+    "keywords": [
+      "@eac",
+      "@pec",
+      "@video",
+      "@pasoapaso",
+      "workbench",
+      "guion"
+    ],
+    "summary": "Plantilla interactiva de resolución de entregas con comandos copiables, textos para PDF y guiones de vídeo."
+  }
+]

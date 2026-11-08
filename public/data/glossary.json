@@ -1,0 +1,442 @@
+[
+  {
+    "id": "ent-uml",
+    "term": "UML (Unified Modeling Language)",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Modelado de Software",
+    "definition": "Lenguaje gráfico estándar para modelar, documentar y estructurar sistemas orientados a objetos mediante diagramas estáticos y de comportamiento.",
+    "keywords": ["uml", "lenguaje", "modelado", "diagramas", "orientado a objetos", "case"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-papyrus",
+    "term": "Papyrus en Eclipse",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Herramientas CASE",
+    "definition": "Herramienta open-source integrada en Eclipse para la edición, validación e ingeniería inversa/directa de modelos UML2 y perfiles específicos.",
+    "keywords": ["papyrus", "eclipse", "case", "di", "uml2", "ingenieria directa", "modelado"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-clases",
+    "term": "Diagrama de Clases",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Estructura OO",
+    "definition": "Diagrama estructural que representa los clasificadores del sistema, sus atributos y métodos tipados, visibilidades (+, -, #) y relaciones.",
+    "keywords": ["clases", "diagrama de clases", "atributos", "metodos", "visibilidad", "estructural"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-composicion",
+    "term": "Composición (Rombo negro)",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Relaciones OO",
+    "definition": "Relación estructural fuerte de pertenencia y ciclo de vida compartido: si el objeto contenedor desaparece, sus partes constitutivas también se destruyen.",
+    "keywords": ["composicion", "rombo negro", "dependencia existencial", "ciclo de vida", "parte todo"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-agregacion",
+    "term": "Agregación (Rombo blanco)",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Relaciones OO",
+    "definition": "Relación estructural débil donde las partes pueden existir de forma autónoma e independiente de la existencia del objeto contenedor.",
+    "keywords": ["agregacion", "rombo blanco", "independiente", "asociacion debil", "componentes"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-secuencia",
+    "term": "Diagrama de Secuencia",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Comportamiento Dinámico",
+    "definition": "Diagrama que modela la interacción temporal entre líneas de vida de objetos mediante mensajes síncronos y asíncronos ordenados en el tiempo.",
+    "keywords": ["secuencia", "lineas de vida", "mensajes", "temporal", "interaccion", "comportamiento"],
+    "url": "/ioc/ent/lecciones-ent/intro-u1"
+  },
+  {
+    "id": "ent-windowbuilder",
+    "term": "WindowBuilder (Swing)",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "IDEs & Interfaces",
+    "definition": "Diseñador visual drag-and-drop para Eclipse que genera automáticamente código Java para formularios JFrame, JPanel y gestores de layouts.",
+    "keywords": ["windowbuilder", "swing", "jframe", "gui", "diseño visual", "eclipse", "escritorio"],
+    "url": "/ioc/ent/lecciones-ent/intro-u2"
+  },
+  {
+    "id": "ent-junit5",
+    "term": "JUnit 5",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Calidad & Pruebas",
+    "definition": "Framework de pruebas unitarias automatizadas para Java basado en anotaciones (@Test, @BeforeEach) y aserciones para verificar condiciones de software.",
+    "keywords": ["junit", "junit 5", "tests", "pruebas unitarias", "assert", "asserts", "testing"],
+    "url": "/ioc/ent/lecciones-ent/intro-u3"
+  },
+  {
+    "id": "ent-refactorizacion",
+    "term": "Refactorización (Refactoring)",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Calidad & Pruebas",
+    "definition": "Técnica de modificación del código fuente para mejorar su legibilidad, mantenibilidad y rendimiento sin alterar su comportamiento funcional observable.",
+    "keywords": ["refactorizacion", "refactoring", "clean code", "deuda tecnica", "legibilidad", "optimizacion"],
+    "url": "/ioc/ent/lecciones-ent/intro-u3"
+  },
+  {
+    "id": "ent-git",
+    "term": "Git & Control de Versiones",
+    "subject": "ent",
+    "subjectName": "Entornos de Desarrollo",
+    "category": "Control de Versiones",
+    "definition": "Sistema distribuido de control de código que permite ramificaciones (branches), confirmaciones (commits), resolución de conflictos y colaboración en equipo.",
+    "keywords": ["git", "control de versiones", "commit", "branch", "rama", "merge", "github"],
+    "url": "/ioc/ent/lecciones-ent/intro-u3"
+  },
+  {
+    "id": "desp-apache",
+    "term": "Apache HTTP Server",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Servidores Web",
+    "definition": "Servidor web HTTP modular basado en procesos e hilos con soporte para configuración dinámica por directorio mediante ficheros .htaccess.",
+    "keywords": ["apache", "httpd", "servidor web", "htaccess", "mpm", "prefork", "worker"],
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts"
+  },
+  {
+    "id": "desp-nginx",
+    "term": "Nginx",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Servidores Web",
+    "definition": "Servidor web ligero y reverse proxy de alto rendimiento impulsado por un bucle de eventos asíncrono no bloqueante (event-driven).",
+    "keywords": ["nginx", "servidor web", "reverse proxy", "event-driven", "asincrono", "rendimiento"],
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts"
+  },
+  {
+    "id": "desp-vhosts",
+    "term": "Virtual Hosts (Servidores Virtuales)",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Servidores Web",
+    "definition": "Técnica de configuración de servidores HTTP para alojar múltiples dominios o subdominios independientes en una misma dirección IP o servidor físico.",
+    "keywords": ["virtual hosts", "vhosts", "server_name", "alojamiento compartido", "multi-sitio"],
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts"
+  },
+  {
+    "id": "desp-dns",
+    "term": "DNS (Domain Name System)",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Redes & Dominios",
+    "definition": "Sistema distribuido y jerárquico que resuelve y traduce nombres de dominio alfanuméricos a direcciones IP numéricas accesibles en Internet.",
+    "keywords": ["dns", "nombres de dominio", "resolucion", "ip", "servidor dns", "zona directa"],
+    "url": "/ioc/desp/lecciones-desp/dns-resolucion-nombres"
+  },
+  {
+    "id": "desp-registros-dns",
+    "term": "Registros DNS (A, CNAME, MX)",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Redes & Dominios",
+    "definition": "Entradas de configuración en zonas DNS: Registro A (mapeo a IPv4), CNAME (alias canónico) y MX (servidor de intercambio de correo electrónico).",
+    "keywords": ["registros dns", "registro a", "cname", "mx", "aaaa", "txt", "alias"],
+    "url": "/ioc/desp/lecciones-desp/dns-resolucion-nombres"
+  },
+  {
+    "id": "desp-https-tls",
+    "term": "HTTPS & Certificados SSL/TLS",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Seguridad Web",
+    "definition": "Protocolo seguro que añade cifrado criptográfico simétrico y asimétrico a las peticiones HTTP para garantizar confidencialidad, autenticidad e integridad.",
+    "keywords": ["https", "tls", "ssl", "certificados", "cifrado", "seguridad", "handshake"],
+    "url": "/ioc/desp/lecciones-desp/https-certificados-ssl-tls"
+  },
+  {
+    "id": "desp-certbot",
+    "term": "Certbot & Let's Encrypt",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Seguridad Web",
+    "definition": "Agente cliente automatizado para la emisión, validación e instalación periódica de certificados digitales TLS gratuitos de la autoridad Let's Encrypt.",
+    "keywords": ["certbot", "lets encrypt", "automatizacion", "acme", "renovacion", "ssl gratuito"],
+    "url": "/ioc/desp/lecciones-desp/https-certificados-ssl-tls"
+  },
+  {
+    "id": "desp-docker",
+    "term": "Docker & Contenedores",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Contenedorización",
+    "definition": "Tecnología de virtualización ligera a nivel de kernel que empaqueta una aplicación con todas sus librerías y dependencias en un entorno aislado.",
+    "keywords": ["docker", "contenedores", "imagenes", "virtualizacion ligera", "namespaces", "cgroups"],
+    "url": "/ioc/desp/lecciones-desp/docker-contenedores-compose"
+  },
+  {
+    "id": "desp-docker-compose",
+    "term": "Docker Compose",
+    "subject": "desp",
+    "subjectName": "Despliegue de Aplicaciones Web",
+    "category": "Contenedorización",
+    "definition": "Herramienta de orquestación declarativa para configurar y levantar aplicaciones multicontenedor mediante un único fichero YAML (docker-compose.yml).",
+    "keywords": ["docker compose", "orquestacion", "multi-contenedor", "compose", "yaml", "servicios"],
+    "url": "/ioc/desp/lecciones-desp/docker-contenedores-compose"
+  },
+  {
+    "id": "digi-industria40",
+    "term": "Industria 4.0",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Transformación Digital",
+    "definition": "Paradigma de la Cuarta Revolución Industrial caracterizado por la integración de sistemas ciberfísicos, hiperconectividad e inteligencia en procesos de producción.",
+    "keywords": ["industria 4.0", "cuarta revolucion", "fabrica inteligente", "transformacion digital", "smart factory"],
+    "url": "/ioc/digi/lecciones-digi/industria-4-0-sistemas-ciberfisicos"
+  },
+  {
+    "id": "digi-cps",
+    "term": "Sistemas Ciberfísicos (CPS)",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Sistemas Inteligentes",
+    "definition": "Mecanismos computacionales y sensoriales integrados estrechamente con activos físicos que monitorizan y controlan variables del mundo real en tiempo real.",
+    "keywords": ["cps", "sistemas ciberfisicos", "sensores", "control en tiempo real", "actuadores"],
+    "url": "/ioc/digi/lecciones-digi/industria-4-0-sistemas-ciberfisicos"
+  },
+  {
+    "id": "digi-thd",
+    "term": "Tecnologías Habilitadoras Digitales (THD)",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Transformación Digital",
+    "definition": "Conjunto de tecnologías clave (IoT, Cloud, Big Data, Inteligencia Artificial, Impresión 3D) que posibilitan la digitalización integral de la economía.",
+    "keywords": ["thd", "tecnologias habilitadoras", "innovacion", "disrupcion tecnologica", "ecosistema digital"],
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd"
+  },
+  {
+    "id": "digi-iot",
+    "term": "IoT e Industrial IoT (IIoT)",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Conectividad & Sensores",
+    "definition": "Interconexión masiva de dispositivos físicos y sensores industriales que recopilan y transmiten telemetría mediante protocolos ligeros como MQTT y CoAP.",
+    "keywords": ["iot", "iiot", "internet de las cosas", "mqtt", "telemetria", "sensores industriales"],
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd"
+  },
+  {
+    "id": "digi-edge",
+    "term": "Edge Computing",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Arquitecturas Cloud",
+    "definition": "Computación en el borde de la red: procesamiento local e instantáneo de datos cerca de las fuentes sensorizadas para minimizar la latencia.",
+    "keywords": ["edge computing", "computacion en el borde", "baja latencia", "procesamiento local", "cloud"],
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd"
+  },
+  {
+    "id": "digi-gemelos",
+    "term": "Gemelos Digitales (Digital Twins)",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Simulación & Modelado",
+    "definition": "Réplicas virtuales vivas y precisas de objetos o procesos físicos que se actualizan continuamente con datos de telemetría para predecir anomalías.",
+    "keywords": ["gemelos digitales", "digital twins", "simulacion", "mantenimiento predictivo", "replica virtual"],
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd"
+  },
+  {
+    "id": "digi-bigdata",
+    "term": "Big Data (Las 5 V's)",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "Gestión de Datos",
+    "definition": "Conjuntos masivos de datos definidos por su Volumen ingente, Velocidad de transmisión en streaming, Variedad multiformato, Veracidad y Valor de negocio.",
+    "keywords": ["big data", "5 vs", "volumen", "velocidad", "variedad", "veracidad", "valor", "data lake"],
+    "url": "/ioc/digi/lecciones-digi/big-data-ciclo-vida-dato"
+  },
+  {
+    "id": "digi-ia",
+    "term": "Inteligencia Artificial y Machine Learning",
+    "subject": "digi",
+    "subjectName": "Digitalización Aplicada",
+    "category": "IA & Modelos",
+    "definition": "Sistemas cognitivos capaces de deducir patrones y predecir comportamientos mediante aprendizaje supervisado, no supervisado o por refuerzo.",
+    "keywords": ["inteligencia artificial", "ia", "machine learning", "aprendizaje automatico", "deep learning", "llm"],
+    "url": "/ioc/digi/lecciones-digi/inteligencia-artificial-machine-learning"
+  },
+  {
+    "id": "int-usabilidad",
+    "term": "Usabilidad & Experiencia de Usuario (UX)",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "UX/UI",
+    "definition": "Medida cuantitativa y cualitativa de la eficacia, eficiencia y grado de satisfacción con que los usuarios interactúan con una aplicación digital.",
+    "keywords": ["usabilidad", "ux", "experiencia de usuario", "ui", "satisfaccion", "eficiencia", "interaccion"],
+    "url": "/ioc/int/lecciones-int/usabilidad-ux-principios-diseno"
+  },
+  {
+    "id": "int-nielsen",
+    "term": "10 Heurísticas de Jakob Nielsen",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Principios UX",
+    "definition": "Reglas de oro para evaluar usabilidad: estado del sistema, mundo real, control del usuario, consistencia, prevención de errores, reconocimiento, estética.",
+    "keywords": ["nielsen", "heuristicas", "reglas de usabilidad", "evaluacion heuristica", "prevencion de errores"],
+    "url": "/ioc/int/lecciones-int/usabilidad-ux-principios-diseno"
+  },
+  {
+    "id": "int-flexbox",
+    "term": "CSS Flexbox",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Maquetación CSS",
+    "definition": "Módulo de diseño unidimensional en CSS ideado para alinear, ordenar y distribuir espacio entre componentes a lo largo de una fila o columna.",
+    "keywords": ["flexbox", "css flexbox", "display flex", "justify-content", "align-items", "eje principal"],
+    "url": "/ioc/int/lecciones-int/css-avanzado-flexbox-grid"
+  },
+  {
+    "id": "int-grid",
+    "term": "CSS Grid Layout",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Maquetación CSS",
+    "definition": "Sistema de cuadrícula bidimensional de CSS para dividir la interfaz en filas y columnas simultáneas mediante áreas y fracciones (fr).",
+    "keywords": ["grid", "css grid", "cuadricula", "display grid", "grid-template-columns", "bidimensional"],
+    "url": "/ioc/int/lecciones-int/css-avanzado-flexbox-grid"
+  },
+  {
+    "id": "int-accesibilidad",
+    "term": "Accesibilidad Web (WCAG 2.2)",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Accesibilidad (a11y)",
+    "definition": "Pautas internacionales del W3C que garantizan que personas con discapacidades sensoriales, cognitivas o motrices puedan percibir y operar la web.",
+    "keywords": ["accesibilidad", "wcag", "a11y", "wcag 2.2", "inclusivo", "lectores de pantalla", "nivel aa"],
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria"
+  },
+  {
+    "id": "int-pour",
+    "term": "Principios P.O.U.R. de Accesibilidad",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Accesibilidad (a11y)",
+    "definition": "Los cuatro pilares normativos de WCAG: Perceptible (información clara), Operable (teclado), Comprensible (Understandable) y Robusto (compatibilidad).",
+    "keywords": ["pour", "perceptible", "operable", "comprensible", "robusto", "pilares wcag"],
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria"
+  },
+  {
+    "id": "int-aria",
+    "term": "Atributos WAI-ARIA",
+    "subject": "int",
+    "subjectName": "Diseño de Interfaces Web",
+    "category": "Semántica & a11y",
+    "definition": "Especificación de atributos HTML (aria-label, aria-expanded, role) para exponer información semántica a tecnologías de asistencia.",
+    "keywords": ["aria", "wai-aria", "aria-label", "role", "semantica", "tecnologias de asistencia"],
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria"
+  },
+  {
+    "id": "ipo2-estatuto",
+    "term": "Estatuto de los Trabajadores",
+    "subject": "ipo2",
+    "subjectName": "Itinerario Personal para la Empleabilidad II",
+    "category": "Legislación Laboral",
+    "definition": "Cuerpo normativo de cabecera en el Derecho Laboral español que define los derechos, deberes y garantías mínimas de los trabajadores por cuenta ajena.",
+    "keywords": ["estatuto de los trabajadores", "ley laboral", "derechos laborales", "marco normativo"],
+    "url": "/ioc/ipo2/lecciones-ipo2/marco-laboral-contrato-trabajo"
+  },
+  {
+    "id": "ipo2-convenio",
+    "term": "Convenio Colectivo",
+    "subject": "ipo2",
+    "subjectName": "Itinerario Personal para la Empleabilidad II",
+    "category": "Legislación Laboral",
+    "definition": "Acuerdo vinculante entre representantes de trabajadores y empresarios que regula tablas salariales, jornadas y categorías en el sector tecnológico.",
+    "keywords": ["convenio colectivo", "negociacion colectiva", "tablas salariales", "convenio tic"],
+    "url": "/ioc/ipo2/lecciones-ipo2/marco-laboral-contrato-trabajo"
+  },
+  {
+    "id": "ipo2-nomina",
+    "term": "Estructura de la Nómina",
+    "subject": "ipo2",
+    "subjectName": "Itinerario Personal para la Empleabilidad II",
+    "category": "Retribución & Salario",
+    "definition": "Recibo individual justificativo del pago salarial con tres bloques: Devengos brutos, Deducciones (Seguridad Social e IRPF) y Líquido neto final.",
+    "keywords": ["nomina", "salario neto", "salario bruto", "devengos", "deducciones", "recibo de salarios"],
+    "url": "/ioc/ipo2/lecciones-ipo2/nominas-salario-seguridad-social"
+  },
+  {
+    "id": "ipo2-cotizacion",
+    "term": "Bases de Cotización (BCCC / BCCP)",
+    "subject": "ipo2",
+    "subjectName": "Itinerario Personal para la Empleabilidad II",
+    "category": "Seguridad Social",
+    "definition": "Bases de cálculo sobre las que se aplican los porcentajes de aportación a contingencias comunes, formación profesional y desempleo a la Seguridad Social.",
+    "keywords": ["bases de cotizacion", "bccc", "bccp", "seguridad social", "contingencias comunes", "desempleo"],
+    "url": "/ioc/ipo2/lecciones-ipo2/nominas-salario-seguridad-social"
+  },
+  {
+    "id": "ipo2-desconexion",
+    "term": "Derecho a la Desconexión Digital",
+    "subject": "ipo2",
+    "subjectName": "Itinerario Personal para la Empleabilidad II",
+    "category": "Salud Laboral & PRL",
+    "definition": "Garantía legal (Ley Orgánica 3/2018) que protege el descanso de los trabajadores impidiendo la obligación de atender comunicaciones laborales fuera de horario.",
+    "keywords": ["desconexion digital", "salud laboral", "derecho al descanso", "teletrabajo", "burnout"],
+    "url": "/ioc/ipo2/lecciones-ipo2/prl-ergonomia-riesgos-psicosociales"
+  },
+  {
+    "id": "java-spring-iod",
+    "term": "Inyección de Dependencias (IoD / DI)",
+    "subject": "java",
+    "subjectName": "Java & Spring Boot",
+    "category": "Patrones & Spring",
+    "definition": "Patrón de diseño por el cual un objeto recibe sus dependencias desde un contenedor externo en vez de crearlas manualmente con 'new'.",
+    "keywords": ["inyeccion de dependencias", "iod", "di", "dependency injection", "spring", "inversion de control"],
+    "url": "/springboot"
+  },
+  {
+    "id": "java-spring-bean",
+    "term": "Spring Bean & Contenedor IoC",
+    "subject": "java",
+    "subjectName": "Java & Spring Boot",
+    "category": "Spring Core",
+    "definition": "Instancia de una clase Java administrada por el contexto de Spring (ApplicationContext) que gestiona su ciclo de vida y configuración.",
+    "keywords": ["bean", "spring bean", "ioc", "applicationcontext", "contenedor ioc", "ciclo de vida"],
+    "url": "/springboot"
+  },
+  {
+    "id": "java-autowired",
+    "term": "@Autowired y Anotaciones de Estereotipo",
+    "subject": "java",
+    "subjectName": "Java & Spring Boot",
+    "category": "Spring Core",
+    "definition": "Anotaciones de Spring (@Autowired, @Component, @Service, @Repository) que habilitan el cableado automático y la detección de componentes.",
+    "keywords": ["autowired", "component", "service", "repository", "anotaciones", "cableado automatico"],
+    "url": "/springboot"
+  },
+  {
+    "id": "java-restcontroller",
+    "term": "@RestController & Endpoints REST",
+    "subject": "java",
+    "subjectName": "Java & Spring Boot",
+    "category": "Spring Web REST",
+    "definition": "Controlador web especializado que expone rutas HTTP (GET, POST, PUT, DELETE) serializando automáticamente las respuestas en formato JSON.",
+    "keywords": ["restcontroller", "api rest", "endpoints", "getmapping", "postmapping", "json", "spring boot"],
+    "url": "/springboot"
+  },
+  {
+    "id": "bbdd-mysql-labex",
+    "term": "MySQL & Laboratorios Prácticos (LabEx Free Labs)",
+    "subject": "bbdd",
+    "subjectName": "Bases de Datos & SQL",
+    "category": "Sistemas Gestores de BBDD",
+    "definition": "Sistema de gestión de bases de datos relacionales (RDBMS) de código abierto más popular en la web. Permite almacenar, modelar y consultar datos con integridad ACID. Los laboratorios gratuitos de LabEx ofrecen un entorno interactivo en la nube para practicar consultas, JOINs y transacciones.",
+    "keywords": ["mysql", "bbdd", "base de datos", "bases de datos", "sql", "labex", "labs", "consultas", "relacional", "acid", "transacciones"],
+    "url": "https://labex.io/free-labs/mysql"
+  }
+]

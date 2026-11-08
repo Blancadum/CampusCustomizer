@@ -1,0 +1,50 @@
+[
+  {
+    "id": "asig1_eac1",
+    "course": "asig-1",
+    "task": "EAC 1",
+    "color": "#2563eb",
+    "badge": "🔵 IOC · asig-1",
+    "date": "2026-11-20",
+    "weight": "35%",
+    "link": "/ioc/asig-1",
+    "tooltip": "Asignatura IOC 1 · Entrega EAC 1 (35% AC)",
+    "done": false
+  },
+  {
+    "id": "uoc1_pec1",
+    "course": "uoc-1",
+    "task": "PEC 1",
+    "color": "#7c3aed",
+    "badge": "🟣 UOC · uoc-1",
+    "date": "2026-11-25",
+    "weight": "35%",
+    "link": "/uoc/uoc-1",
+    "tooltip": "Asignatura UOC 1 · Entrega PEC 1 (35% AC)",
+    "done": false
+  },
+  {
+    "id": "asig2_eac1",
+    "course": "asig-2",
+    "task": "EAC 1",
+    "color": "#16a34a",
+    "badge": "🟢 IOC · asig-2",
+    "date": "2026-12-05",
+    "weight": "40%",
+    "link": "/ioc/asig-2",
+    "tooltip": "Asignatura IOC 2 · Entrega EAC 1 (40% AC)",
+    "done": false
+  },
+  {
+    "id": "asig3_eac1",
+    "course": "asig-3",
+    "task": "EAC 1",
+    "color": "#eab308",
+    "badge": "🟡 IOC · asig-3",
+    "date": "2026-12-14",
+    "weight": "33%",
+    "link": "/ioc/asig-3",
+    "tooltip": "Asignatura IOC 3 · Entrega EAC 1 (33% AC)",
+    "done": false
+  }
+]

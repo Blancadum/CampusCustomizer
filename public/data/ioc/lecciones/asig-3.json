@@ -1,0 +1,27 @@
+[
+  {
+    "id": "asig-3-overview",
+    "moduleId": "u1",
+    "moduleShort": "Bloque 1",
+    "moduleTitle": "Bloque 1: Fundamentos de Asignatura IOC 3 (Plantilla Limpia)",
+    "topicNum": null,
+    "title": "Introducción y Conceptos Clave del Bloque",
+    "slug": "intro-unidad",
+    "badge": "IOC3",
+    "isOverview": true,
+    "temaTitle": "Introducción",
+    "contentMd": "Bienvenido al Libro Digital interactivo de **Asignatura IOC 3 (Plantilla Limpia)**.\n\n### 💡 Conceptos Clave de este Bloque\n\n* **Arquitectura Limpia:** Separación de responsabilidades en capas para facilitar el mantenimiento.\n* **Aprendizaje Guiado por Analogías:** Cada concepto técnico se explica primero con un ejemplo de la vida real antes de pasar al código.\n* **Modelización Práctica:** Hilo conductor con código funcional y botones de copiado rápido.\n\n> [!TIP]\n> **¿Cómo rellenar este Libro Digital sin escribir prompts?**\n> Solo tienes que dejar tus PDFs o apuntes en la carpeta `public/fuentes/` y decirle a tu IA: *\"Léete el material que he dejado en public/fuentes y genera los temas de Asignatura IOC 3 (Plantilla Limpia)\"*. El sistema leerá automáticamente las reglas de `.agents/` y maquetará todo con este mismo estilo."
+  },
+  {
+    "id": "asig-3-t1",
+    "moduleId": "u1",
+    "moduleShort": "Bloque 1",
+    "moduleTitle": "Bloque 1: Fundamentos de Asignatura IOC 3 (Plantilla Limpia)",
+    "topicNum": "1.1",
+    "title": "1.1 Fundamentos con Analogía Real y Ejemplo Práctico",
+    "slug": "1-1-introduccion",
+    "badge": "IOC3",
+    "temaTitle": "Tema 1: Fundamentos",
+    "contentMd": "En este tema de ejemplo verás la estructura pedagógica exacta configurada en el sistema de agentes de este proyecto.\n\n### 1.1 Definición del Concepto Principal\n\nEl **modelo Cliente-Servidor** es una arquitectura distribuida donde un programa cliente solicita recursos o servicios y un servidor centralizado los procesa y devuelve una respuesta estructurada.\n\n> [!NOTE]\n> **Analogía de la vida real (El Restaurante):**\n> Imagina un restaurante: tú eres el **Cliente** mirando la carta (el Frontend), el camarero es el **Protocolo HTTP** que lleva tu pedido en una nota estandarizada, la cocina es el **Servidor Backend** que prepara el plato siguiendo las reglas del negocio, y la despensa refrigerada es la **Base de Datos** donde se guardan los ingredientes.\n\n### 1.2 Ejemplo de Modelización en Código\n\nA continuación se muestra cómo este flujo se traduce en un endpoint limpio y comentado:\n\n```javascript\n// 1. El servidor recibe la petición GET del cliente\napp.get(\"/api/asignaturas\", async (req, res) => {\n  try {\n    // 2. Consulta a la capa de datos\n    const asignaturas = await db.obtenerAsignaturasActivas();\n    // 3. Respuesta HTTP 200 en formato JSON\n    return res.status(200).json({ ok: true, data: asignaturas });\n  } catch (error) {\n    return res.status(500).json({ ok: false, error: \"Error interno del servidor\" });\n  }\n});\n```\n\n### 1.3 Tabla Comparativa de Referencia\n\n| Componente | Responsabilidad Principal | Ejemplo en el Proyecto |\n|---|---|---|\n| **Cliente (SPA)** | Renderizar la interfaz y gestionar la interacción | React + Vite (`src/`) |\n| **API Local** | Persistir entregas y regenerar el calendario `.ics` | Express (`backend/server.js`) |\n| **Almacén JSON** | Guardar asignaturas, fechas y temarios | `public/data/ioc/` y `public/data/uoc/` |"
+  }
+]

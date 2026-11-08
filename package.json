@@ -1,0 +1,39 @@
+{
+  "name": "campuscustomizer",
+  "author": "Blanca de Uña <blancadum@gmail.com> (https://github.com/Blancadum)",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "oxlint",
+    "api": "node backend/server.js",
+    "coach": "node src/agents/coach/index.js",
+    "bridge": "node src/telegram/bridge.js",
+    "agents": "node src/agents/launcher.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^18.0.7",
+    "express": "^4.21.2",
+    "highlight.js": "^11.12.0",
+    "multer": "^1.4.5-lts.1",
+    "nats": "^2.29.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-markdown": "^10.1.0",
+    "react-router-dom": "^7.18.4",
+    "rehype-raw": "^7.0.0",
+    "remark-gfm": "^4.0.1",
+    "telegraf": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "oxlint": "^1.81.0",
+    "vite": "^8.3.0"
+  }
+}

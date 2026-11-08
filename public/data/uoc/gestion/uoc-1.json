@@ -1,0 +1,104 @@
+{
+  "id": "uoc-1",
+  "title": "Asignatura UOC 1 (Ejemplo con PEC y Apuntes)",
+  "themeColor": "#7c3aed",
+  "icon": "🏛️",
+  "progress": 0,
+  "theoryRoute": "/uoc/uoc-1/lecciones-uoc-1",
+  "blocks": [
+    {
+      "id": "bloque1",
+      "label": "BLOQUE 1: Fundamentos y PEC 1"
+    },
+    {
+      "id": "bloque2",
+      "label": "BLOQUE 2: Práctica Avanzada y PEC 2"
+    },
+    {
+      "id": "bloque3",
+      "label": "BLOQUE 3: Proyecto Final y PEC 3"
+    }
+  ],
+  "eacs": [
+    {
+      "id": "pec1",
+      "title": "PEC 1: Primera Entrega Evaluable (35% AC)",
+      "status": "pending",
+      "dueDate": "2026-11-20",
+      "theorySlug": "intro-unidad",
+      "weight": "35% AC",
+      "description": "Plantilla limpia para la PEC 1 de Asignatura UOC 1 (Ejemplo con PEC y Apuntes). Pon el PDF del enunciado en public/eacs/uoc/uoc-1/ y pídele al agente que rellene automáticamente esta guía paso a paso.",
+      "checklist": [
+        "Parte 1: Configuración del entorno y primeros pasos (capturas en el PDF)",
+        "Parte 2: Desarrollo de los ejercicios prácticos (PEC 1)",
+        "Parte 3: Grabación del vídeo demostrativo (con guion hablado incluido)"
+      ],
+      "exercicis": [
+        {
+          "num": 1,
+          "label": "Parte 1 · Preparación",
+          "points": "3,0 puntos",
+          "title": "Parte 1: Configuración inicial y estructura del proyecto",
+          "desc": "Ejemplo de apartado paso a paso con comandos listos para copiar y pegar.",
+          "steps": [
+            {
+              "title": "Apartado 1 · Verificar entorno en terminal",
+              "desc": "Ejecuta este comando en tu terminal y haz captura donde se vea tu usuario@equipo.",
+              "code": "git --version\nnode --version"
+            }
+          ],
+          "deliverables": [
+            "📸 Captura de pantalla en el PDF mostrando la salida del comando",
+            "✍️ Breve explicación técnica de los pasos realizados"
+          ]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "pec2",
+      "title": "PEC 2: Segunda Entrega Evaluable (35% AC)",
+      "status": "pending",
+      "dueDate": "2026-12-10",
+      "theorySlug": "intro-unidad",
+      "weight": "35% AC",
+      "description": "Espacio reservado para la PEC 2. Se actualizará automáticamente cuando subas el enunciado PDF.",
+      "checklist": [
+        "Subir el PDF del enunciado a public/eacs/",
+        "Generar el paso a paso y el guion de vídeo con el agente"
+      ],
+      "nota": null
+    },
+    {
+      "id": "pec3",
+      "title": "PEC 3: Entrega Final (30% AC)",
+      "status": "pending",
+      "dueDate": "2027-01-10",
+      "theorySlug": "intro-unidad",
+      "weight": "30% AC",
+      "description": "Espacio reservado para la PEC 3.",
+      "checklist": [
+        "Subir el PDF del enunciado a public/eacs/",
+        "Marcar como entregado para actualizar el calendario .ics"
+      ],
+      "nota": null
+    }
+  ],
+  "events": [
+    {
+      "date": "2026-11-20",
+      "title": "Entrega PEC 1",
+      "type": "eac"
+    },
+    {
+      "date": "2026-12-10",
+      "title": "Entrega PEC 2",
+      "type": "eac"
+    },
+    {
+      "date": "2027-01-10",
+      "title": "Entrega PEC 3",
+      "type": "eac"
+    }
+  ]
+}

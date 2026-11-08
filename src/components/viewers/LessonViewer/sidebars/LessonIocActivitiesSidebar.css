@@ -1,0 +1,193 @@
+/* LessonIocActivitiesSidebar.css - Panel Lateral de Entregas y Actividades IOC */
+
+.ioc-activities-sidebar {
+  position: fixed;
+  top: 126px;
+  right: 0;
+  bottom: 0;
+  width: 420px;
+  max-width: 90vw;
+  background: var(--bg-card);
+  border-left: 1px solid var(--border-subtle);
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+  z-index: 950;
+  display: flex;
+  flex-direction: column;
+}
+
+.ioc-activities-sidebar.is-open {
+  transform: translateX(0);
+  box-shadow: -8px 0 28px rgba(0, 0, 0, 0.25);
+  z-index: 980;
+}
+
+/* Botón flotante pegado al borde izquierdo */
+.ioc-activities-tab-btn {
+  position: absolute;
+  left: -40px;
+  width: 40px;
+  height: 46px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-right: none;
+  border-radius: 10px 0 0 10px;
+  box-shadow: -4px 2px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.15rem;
+  z-index: 941;
+  transition: all 0.2s ease;
+  padding: 0;
+}
+
+.ioc-activities-tab-btn:hover {
+  background: var(--bg-hover);
+  transform: scale(1.05);
+}
+
+/* Contenedor principal del scroll */
+.ioc-activities-body {
+  padding: 1.4rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+/* Buscador integrado */
+.ioc-search-wrapper {
+  position: relative;
+  margin-bottom: 1.1rem;
+}
+
+.ioc-search-input {
+  width: 100%;
+  padding: 0.5rem 0.8rem 0.5rem 2.2rem;
+  background: var(--bg-input, var(--bg-hover));
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  font-size: 0.82rem;
+  color: var(--text-main);
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ioc-search-input:focus {
+  border-color: var(--accent-blue, #3b82f6);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+.ioc-search-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.ioc-search-clear {
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  padding: 0.2rem;
+}
+
+/* Selector de pestañas */
+.ioc-tabs-nav {
+  display: flex;
+  gap: 0.45rem;
+  background: var(--bg-input, var(--bg-hover));
+  padding: 0.35rem;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+  border: 1px solid var(--border-subtle);
+}
+
+.ioc-tab-btn {
+  flex: 1;
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  border-radius: 7px;
+  padding: 0.45rem 0.3rem;
+  font-size: 0.86rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: center;
+}
+
+.ioc-tab-btn.is-active {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
+}
+
+/* Tarjeta de actividad actual */
+.ioc-activity-card {
+  background: var(--bg-hover);
+  border-radius: 10px;
+  padding: 1rem 1.15rem;
+  margin-bottom: 1.3rem;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease;
+}
+
+.ioc-activity-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.ioc-activity-card-title {
+  margin: 0;
+  font-size: 0.98rem;
+  font-weight: 800;
+  color: var(--text-title);
+  line-height: 1.3;
+}
+
+.ioc-activity-due-badge {
+  font-size: 0.78rem;
+  color: #d97706;
+  font-weight: 800;
+  white-space: nowrap;
+  background: rgba(245, 158, 11, 0.12);
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.ioc-activity-desc {
+  margin: 0.55rem 0 0;
+  font-size: 0.86rem;
+  color: var(--text-main);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+/* Resultados de búsqueda */
+.ioc-search-results-banner {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 0.8rem;
+  padding: 0.4rem 0.6rem;
+  background: var(--bg-hover);
+  border-radius: 6px;
+  border: 1px dashed var(--border-subtle);
+}

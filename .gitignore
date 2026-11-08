@@ -1,0 +1,53 @@
+# Dependencies
+node_modules
+**/node_modules
+.pnp
+.pnp.js
+
+# Production builds
+dist
+dist-ssr
+*.local
+
+# Environment and Secrets (¡Nunca subir tokens ni credenciales!)
+.env
+.env.*
+!.env.example
+
+# Python Virtual Environments & Cache (Hermes, Scripts)
+venv/
+**/venv/
+.venv/
+**/.venv/
+env/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temporary & Working Folders
+punto-limpio/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# OS and Editor files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.tmp
+*.bak

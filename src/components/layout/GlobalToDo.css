@@ -1,0 +1,271 @@
+/* GlobalToDo.css - Panel flotante lateral de Entregas y Tareas Globales */
+
+.global-todo-container {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  pointer-events: none;
+}
+
+.global-todo-container.is-open {
+  pointer-events: auto;
+}
+
+/* Tab de apertura a la izquierda */
+.global-todo-tab {
+  background: var(--bg-card);
+  padding: 0.75rem 0.65rem;
+  border-radius: 0 12px 12px 0;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  border: 1px solid var(--border-subtle);
+  border-left: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  pointer-events: auto;
+  outline: none;
+  z-index: 10;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.global-todo-tab:hover {
+  background: var(--bg-hover);
+  transform: scale(1.05);
+}
+
+.global-todo-tab-icon {
+  font-size: 1.4rem;
+  line-height: 1;
+}
+
+.global-todo-tab-count {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: var(--text-main);
+  line-height: 1;
+}
+
+/* Cajón expandido hacia la derecha */
+.global-todo-drawer {
+  width: 0;
+  height: 0;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--bg-card);
+  box-shadow: 4px 4px 18px rgba(0, 0, 0, 0.16);
+  border-radius: 0 14px 14px 0;
+  border: none;
+  border-left: none;
+  overflow-y: auto;
+  pointer-events: none;
+}
+
+.global-todo-drawer.is-open {
+  width: 340px;
+  height: auto;
+  max-height: 80vh;
+  display: block;
+  border: 1px solid var(--border-subtle);
+  border-left: none;
+  pointer-events: auto;
+}
+
+.global-todo-content {
+  padding: 1.1rem;
+  width: 340px;
+  box-sizing: border-box;
+}
+
+/* Header del cajón */
+.global-todo-header {
+  margin: 0 0 1rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.global-todo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  color: var(--text-title);
+  font-size: 0.95rem;
+}
+
+.global-todo-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.global-todo-badge {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.global-todo-close-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.global-todo-close-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-title);
+}
+
+/* Grupos por mes */
+.global-todo-month-group {
+  margin-bottom: 1.25rem;
+}
+
+.global-todo-month-label {
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+.global-todo-tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.global-todo-task-row {
+  display: grid;
+  grid-template-columns: minmax(115px, 1fr) 48px 40px 35px 20px;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--border-subtle);
+  font-size: 0.82rem;
+  transition: background 0.15s ease;
+}
+
+.global-todo-task-row:hover {
+  background: var(--bg-hover);
+  border-radius: 6px;
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.global-todo-task-info {
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+  overflow: hidden;
+}
+
+.global-todo-task-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.global-todo-task-link {
+  font-weight: 600;
+  color: var(--text-main);
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s ease;
+}
+
+.global-todo-task-link:hover {
+  color: var(--accent-purple, #8b5cf6);
+}
+
+.global-todo-task-date {
+  font-size: 0.8rem;
+  color: var(--text-main);
+  font-weight: 600;
+  text-align: center;
+}
+
+.global-todo-task-weight {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+.global-todo-task-days {
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.global-todo-task-days.urgent {
+  color: var(--accent-red, #ef4444);
+}
+
+.global-todo-task-days.normal {
+  color: var(--accent-green, #10b981);
+}
+
+.global-todo-delete-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.4;
+  transition: opacity 0.2s ease, transform 0.15s ease;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  color: var(--text-muted);
+}
+
+.global-todo-delete-btn:hover {
+  opacity: 1;
+  color: var(--accent-red, #ef4444);
+  transform: scale(1.15);
+}
+
+/* Footer con reset de tareas completadas */
+.global-todo-footer {
+  margin-top: 1rem;
+  padding-top: 0.6rem;
+  border-top: 1px dashed var(--border-subtle);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.global-todo-restore-btn {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.72rem;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+  transition: color 0.15s ease;
+}
+
+.global-todo-restore-btn:hover {
+  color: var(--accent-blue, #3b82f6);
+}
