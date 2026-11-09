@@ -2,6 +2,8 @@
  * Utilidades para estructuración de árbol y extracción de subsecciones en LessonSidebar.
  */
 
+import { slugify } from '../../../../utils/text';
+
 export function groupTopicsByModuleAndTema(topics) {
   return topics.reduce((acc, t) => {
     const module = t.moduleTitle || 'Temas Generales';
@@ -46,12 +48,7 @@ export function extractSubsections(topic) {
     if (m) {
       const raw = m[1].replace(/[*_#]/g, '').trim();
       const isEac = /\beac\b|\beac\d+/i.test(raw);
-      const slug = raw
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/[^a-z0-9]+/g, '-')
-        .replace(/(^-|-$)/g, '');
+      const slug = slugify(raw);
       res.push({ id: slug, slug, title: raw, isEac });
     }
   }

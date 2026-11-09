@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import hljs, { enhanceCodeBlockComments } from '../../../utils/highlight';
+import { slugify } from '../../../utils/text';
 
 export default function useCourseContent(dataSource, isSingleView = false) {
   const { slug: routeSlug } = useParams();
@@ -215,7 +216,7 @@ export default function useCourseContent(dataSource, isSingleView = false) {
                 const m = l.match(/^(?:###|##)\s+([0-9]+(?:\.[0-9]+)*\.?\s+.*|\bEAC\b.*)/i);
                 if (m) {
                   const raw = m[1].replace(/[*_#]/g, '').trim();
-                  const slug = raw.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                  const slug = slugify(raw);
                   res.push({ id: slug, slug });
                 }
               }
