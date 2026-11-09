@@ -21,3 +21,17 @@ export function slugify(text) {
     .replace(NON_ALPHANUMERIC, '-')
     .replace(EDGE_HYPHENS, '');
 }
+
+/**
+ * Normaliza un texto para comparar búsquedas: minúsculas y sin tildes ni
+ * diacríticos. A diferencia de slugify, conserva espacios y signos.
+ *
+ * @param {string | null | undefined} text
+ * @returns {string}
+ */
+export function normalizeForSearch(text) {
+  return String(text ?? '')
+    .normalize('NFD')
+    .replace(DIACRITICS, '')
+    .toLowerCase();
+}

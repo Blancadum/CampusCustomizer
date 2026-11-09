@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { slugify } from './text';
+import { normalizeForSearch, slugify } from './text';
 
 describe('slugify', () => {
   it.each([
@@ -18,5 +18,21 @@ describe('slugify', () => {
 
   it.each([[''], [null], [undefined]])('devuelve una cadena vacía para %s', (input) => {
     expect(slugify(input)).toBe('');
+  });
+});
+
+describe('normalizeForSearch', () => {
+  it.each([
+    ['Función', 'funcion'],
+    ['CONFIGURACIÓ', 'configuracio'],
+    ['Año', 'ano'],
+    ['Col·lecció', 'col·leccio'],
+    ['Cliente-Servidor 2.0', 'cliente-servidor 2.0'],
+  ])('convierte "%s" en "%s" (sin tildes, en minúsculas, conserva signos)', (input, expected) => {
+    expect(normalizeForSearch(input)).toBe(expected);
+  });
+
+  it.each([[''], [null], [undefined]])('devuelve una cadena vacía para %s', (input) => {
+    expect(normalizeForSearch(input)).toBe('');
   });
 });
