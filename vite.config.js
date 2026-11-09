@@ -50,5 +50,13 @@ export default defineConfig({
       }
     },
     chunkSizeWarningLimit: 800,
-  }
+  },
+  test: {
+    environment: 'node',
+    include: ['src/**/*.test.{js,jsx}', 'backend/**/*.test.js'],
+    coverage: {
+      provider: 'v8',
+      include: ['src/**/*.{js,jsx}', 'backend/**/*.js'],
+    },
+  },
 })

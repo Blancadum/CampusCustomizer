@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useMemo } from 'react';
 import { useNavigate } from 'react-router-dom';
 import searchIcon from '../../assets/img/icons/search.webp';
 import { getCachedSearchIndex, fetchSearchIndex } from '../../utils/searchIndexService';
+import { matchesSearch } from '../../utils/search';
 import SearchInputBar from './search/SearchInputBar';
 import SearchDropdown from './search/SearchDropdown';
 import { getBadgeStyle } from './search/searchBadgeStyles';
@@ -73,11 +74,7 @@ export default function HeaderSearchBar() {
 
   // Filtrado reactivo optimizado
   const filteredResults = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return [];
-
-    const escaped = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(escaped, 'i');
+    if (!query.trim()) return [];
 
     return searchData.filter((item) => {
       // 1. Filtro por categoría seleccionada
@@ -90,15 +87,8 @@ export default function HeaderSearchBar() {
         if (activeCategory === 'campus' && !itemType.includes('campus') && !itemType.includes('portal') && !itemType.includes('materia')) return false;
       }
 
-      // 2. Coincidencia por texto
-      const titleMatch = regex.test(item.title || '');
-      const typeMatch = regex.test(item.type || '');
-      const defMatch = item.definition ? regex.test(item.definition) : false;
-      const keywordsMatch = Array.isArray(item.keywords)
-        ? item.keywords.some((k) => typeof k === 'string' && (k.toLowerCase().includes(q) || regex.test(k)))
-        : false;
-
-      return titleMatch || typeMatch || defMatch || keywordsMatch;
+      // 2. Coincidencia por texto (sin distinguir mayúsculas ni tildes)
+      return matchesSearch(item, query);
     }).slice(0, 40);
   }, [query, searchData, activeCategory]);
 

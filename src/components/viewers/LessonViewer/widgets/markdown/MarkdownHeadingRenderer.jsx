@@ -1,17 +1,10 @@
 import React from 'react';
+import { slugify } from '../../../../../utils/text';
 
 function getRawText(children) {
   return React.Children.toArray(children)
     .map(c => (typeof c === 'string' ? c : (c?.props?.children || '')))
     .join('');
-}
-
-function slugify(text) {
-  return text.toLowerCase()
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/(^-|-$)/g, '');
 }
 
 export function renderH2({ children, ...props }) {
