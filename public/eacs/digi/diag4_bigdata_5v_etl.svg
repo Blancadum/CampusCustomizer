@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradHeaderDigi4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="cardGradDigi4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowDigi4" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid Canvas -->
+  <rect width="1200" height="675" fill="#0b0f19"/>
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200"/>
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675"/>
+  </g>
+
+  <!-- Top Banner / Header -->
+  <rect x="50" y="35" width="1100" height="90" rx="16" fill="url(#cardGradDigi4)" stroke="#0284c7" stroke-width="2" filter="url(#shadowDigi4)"/>
+  <circle cx="95" cy="80" r="24" fill="url(#gradHeaderDigi4)"/>
+  <text x="95" y="87" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">4</text>
+  <text x="135" y="72" font-size="22" font-weight="800" fill="#f8fafc">TEMA 4: BIG DATA Y EL CICLO DE VIDA DEL DATO</text>
+  <text x="135" y="98" font-size="14" font-weight="500" fill="#7dd3fc">Las 5 V's del Big Data | Data Lake vs Data Warehouse | Canalizaciones ETL / Streaming</text>
+
+  <!-- Left Column: Las 5 V's del Big Data -->
+  <g transform="translate(50, 150)">
+    <rect width="360" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi4)"/>
+    <rect width="360" height="48" rx="16" fill="#0284c7" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38bdf8">📊 LAS 5 V'S DEL BIG DATA</text>
+
+    <!-- 5 V cards -->
+    <g transform="translate(20, 65)">
+      <!-- V1: Volumen -->
+      <rect x="0" y="0" width="320" height="65" rx="8" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+      <text x="16" y="25" font-size="12" font-weight="800" fill="#38bdf8">1. VOLUMEN (Terabytes a Petabytes)</text>
+      <text x="16" y="48" font-size="11" fill="#94a3b8">Escala masiva generada por millones de dispositivos.</text>
+
+      <!-- V2: Velocidad -->
+      <rect x="0" y="75" width="320" height="65" rx="8" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+      <text x="16" y="25" font-size="12" font-weight="800" fill="#c084fc">2. VELOCIDAD (Ingesta en Tiempo Real)</text>
+      <text x="16" y="48" font-size="11" fill="#94a3b8">Data Streaming continuo mediante colas Apache Kafka.</text>
+
+      <!-- V3: Variedad -->
+      <rect x="0" y="150" width="320" height="65" rx="8" fill="#0f172a" stroke="#f59e0b" stroke-width="1"/>
+      <text x="16" y="25" font-size="12" font-weight="800" fill="#fbbf24">3. VARIEDAD (Formatos Heterogéneos)</text>
+      <text x="16" y="48" font-size="11" fill="#94a3b8">SQL estructurado, JSON/Logs y vídeo/audio libre.</text>
+
+      <!-- V4: Veracidad -->
+      <rect x="0" y="225" width="320" height="65" rx="8" fill="#0f172a" stroke="#10b981" stroke-width="1"/>
+      <text x="16" y="25" font-size="12" font-weight="800" fill="#34d399">4. VERACIDAD (Calidad y Limpieza)</text>
+      <text x="16" y="48" font-size="11" fill="#94a3b8">Depuración de sesgos y filtrado de ruido de sensores.</text>
+
+      <!-- V5: Valor -->
+      <rect x="0" y="300" width="320" height="90" rx="10" fill="#1e1b4b" stroke="#6366f1" stroke-width="1.5"/>
+      <text x="16" y="28" font-size="13" font-weight="800" fill="#a5b4fc">5. VALOR (Decisión de Negocio)</text>
+      <text x="16" y="52" font-size="11" fill="#cbd5e1">El objetivo final: monetizar datos y anticipar</text>
+      <text x="16" y="70" font-size="11" fill="#cbd5e1">la demanda mediante analítica prescriptiva.</text>
+    </g>
+  </g>
+
+  <!-- Right: Pipeline ETL & Arquitectura Data Lake vs Warehouse -->
+  <g transform="translate(435, 150)">
+    <rect width="715" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi4)"/>
+    <rect width="715" height="48" rx="16" fill="#6366f1" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#a5b4fc">⚡ EL CICLO DE VIDA DEL DATO (CANALIZACIÓN ETL &amp; LAKEHOUSE)</text>
+
+    <!-- 4 Pipeline stages -->
+    <g transform="translate(20, 65)">
+      <!-- Stage 1 -->
+      <rect x="0" y="0" width="155" height="180" rx="10" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+      <rect x="0" y="0" width="155" height="28" rx="10" fill="#0284c7" fill-opacity="0.3"/>
+      <text x="14" y="20" font-size="11" font-weight="800" fill="#38bdf8">1. FUENTES</text>
+      <text x="14" y="50" font-size="11" fill="#cbd5e1">• IoT Sensores</text>
+      <text x="14" y="72" font-size="11" fill="#cbd5e1">• Logs Servidor</text>
+      <text x="14" y="94" font-size="11" fill="#cbd5e1">• Transacciones</text>
+      <text x="14" y="116" font-size="11" fill="#cbd5e1">• APIs Externas</text>
+      <text x="14" y="145" font-size="10" fill="#94a3b8">Múltiples formatos</text>
+
+      <!-- Stage 2 -->
+      <rect x="175" y="0" width="155" height="180" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+      <rect x="175" y="0" width="155" height="28" rx="10" fill="#8b5cf6" fill-opacity="0.3"/>
+      <text x="189" y="20" font-size="11" font-weight="800" fill="#c084fc">2. INGESTIÓN</text>
+      <text x="189" y="50" font-size="11" fill="#cbd5e1">• Apache Kafka</text>
+      <text x="189" y="72" font-size="11" fill="#cbd5e1">• AWS Kinesis</text>
+      <text x="189" y="94" font-size="11" fill="#cbd5e1">• Event Hubs</text>
+      <text x="189" y="116" font-size="11" fill="#cbd5e1">• Micro-batches</text>
+      <text x="189" y="145" font-size="10" fill="#94a3b8">Streaming continuo</text>
+
+      <!-- Stage 3 -->
+      <rect x="350" y="0" width="155" height="180" rx="10" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+      <rect x="350" y="0" width="155" height="28" rx="10" fill="#f59e0b" fill-opacity="0.3"/>
+      <text x="364" y="20" font-size="11" font-weight="800" fill="#fbbf24">3. DATA LAKE</text>
+      <text x="364" y="50" font-size="11" fill="#cbd5e1">• Almacén crudo</text>
+      <text x="364" y="72" font-size="11" fill="#cbd5e1">• Formato nativo</text>
+      <text x="364" y="94" font-size="11" fill="#cbd5e1">• S3 / ADLS Gen2</text>
+      <text x="364" y="116" font-size="11" fill="#cbd5e1">• Esquema en lectura</text>
+      <text x="364" y="145" font-size="10" fill="#94a3b8">Bajo coste elástico</text>
+
+      <!-- Stage 4 -->
+      <rect x="525" y="0" width="150" height="180" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <rect x="525" y="0" width="150" height="28" rx="10" fill="#10b981" fill-opacity="0.3"/>
+      <text x="539" y="20" font-size="11" font-weight="800" fill="#34d399">4. WAREHOUSE</text>
+      <text x="539" y="50" font-size="11" fill="#cbd5e1">• Snowflake/BigQuery</text>
+      <text x="539" y="72" font-size="11" fill="#cbd5e1">• Tablas curadas</text>
+      <text x="539" y="94" font-size="11" fill="#cbd5e1">• Modelos estrella</text>
+      <text x="539" y="116" font-size="11" fill="#cbd5e1">• Cuadros PowerBI</text>
+      <text x="539" y="145" font-size="10" fill="#94a3b8">Consultas SQL TOP</text>
+    </g>
+
+    <!-- Comparison Box -->
+    <g transform="translate(20, 265)">
+      <rect width="675" height="185" rx="12" fill="#0f172a" stroke="#6366f1" stroke-width="1.5"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#a5b4fc">Comparativa: Data Lake (Datos Crudos) vs Data Warehouse (Datos Estructurados)</text>
+      <text x="20" y="60" font-size="12" fill="#cbd5e1">• Data Lake: Admite cualquier tipo de dato en bruto sin procesar (imágenes, JSON sin esquema, audio).</text>
+      <text x="20" y="85" font-size="12" fill="#cbd5e1">• Data Warehouse: Exige ETL previo (Schema-on-write), ideal para reporting financiero y KPIs directivos.</text>
+      <text x="20" y="110" font-size="12" fill="#cbd5e1">• Tendencia moderna: Arquitectura Lakehouse (Databricks) combinando lo mejor de ambos mundos.</text>
+      <rect x="20" y="130" width="635" height="35" rx="8" fill="#1e1b4b" stroke="#4f46e5" stroke-width="1"/>
+      <text x="337" y="152" font-size="11" font-weight="700" fill="#c7d2fe" text-anchor="middle">Evaluación: Contenido clave de Quiz EAC1 (Parte 2) - 20% Ponderación</text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,206 @@
+{
+  "id": "desp",
+  "title": "Despliegue de Aplicaciones Web",
+  "themeColor": "#22c55e",
+  "icon": "🚀",
+  "progress": 0,
+  "theoryRoute": "/ioc/desp/lecciones-desp",
+  "blocks": [
+    { "id": "bloque1", "label": "BLOQUE 1: Servidores, FTP & DNS (EAC 1)" },
+    { "id": "bloque2", "label": "BLOQUE 2: Git, LAMP & Tomcat (EAC 2)" },
+    { "id": "bloque3", "label": "BLOQUE 3: HTTPS, SSL/TLS & Proxy (EAC 3)" }
+  ],
+  "eacs": [
+    {
+      "id": "eac1",
+      "title": "EAC 1: Servidores Web, ProFTPD y DNS (45% AC)",
+      "status": "pending",
+      "dueDate": "2026-10-22",
+      "theorySlug": "intro-bloque1",
+      "weight": "45% AC",
+      "description": "Aprovisionamiento y configuración de servidores web Apache2 con Virtual Hosts múltiples (EverOffice Supplies), autenticación básica (.htpasswd) para recursos privados, servidor de transferencia ProFTPD con acceso anónimo, usuarios virtuales (comerciales y auditores), FTPS seguro mediante certificados OpenSSL y resolución DNS.",
+      "checklist": [
+        "Configuración de Apache2 y Virtual Hosts para dominios corporativos",
+        "Autenticación básica HTTP (.htpasswd) en /nomines",
+        "Servidor ProFTPD: acceso anónimo y usuarios virtuales diferenciados",
+        "Implementación de canal seguro FTPS con certificados TLS/SSL",
+        "Grabación del videotutorial con pruebas en vivo (FileZilla y navegador)"
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac2",
+      "title": "EAC 2: Servidores de aplicaciones web y control de versiones (30% AC)",
+      "status": "pending",
+      "dueDate": "2026-11-19",
+      "theorySlug": "intro-bloque2",
+      "weight": "30% AC",
+      "enunciatUrl": "/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1/DAW_0614_EAC2_Enunciat_2627S1.odt",
+      "folderPath": "/Users/blanca/CampusCustomizer/public/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1",
+      "description": "DAW_0614_EAC2_Enunciat_2627S1 · Entrega: único documento PDF (DAW_0614_EAC2_Deuna_M.pdf) antes del 19/11/2026 a las 23:55h. Incluye: Parte 0 (Laboratorio 2 MVs en red puente, 0 pts), Parte 1 (Git y GitLab por terminal: fork, ramas y 2 conflictos de merge, 3 pts - solo capturas), Parte 2 (Pila LAMP, BD dundersdb con usuario deuna y WordPress en www.dundersupplies.cat, 3 pts - capturas + mini-vídeo) y Parte 3 (Apache Tomcat 10, NetBeans WAR, despliegue por Tomcat Manager y manual en webapps, 4 pts - vídeo + texto bg).",
+      "checklist": [
+        "Parte 0 (0 pts · a): Ubuntu Desktop Cliente + Ubuntu Server en red puente con ping (sin capturas ni vídeo)",
+        "Parte 1 (3 pts · Apartados 1-5, a-w): Git config, Fork y Clone de EverOfficeComandes, fetch/pull/push, rama personalitzacio-deuna y resolución de 2 conflictos (capturas en el PDF)",
+        "Parte 2 (3 pts · Apartados 6-10, y-an): Pila LAMP, info.php, VHost www.dundersupplies.cat, BD dundersdb (usuario deuna) y WordPress con título 'Dunder Supplies' (capturas + mini-vídeo)",
+        "Parte 3 (4 pts · Apartados 11-14, ao-bg): Tomcat 10 (usuario blanca con rol manager-gui), WAR con NetBeans, despliegue por Manager y manual en webapps (vídeo + respuesta escrita bg)"
+      ],
+      "exercicis": [
+        {
+          "num": 1,
+          "label": "Parte 1 · Apartados 1 a 5 (a–w)",
+          "points": "3.0 puntos",
+          "title": "Parte 1: Control de versiones Git y GitLab por terminal",
+          "desc": "Instalación y configuración de Git en el Cliente, Fork privado de EverOfficeComandes en GitLab, clonación por HTTPS con Token, edición de README.md (push/pull y explicación de fetch vs pull vs push), rama personalitzacio-deuna en ComandesServlet.java y resolución de 2 conflictos (misma línea y modify/delete). Todo con capturas en el PDF (sin vídeo).",
+          "steps": [
+            {
+              "title": "Apartado 1 (a) · Configuración de Git en el Cliente (0,25 pts)",
+              "desc": "Comprueba la versión de Git y configura tu nombre y correo del IOC vinculados a GitLab.",
+              "code": "git --version\ngit config --global user.name \"Blanca de Uña\"\ngit config --global user.email \"bdeunam@ioc.cat\"\ngit config --list"
+            },
+            {
+              "title": "Apartado 2 (b–g) · Fork en GitLab y Clone local (0,75 pts)",
+              "desc": "Haz un Fork de https://gitlab.com/josepmaria_ioc1/everofficecomandes hacia tu usuario, clona TU fork con Personal Access Token y verifica remoto y ramas.",
+              "code": "git clone https://gitlab.com/blancadum/everofficecomandes.git\ncd everofficecomandes\ngit remote -v\ngit branch -a && git log --oneline"
+            },
+            {
+              "title": "Apartado 3 (h–k) · Commits, Push, Edición Web y Pull (0,50 pts)",
+              "desc": "Añade el apartado «Objectiu del projecte» en README.md, consulta git status/diff, haz commit y push. Después edita una línea en la web de GitLab, haz git pull origin main y explica la diferencia entre fetch, pull y push.",
+              "code": "printf \"\\n## Objectiu del projecte\\nGestión corporativa de pedidos y catálogo de EverOffice Supplies.\\n\" >> README.md\ngit status && git diff\ngit add README.md && git commit -m \"docs: añadir Objectiu del projecte\" && git push origin main\n# (Después de editar una línea en GitLab Web):\ngit pull origin main && git log --oneline"
+            },
+            {
+              "title": "Apartado 4 (l–o) · Rama personalitzacio-deuna y Merge (0,50 pts)",
+              "desc": "Crea la rama personalitzacio-deuna, pon RESPONSABLE = \"deuna\", cambia 1 producto y el mensaje de doPost() en ComandesServlet.java, documéntalo en README.md, sube la rama y fusiónala en main.",
+              "code": "git checkout -b personalitzacio-deuna\n# Edita ComandesServlet.java y README.md\ngit add -A && git commit -m \"feat: personalizar ComandesServlet\" && git push -u origin personalitzacio-deuna\ngit checkout main && git merge personalitzacio-deuna && git push origin main\ngit log --oneline --graph --all"
+            },
+            {
+              "title": "Apartado 5 (p–w) · Resolución de 2 Conflictos Reales (1,00 pt)",
+              "desc": "Conflicto 1 (p–s): ramas proposta-a y proposta-b modificando RESPONSABLE; fusiona y resuelve dejando \"deuna\". Conflicto 2 (t–w): ramas modificar-fitxer y eliminar-fitxer (git rm README.md); fusiona y resuelve manteniendo README.md.",
+              "code": "# Conflicto 1 (misma línea):\ngit checkout main && git checkout -b proposta-a\n# RESPONSABLE = \"Equip A - deuna\" -> commit\ngit checkout main && git checkout -b proposta-b\n# RESPONSABLE = \"Equip B - deuna\" -> commit\ngit checkout main && git merge proposta-a && git merge proposta-b\n# Resuelve dejando \"deuna\" -> git add -A && git commit\n\n# Conflicto 2 (modify/delete):\ngit checkout main && git checkout -b modificar-fitxer && echo \"Mejoras\" >> README.md && git commit -am \"docs: modificar\"\ngit checkout main && git checkout -b eliminar-fitxer && git rm README.md && git commit -m \"chore: eliminar\"\ngit checkout main && git merge modificar-fitxer && git merge eliminar-fitxer\ngit add README.md && git commit -m \"merge: mantener README.md\""
+            }
+          ],
+          "deliverables": [
+            "Apartado 1 (a): Captura de git --version y git config --list",
+            "Apartado 2 (b–g): Captura del Fork en GitLab ('forked from...') + git remote -v + git branch -a + git log --oneline",
+            "Apartado 3 (h–k): Captura de git status/diff, push, edición web + pull y explicación escrita de fetch vs pull vs push",
+            "Apartado 4 (l–o): Captura de la rama personalitzacio-deuna, cambios en ComandesServlet.java, merge en main y git log --graph",
+            "Apartado 5 (p–w): Capturas de los 2 conflictos (misma línea y modify/delete) y sus resoluciones"
+          ]
+        },
+        {
+          "num": 2,
+          "label": "Parte 2 · Apartados 6 a 10 (y–an)",
+          "points": "3.0 puntos",
+          "title": "Parte 2: Pila LAMP y WordPress (www.dundersupplies.cat)",
+          "desc": "Instalación de Apache, MariaDB y PHP en Ubuntu Server, comprobación de info.php desde el Cliente, creación del Virtual Host obligatorio www.dundersupplies.cat (/var/www/dundersupplies), BD dundersdb con usuario exclusivo deuna e instalación de WordPress con título 'Dunder Supplies' + mini-vídeo de pocos segundos.",
+          "steps": [
+            {
+              "title": "Apartado 6 (y) · Instalación y securización LAMP en el Servidor (0,50 pts)",
+              "desc": "Instala MariaDB y PHP, habilita el arranque automático, configura UFW, ejecuta mariadb-secure-installation y comprueba puertos (80 y 3306) y php -v.",
+              "code": "sudo apt update && sudo apt install -y apache2 mariadb-server php libapache2-mod-php php-mysql php-curl php-gd php-mbstring php-xml php-intl php-zip\nsudo systemctl enable --now apache2 mariadb\nsudo ufw allow OpenSSH && sudo ufw allow 80/tcp && sudo ufw allow 443/tcp && sudo ufw allow 8080/tcp\nsudo mariadb-secure-installation\nsudo ss -tlnp | grep -E ':(80|3306)' && php -v"
+            },
+            {
+              "title": "Apartado 7 (z–ab) · Acceso desde el Cliente e info.php (0,25 pts)",
+              "desc": "Crea /var/www/html/info.php en el Servidor y abre http://IP_SERVIDOR y http://IP_SERVIDOR/info.php desde el navegador del Cliente.",
+              "code": "printf \"<?php\\nphpinfo();\\n?>\\n\" | sudo tee /var/www/html/info.php"
+            },
+            {
+              "title": "Apartado 8 (ac–ag) · WordPress en /var/www/dundersupplies y Virtual Host (0,75 pts)",
+              "desc": "Descarga WordPress en /var/www/dundersupplies con permisos para www-data, añade www.dundersupplies.cat en /etc/hosts del Cliente y crea y activa el Virtual Host dundersupplies.conf.",
+              "code": "cd /tmp && wget -O latest.tar.gz https://es.wordpress.org/latest-es_ES.tar.gz\nsudo mkdir -p /var/www/dundersupplies && sudo tar -xzf latest.tar.gz -C /var/www/dundersupplies --strip-components=1\nsudo chown -R www-data:www-data /var/www/dundersupplies\n# Activar VHost:\nsudo a2enmod rewrite && sudo a2ensite dundersupplies.conf && sudo apache2ctl configtest && sudo systemctl reload apache2"
+            },
+            {
+              "title": "Apartado 9 (ah–ai) · Base de Datos dundersdb y usuario deuna (0,50 pts)",
+              "desc": "Crea la BD dundersdb y el usuario exclusivo con tu primer apellido (deuna) sin usar root.",
+              "code": "sudo mariadb -e \"CREATE DATABASE dundersdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci; CREATE USER 'deuna'@'localhost' IDENTIFIED BY 'Dunder2026!'; GRANT ALL PRIVILEGES ON dundersdb.* TO 'deuna'@'localhost'; FLUSH PRIVILEGES;\"\nmariadb -u deuna -p'Dunder2026!' -D dundersdb -e \"SELECT CURRENT_USER(), DATABASE();\""
+            },
+            {
+              "title": "Apartado 10 (aj–an) · Asistente WordPress, título 'Dunder Supplies' y Mini-vídeo (1,00 pt)",
+              "desc": "Completa la instalación en http://www.dundersupplies.cat, crea un usuario administrador de WP diferente de deuna, pon el título exacto 'Dunder Supplies' en /wp-admin y graba un vídeo de pocos segundos.",
+              "code": "URL portada: http://www.dundersupplies.cat\nURL admin:   http://www.dundersupplies.cat/wp-admin\nTítulo exacto: Dunder Supplies"
+            }
+          ],
+          "deliverables": [
+            "Apartado 6 (y): Capturas de systemctl status/is-enabled, ufw status, mariadb-secure-installation, ss -tlnp (:80 y :3306) y php -v",
+            "Apartado 7 (z–ab): Capturas de Apache por IP y de http://IP_SERVIDOR/info.php en el navegador del Cliente",
+            "Apartado 8 (ac–ag): Capturas de permisos en /var/www/dundersupplies, /etc/hosts en el Cliente, archivo dundersupplies.conf y pantalla inicial de instalación en http://www.dundersupplies.cat",
+            "Apartado 9 (ah–ai): Captura de la creación de dundersdb y comprobación de acceso del usuario deuna",
+            "Apartado 10 (aj–an): Capturas de la instalación y título 'Dunder Supplies' + Enlace al mini-vídeo de pocos segundos"
+          ]
+        },
+        {
+          "num": 3,
+          "label": "Parte 3 · Apartados 11 a 14 (ao–bg)",
+          "points": "4.0 puntos",
+          "title": "Parte 3: Apache Tomcat 10, NetBeans WAR y Despliegue",
+          "desc": "Instalación de Tomcat 10 en el Servidor (usuario con tu nombre y rol manager-gui en tomcat-users.xml), compilación de EverOfficeComandes.war con NetBeans en el Cliente, despliegue por Tomcat Manager y despliegue manual en webapps. Se entrega con 1 Vídeo demostrativo + el texto de respuesta de 14.bg en el PDF (sin capturas).",
+          "steps": [
+            {
+              "title": "Apartado 11 (ao–ar) · Tomcat 10 y usuario manager-gui (1,00 pt)",
+              "desc": "Instala OpenJDK, tomcat10 y tomcat10-admin en el Servidor, añade tu usuario con rol manager-gui en tomcat-users.xml y permite el acceso desde el Cliente en el context.xml del Manager.",
+              "code": "sudo apt update && sudo apt install -y default-jdk tomcat10 tomcat10-admin\n# En /etc/tomcat10/tomcat-users.xml:\n# <role rolename=\"manager-gui\"/>\n# <user username=\"blanca\" password=\"Tomcat2026!\" roles=\"manager-gui\"/>"
+            },
+            {
+              "title": "Apartado 12 (as–aw) · Proyecto en NetBeans y generación del WAR (1,00 pt)",
+              "desc": "Abre EverOfficeComandes con NetBeans en el Cliente, muestra ComandesServlet.java (doGet y doPost), ejecuta Clean and Build y localiza EverOfficeComandes.war en target/.",
+              "code": "cd ~/everofficecomandes && mvn clean package && ls -lh target/*.war"
+            },
+            {
+              "title": "Apartado 13 (ax–bb) · Despliegue mediante Tomcat Manager (1,00 pt)",
+              "desc": "Sube EverOfficeComandes.war desde http://IP_SERVIDOR:8080/manager/html, comprueba doGet() y doPost() en el navegador y prueba los botones Stop y Start.",
+              "code": "http://IP_SERVIDOR:8080/manager/html\nhttp://IP_SERVIDOR:8080/EverOfficeComandes/"
+            },
+            {
+              "title": "Apartado 14 (bc–bg) · Undeploy, Despliegue manual en webapps y Texto bg) (1,00 pt)",
+              "desc": "Haz Undeploy desde Tomcat Manager, copia EverOfficeComandes.war a /var/lib/tomcat10/webapps/ en el Servidor, comprueba que se despliega automáticamente e incluye en el PDF el texto de respuesta bg).",
+              "code": "scp ~/everofficecomandes/target/EverOfficeComandes.war IP_SERVIDOR:/tmp/\n# En el Servidor:\nsudo cp /tmp/EverOfficeComandes.war /var/lib/tomcat10/webapps/ && ls -la /var/lib/tomcat10/webapps/"
+            }
+          ],
+          "deliverables": [
+            "Apartado 14 (bg): Incluir en el documento PDF el texto identificando el directorio de despliegue (/var/lib/tomcat10/webapps/EverOfficeComandes) y la diferencia entre despliegue por Tomcat Manager y manual",
+            "Vídeo de la Parte 3 (obligatorio): Enlace al vídeo mostrando (1) Tomcat y acceso a Manager, (2) NetBeans y archivo WAR, (3) Despliegue por Tomcat Manager + GET/POST, (4) Despliegue manual en webapps + GET/POST"
+          ]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac3",
+      "title": "EAC 3: Seguridad, SSL/TLS y Proxy Inverso (25% AC)",
+      "status": "locked",
+      "dueDate": "2026-12-16",
+      "theorySlug": "intro-bloque2",
+      "weight": "25% AC",
+      "description": "Implementación de canales seguros en producción: emisión e instalación de certificados digitales SSL/TLS con Let's Encrypt y Certbot, configuración de cifrado HTTPS estricto y Nginx como Proxy Inverso de terminación TLS.",
+      "checklist": [
+        "Adquisición e instalación de certificados SSL/TLS con Certbot",
+        "Configuración de cabeceras de seguridad y redirección HTTP a HTTPS",
+        "Nginx como Reverse Proxy hacia servidores de aplicación",
+        "Auditoría de seguridad y cifrado con herramientas de análisis"
+      ],
+      "nota": null
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Josep Maria",
+      "photoKey": "josep_maria",
+      "mailLink": "https://ioc.xtec.cat/campus/local/mail/view.php?t=drafts&c=18669&m=9380698"
+    }
+  ],
+  "events": [
+    { "date": "2026-09-22", "type": "leccion", "title": "Apertura U1: Servidores web y FTP (Apartados 1-3)", "time": "00:00" },
+    { "date": "2026-09-22", "type": "inicio_eac", "title": "Enunciado EAC1 (U1)", "time": "00:00" },
+    { "date": "2026-10-22", "type": "entrega", "title": "Entrega EAC1 (archivo .zip - 45% AC)", "time": "23:55" },
+    { "date": "2026-10-23", "type": "leccion", "title": "Apertura U2: Servidores de aplicaciones y Git (Apartados 1-2)", "time": "00:00" },
+    { "date": "2026-10-23", "type": "inicio_eac", "title": "Enunciado EAC2 (U2)", "time": "00:00" },
+    { "date": "2026-10-29", "type": "notas", "title": "Solución y calificaciones EAC1", "time": "00:00" },
+    { "date": "2026-11-19", "type": "entrega", "title": "Entrega EAC2 (U2 - 30% AC)", "time": "23:55" },
+    { "date": "2026-11-20", "type": "leccion", "title": "Apertura U3: Servicios de red y documentación (Apartados 1-3)", "time": "00:00" },
+    { "date": "2026-11-20", "type": "inicio_eac", "title": "Enunciado EAC3 (U3)", "time": "00:00" },
+    { "date": "2026-11-26", "type": "notas", "title": "Solución y calificaciones EAC2", "time": "00:00" },
+    { "date": "2026-12-14", "type": "entrega", "title": "Entrega EAC3 (U3 - 25% AC)", "time": "23:55" },
+    { "date": "2026-12-21", "type": "notas", "title": "Calificaciones EAC3 y final AC", "time": "00:00" },
+    { "date": "2027-01-16", "type": "entrega", "title": "PAF 1: Prueba Presencial DESP", "time": "16:30" },
+    { "date": "2027-02-06", "type": "entrega", "title": "PAF 2: Recuperación DESP", "time": "16:30" }
+  ]
+}

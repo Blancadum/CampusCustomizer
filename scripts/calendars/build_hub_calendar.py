@@ -47,8 +47,10 @@ def build_hub_calendar():
     output_files = [
         output_dir / 'calendario_miCampus.ics',
         output_dir / 'HUB_PERSONALIZADO.ics',
+        output_dir / 'todo.ics',
         spa_output_dir / 'calendario_miCampus.ics',
-        spa_output_dir / 'HUB_PERSONALIZADO.ics'
+        spa_output_dir / 'HUB_PERSONALIZADO.ics',
+        spa_output_dir / 'todo.ics'
     ]
 
     all_events = []

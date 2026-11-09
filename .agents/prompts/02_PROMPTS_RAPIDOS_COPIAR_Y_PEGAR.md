@@ -42,3 +42,13 @@ Copia y pega esto en el chat de la IA:
 Dime paso a paso qué tengo que hacer con esta EAC/PEC para empezar ahora mismo desde el Apartado 1, sin abrumarme, e indícame qué capturas tengo que ir pegando en el documento de entrega.
 ```
 
+---
+
+## 5️⃣ Para nutrir IPO 1 (FOL) con tu Plan de Trabajo y apuntes oficiales
+1. Mete tu PDF de Plan de Trabajo y tus apuntes en `public/fuentes/ioc/ipo1/`.
+2. Copia y pega esto en el chat de la IA (ver guía completa en `.agents/prompts/03_COMO_NUTRIR_TU_ASIGNATURA_IPO1.md`):
+```text
+He puesto mis archivos de IPO 1 en public/fuentes/ioc/ipo1/. Extrae el calendario oficial del Plan de Trabajo (fechas reales de entrega y PAF sin inventar horas), actualiza public/data/ioc/gestion/ipo1.json, public/data/tasks.json, compila el calendario .ics y genera el Libro Digital en public/data/ioc/lecciones/ipo1_curso.json.
+```
+
+

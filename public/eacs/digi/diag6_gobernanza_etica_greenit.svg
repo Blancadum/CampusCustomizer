@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradHeaderDigi6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="cardGradDigi6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowDigi6" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid Canvas -->
+  <rect width="1200" height="675" fill="#0b0f19"/>
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200"/>
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675"/>
+  </g>
+
+  <!-- Top Banner / Header -->
+  <rect x="50" y="35" width="1100" height="90" rx="16" fill="url(#cardGradDigi6)" stroke="#10b981" stroke-width="2" filter="url(#shadowDigi6)"/>
+  <circle cx="95" cy="80" r="24" fill="url(#gradHeaderDigi6)"/>
+  <text x="95" y="87" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">6</text>
+  <text x="135" y="72" font-size="22" font-weight="800" fill="#f8fafc">TEMA 6: GOBERNANZA ÉTICA, REGLAMENTO AI ACT Y GREEN IT</text>
+  <text x="135" y="98" font-size="14" font-weight="500" fill="#6ee7b7">Reglamento Europeo de IA | Explicabilidad (XAI) | Sesgos Algorítmicos &amp; Huella de Carbono</text>
+
+  <!-- 3 Columns: AI Act, Ética/Sesgos, Green IT -->
+  <g transform="translate(50, 150)">
+    <!-- Column 1: Reglamento Europeo AI Act -->
+    <g transform="translate(0, 0)">
+      <rect width="350" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi6)"/>
+      <rect width="350" height="48" rx="16" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#38bdf8">🇪🇺 REGLAMENTO EUROPEO (AI ACT)</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="314" height="75" rx="10" fill="#450a0a" stroke="#ef4444" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#fca5a5">Riesgo Inaceptable (PROHIBIDO)</text>
+        <text x="16" y="45" font-size="11" fill="#fecaca">• Puntuación social (Social Scoring tipo China)</text>
+        <text x="16" y="65" font-size="11" fill="#fecaca">• Manipulación subliminal del comportamiento humano</text>
+      </g>
+
+      <g transform="translate(18, 150)">
+        <rect width="314" height="95" rx="10" fill="#451a03" stroke="#f59e0b" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#fde68a">Alto Riesgo (AUDITORÍA EXIGIDA)</text>
+        <text x="16" y="45" font-size="11" fill="#fef3c7">• Selección de personal y RRHH automatizados</text>
+        <text x="16" y="65" font-size="11" fill="#fef3c7">• Concesión de préstamos bancarios y scoring</text>
+        <text x="16" y="85" font-size="11" fill="#fef3c7">• Identificación biométrica en espacios públicos</text>
+      </g>
+
+      <g transform="translate(18, 255)">
+        <rect width="314" height="85" rx="10" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#6ee7b7">Riesgo Específico (TRANSPARENCIA)</text>
+        <text x="16" y="45" font-size="11" fill="#cbd5e1">• Chatbots: Obligación de avisar que habla con IA</text>
+        <text x="16" y="65" font-size="11" fill="#cbd5e1">• Deepfakes: Marca de agua digital verificable</text>
+      </g>
+
+      <g transform="translate(18, 350)">
+        <rect width="314" height="95" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#e2e8f0">Riesgo Mínimo (USO LIBRE)</text>
+        <text x="16" y="48" font-size="11" fill="#94a3b8">Filtros de spam, videojuegos y optimización de rutas.</text>
+        <text x="16" y="70" font-size="11" fill="#94a3b8">Códigos de conducta voluntarios sin sanción.</text>
+      </g>
+    </g>
+
+    <!-- Column 2: Ética, Sesgos y Explicabilidad (XAI) -->
+    <g transform="translate(375, 0)">
+      <rect width="350" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi6)"/>
+      <rect width="350" height="48" rx="16" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#c084fc">🔍 EXPLICABILIDAD &amp; SESGOS (XAI)</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="314" height="175" rx="12" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="13" font-weight="800" fill="#c084fc">Superar la "Caja Negra" (Black Box)</text>
+        <text x="16" y="55" font-size="12" fill="#cbd5e1">• XAI (Explainable AI): Saber por qué el modelo</text>
+        <text x="16" y="75" font-size="12" fill="#cbd5e1">  tomó una decisión concreta.</text>
+        <text x="16" y="100" font-size="12" fill="#cbd5e1">• Técnicas SHAP y LIME para cuantificar el</text>
+        <text x="16" y="120" font-size="12" fill="#cbd5e1">  peso de cada variable en el resultado.</text>
+        <text x="16" y="145" font-size="11" fill="#94a3b8">Imprescindible para cumplimiento RGPD (Derecho a explicación).</text>
+      </g>
+
+      <g transform="translate(18, 255)">
+        <rect width="314" height="190" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="13" font-weight="800" fill="#f472b6">Auditoría de Sesgos Algorítmicos</text>
+        <text x="16" y="55" font-size="12" fill="#cbd5e1">• "La IA no es neutra: hereda los prejuicios</text>
+        <text x="16" y="75" font-size="12" fill="#cbd5e1">  presentes en los datos de entrenamiento."</text>
+        <text x="16" y="100" font-size="12" fill="#cbd5e1">• Desbalanceo de género o etnia en datasets históricos.</text>
+        <rect x="15" y="120" width="284" height="50" rx="8" fill="#831843" fill-opacity="0.3" stroke="#f43f5e" stroke-width="1"/>
+        <text x="142" y="143" font-size="11" font-weight="700" fill="#fbcfe8" text-anchor="middle">Principio ético: Human-in-the-Loop</text>
+        <text x="142" y="159" font-size="10" fill="#fce7f3" text-anchor="middle">Supervisión humana final en decisiones críticas</text>
+      </g>
+    </g>
+
+    <!-- Column 3: Green IT y Sostenibilidad Digital -->
+    <g transform="translate(750, 0)">
+      <rect width="350" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi6)"/>
+      <rect width="350" height="48" rx="16" fill="#10b981" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#34d399">🌱 GREEN COMPUTING &amp; ENERGÍA</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="314" height="185" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+        <text x="16" y="25" font-size="13" font-weight="800" fill="#34d399">Huella de Carbono del Software</text>
+        <text x="16" y="55" font-size="12" fill="#cbd5e1">• Centros de datos consumen ~2% electricidad mundial.</text>
+        <text x="16" y="80" font-size="12" fill="#cbd5e1">• Entrenamiento de LLMs: Cientos de toneladas CO2.</text>
+        <text x="16" y="105" font-size="12" fill="#cbd5e1">• Eficiencia de código: Algoritmos O(n) vs O(n²).</text>
+        <text x="16" y="130" font-size="12" fill="#cbd5e1">• Reciclaje de hardware y directivas RAEE.</text>
+        <rect x="15" y="145" width="284" height="28" rx="6" fill="#065f46" fill-opacity="0.5"/>
+        <text x="142" y="164" font-size="10" font-weight="700" fill="#6ee7b7" text-anchor="middle">Métrica PUE &lt; 1.2 en Data Centers Verdes</text>
+      </g>
+
+      <!-- Final Evaluation Card -->
+      <g transform="translate(18, 265)">
+        <rect width="314" height="180" rx="12" fill="#0f172a" stroke="#06b6d4" stroke-width="1.5"/>
+        <rect x="0" y="0" width="314" height="34" rx="12" fill="#0891b2" fill-opacity="0.3"/>
+        <text x="18" y="23" font-size="12" font-weight="800" fill="#67e8f9">EVALUACIÓN QUIZ EAC1 (P2)</text>
+        <text x="18" y="60" font-size="11" font-weight="600" fill="#f8fafc">• Ponderación total P2: 62.5% AC</text>
+        <text x="18" y="82" font-size="11" font-weight="600" fill="#f8fafc">• Superación de AC: P1 + P2 ≥ 5.0</text>
+        <text x="18" y="104" font-size="11" font-weight="600" fill="#f8fafc">• Acceso directo a validación PAF</text>
+        
+        <rect x="15" y="125" width="284" height="38" rx="8" fill="#164e63" stroke="#0891b2" stroke-width="1"/>
+        <text x="142" y="150" font-size="12" font-weight="800" fill="#a5f3fc" text-anchor="middle">¡Temario 100% Preparado!</text>
+      </g>
+    </g>
+  </g>
+</svg>

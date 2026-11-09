@@ -1,0 +1,94 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Blanca//IOC DAW DIG//ES
+X-WR-CALNAME:DIG - Calendario
+X-WR-CALDESC:M1665 Digitalització aplicada als sectors productius (IOC DAW)\nCoord: Iván Melendo Miró\nAC = 37.5% Quiz P1 + 62.5% Quiz P2\nFinal = 40% AC + 60% PAF (mínimo 5\,00 en PAF)
+BEGIN:VEVENT
+UID:dig-u1-l1-2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261021
+SUMMARY:🟣 DIG · U1 · L1-2
+DESCRIPTION:U1: Digitalización aplicada a los sectores productivos (Parte 1 - 16h)\n\n• Objetivos: RA1 y RA2 (Concepto de digitalización\, tecnologías habilitadoras THD y Cloud)\n• Coord: Iván Melendo Miró\n\nLecciones:\n• L1: La digitalización en los sectores productivos (8h)\n• L2: Tecnologías habilitadoras digitales. Sistemas en la nube (8h)\n\n• Actividad asociada: Quiz EAC1 P1 (37.5% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:3531368@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20260929T060000Z
+DTEND:20260929T060000Z
+SUMMARY:🟣 DIG · Inicio Quiz EAC1 (P1)
+DESCRIPTION:Apertura del Quiz EAC1 (Parte 1)\n• Ponderación: 37.5% de la Evaluación Continua (AC)\n• Cierre: 20-10-2026 (23:55)\n• Calificaciones y soluciones: 03-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3531379@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261020T215500Z
+DTEND:20261020T215500Z
+SUMMARY:🟣 DIG · Fin Quiz EAC1 (P1)
+DESCRIPTION:Límite de entrega / Cierre del Quiz EAC1 (Parte 1)\n• Ponderación: 37.5% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 03-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-u1-l3-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261114
+SUMMARY:🟣 DIG · U1 · L3-4
+DESCRIPTION:U1: Digitalización aplicada a los sectores productivos (Parte 2 - 17h)\n\n• Objetivos: RA3\, RA4\, RA5 y RA6 (IA en la empresa\, ciberseguridad y proyecto digital)\n• Coord: Iván Melendo Miró\n\nLecciones:\n• L3: Los datos y la Inteligencia Artificial en la empresa (8h)\n• L4: Proyecto de transformación digital (9h)\n\n• Actividad asociada: Quiz EAC1 P2 (62.5% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:3531369@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T060000Z
+DTEND:20261022T060000Z
+SUMMARY:🟣 DIG · Inicio Quiz EAC1 (P2)
+DESCRIPTION:Apertura del Quiz EAC1 (Parte 2)\n• Ponderación: 62.5% de la Evaluación Continua (AC)\n• Cierre: 13-11-2026 (23:55)\n• Calificaciones y soluciones: 04-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-notas-quiz1-20261103@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261102T230000Z
+DTEND:20261102T230000Z
+SUMMARY:🟣 DIG · Notas Quiz EAC1 (P1)
+DESCRIPTION:Publicación de calificaciones y soluciones del Quiz EAC1 (Parte 1)\n• Ponderación: 37.5% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:3531380@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261113T225500Z
+DTEND:20261113T225500Z
+SUMMARY:🟣 DIG · Fin Quiz EAC1 (P2)
+DESCRIPTION:Límite de entrega / Cierre del Quiz EAC1 (Parte 2)\n• Ponderación: 62.5% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 04-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-notas-quiz2-20261204@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261203T230000Z
+DTEND:20261203T230000Z
+SUMMARY:🟣 DIG · Notas Quiz EAC1 (P2)
+DESCRIPTION:Publicación de calificaciones y soluciones del Quiz EAC1 (Parte 2)\n• Ponderación: 62.5% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T180000Z
+DTEND:20270116T193000Z
+SUMMARY:🟣 DIG · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Digitalización Aplicada a los Sectores Productivos (60% nota final).
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T180000Z
+DTEND:20270206T193000Z
+SUMMARY:🟣 DIG · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Digitalización Aplicada.
+COLOR:#AF52DE
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,25 @@
+{
+  "id": "ipo1",
+  "name": "Itinerari Personal per a l'Ocupabilitat I",
+  "code": "IPO1",
+  "sigla": "IPO1",
+  "color": "#ea580c",
+  "description": "Itinerario Personal para la Empleabilidad I (antiguo FOL). Marco legal laboral, nóminas, Seguridad Social y prevención de riesgos laborales.",
+  "theoryRoute": "/ioc/ipo1/lecciones-ipo1",
+  "evaluationFormula": "Pendiente de configurar con tu Plan de Trabajo Oficial",
+  "evaluationCriteria": {
+    "acWeight": "40%",
+    "pafWeight": "60%",
+    "pafMin": "5.00"
+  },
+  "eacs": [],
+  "teachingTeam": [
+    {
+      "role": "Docencia / Tutoría",
+      "name": "Profesor/a por asignar",
+      "mailLink": "https://ioc.xtec.cat/campus/"
+    }
+  ],
+  "events": []
+}
+

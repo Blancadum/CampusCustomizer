@@ -6,6 +6,7 @@ import { ALL_SUBJECTS } from '../config/iocSubjects.js';
 const LessonViewer = lazy(() => import('../components/viewers/LessonViewer/LessonViewer.jsx'));
 const SubjectLanding = lazy(() => import('../components/dashboards/subject/SubjectLanding.jsx'));
 const DespEac2Workbench = lazy(() => import('../components/dashboards/eac2/DespEac2Workbench.jsx'));
+const LinkedInSeoAiBlog = lazy(() => import('../components/blog/LinkedInSeoAiBlog.jsx'));
 
 export function DynamicLessonDispatcher() {
   const { subjectCode } = useParams();
@@ -39,10 +40,15 @@ export function DynamicLessonDispatcher() {
 export function getIocRoutes() {
   const routes = [
     ...[
-      '/ioc/asig-1/eac1',
-      '/uoc/uoc-1/pec1',
       '/ioc/desp/eac2',
       '/desp/eac2',
+      '/ioc/desp/eac2-workbench',
+      '/desp/eac2-workbench',
+      '/ioc/desp/eac2-teleprompter',
+      '/desp/eac2-teleprompter',
+      '/ioc/desp/teleprompter',
+      '/ioc/asig-1/eac1',
+      '/uoc/uoc-1/pec1',
       '/workbench-ejemplo'
     ].map(path => (
       <Route
@@ -50,7 +56,12 @@ export function getIocRoutes() {
         path={path}
         element={<DespEac2Workbench />}
       />
-    ))
+    )),
+    <Route
+      key="blog-linkedin-seo"
+      path="/blog/seo-linkedin-filtros-ia"
+      element={<LinkedInSeoAiBlog />}
+    />
   ];
 
   ALL_SUBJECTS.forEach(subj => {
@@ -117,6 +128,7 @@ export function getIocRoutes() {
     <Route key="ioc-sub-lec-slug" path="/ioc/:subjectCode/lecciones/:slug" element={<DynamicLessonDispatcher />} />,
     <Route key="uoc-sub-lec" path="/uoc/:subjectCode/lecciones" element={<DynamicLessonDispatcher />} />,
     <Route key="uoc-sub-lec-slug" path="/uoc/:subjectCode/lecciones/:slug" element={<DynamicLessonDispatcher />} />,
+    <Route key="ioc-desp-alias" path="/ioc/despliegue/:slug?" element={<DynamicLessonDispatcher />} />,
     <Route key="ioc-dash" path="/ioc" element={<Placeholder title="Dashboard IOC" />} />,
     <Route key="uoc-dash" path="/uoc" element={<Placeholder title="Dashboard UOC" />} />
   );

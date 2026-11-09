@@ -1,50 +1,1302 @@
 [
   {
-    "id": "asig1-1-1",
-    "title": "1.1 Fundamentos y Arquitectura con Analogías",
-    "category": "IOC · Asignatura 1",
-    "badge": "IOC1",
-    "url": "/ioc/asig-1/lecciones-asig-1/1-1-fundamentos-y-arquitectura",
+    "id": "mod-desp",
+    "title": "Despliegue de Aplicaciones Web (DESP)",
+    "type": "Materia IOC",
+    "url": "/ioc/desp/lecciones-desp",
+    "external": false,
     "keywords": [
-      "arquitectura",
-      "cliente",
-      "servidor",
-      "capas",
-      "mvc",
-      "rest",
-      "http"
-    ],
-    "summary": "Introducción con analogías del mundo real, modelización paso a paso y código limpio."
+      "despliegue",
+      "desp",
+      "servidores",
+      "dns",
+      "docker",
+      "nginx",
+      "apache"
+    ]
   },
   {
-    "id": "uoc1-1-1",
-    "title": "1.1 Conceptos Clave para la PEC 1",
-    "category": "UOC · Asignatura 1",
-    "badge": "UOC1",
-    "url": "/uoc/uoc-1/lecciones-uoc-1/1-1-conceptos-clave-pec",
+    "id": "mod-digi",
+    "title": "Digitalización Aplicada (DIGI)",
+    "type": "Materia IOC",
+    "url": "/ioc/digi/lecciones-digi",
+    "external": false,
     "keywords": [
-      "pec",
-      "uoc",
-      "metodologia",
-      "arquitectura",
-      "practica"
-    ],
-    "summary": "Guía teórica y práctica orientada a resolver el reto de la PEC 1."
+      "digitalizacion",
+      "digi",
+      "industria 4.0",
+      "big data",
+      "ia",
+      "iot"
+    ]
   },
   {
-    "id": "wb-eac",
-    "title": "@Workbench Paso a Paso EAC / PEC (Con Guion de Vídeo)",
-    "category": "Herramienta",
-    "badge": "EAC",
-    "url": "/ioc/asig-1/eac1",
+    "id": "mod-int",
+    "title": "Diseño de Interfaces Web (INT)",
+    "type": "Materia IOC",
+    "url": "/ioc/int/lecciones-int",
+    "external": false,
     "keywords": [
-      "@eac",
-      "@pec",
-      "@video",
-      "@pasoapaso",
-      "workbench",
-      "guion"
-    ],
-    "summary": "Plantilla interactiva de resolución de entregas con comandos copiables, textos para PDF y guiones de vídeo."
+      "interfaces",
+      "int",
+      "usabilidad",
+      "ux",
+      "css",
+      "flexbox",
+      "grid",
+      "accesibilidad"
+    ]
+  },
+  {
+    "id": "mod-ipo2",
+    "title": "Itinerario Personal para la Empleabilidad II (IPO2)",
+    "type": "Materia IOC",
+    "url": "/ioc/ipo2/lecciones-ipo2",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "ipo",
+      "fol",
+      "laboral",
+      "nominas",
+      "contratos",
+      "prl"
+    ]
+  },
+  {
+    "id": "g-desp-apache",
+    "title": "Apache HTTP Server",
+    "type": "Glosario · DESP",
+    "definition": "Servidor web HTTP por procesos e hilos con configuración por directorio mediante .htaccess.",
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts",
+    "external": false,
+    "keywords": [
+      "apache",
+      "httpd",
+      "servidor web",
+      "htaccess",
+      "vhosts"
+    ]
+  },
+  {
+    "id": "g-desp-nginx",
+    "title": "Nginx & Reverse Proxy",
+    "type": "Glosario · DESP",
+    "definition": "Servidor web asíncrono y proxy inverso de alto rendimiento para tráfico concurrente y balanceo.",
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts",
+    "external": false,
+    "keywords": [
+      "nginx",
+      "servidor web",
+      "reverse proxy",
+      "event-driven",
+      "balanceo"
+    ]
+  },
+  {
+    "id": "g-desp-vhosts",
+    "title": "Virtual Hosts (VHosts)",
+    "type": "Glosario · DESP",
+    "definition": "Configuración para alojar múltiples dominios o subdominios independientes en un mismo servidor HTTP.",
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts",
+    "external": false,
+    "keywords": [
+      "virtual hosts",
+      "vhosts",
+      "server_name",
+      "multi-dominio"
+    ]
+  },
+  {
+    "id": "g-desp-dns",
+    "title": "DNS & Registros de Zona (A, CNAME, MX)",
+    "type": "Glosario · DESP",
+    "definition": "Sistema jerárquico que resuelve nombres de dominio a IPs numéricas mediante registros A, CNAME y MX.",
+    "url": "/ioc/desp/lecciones-desp/dns-resolucion-nombres",
+    "external": false,
+    "keywords": [
+      "dns",
+      "nombres de dominio",
+      "registro a",
+      "cname",
+      "mx",
+      "resolucion ip"
+    ]
+  },
+  {
+    "id": "g-desp-https",
+    "title": "HTTPS & Protocolo TLS",
+    "type": "Glosario · DESP",
+    "definition": "Cifrado criptográfico simétrico y asimétrico para securizar el tráfico web cliente-servidor.",
+    "url": "/ioc/desp/lecciones-desp/https-certificados-ssl-tls",
+    "external": false,
+    "keywords": [
+      "https",
+      "tls",
+      "ssl",
+      "certificados",
+      "cifrado",
+      "seguridad"
+    ]
+  },
+  {
+    "id": "g-desp-certbot",
+    "title": "Certbot & Let's Encrypt",
+    "type": "Glosario · DESP",
+    "definition": "Herramienta para emitir, renovar e instalar automáticamente certificados digitales SSL/TLS gratuitos.",
+    "url": "/ioc/desp/lecciones-desp/https-certificados-ssl-tls",
+    "external": false,
+    "keywords": [
+      "certbot",
+      "lets encrypt",
+      "acme",
+      "ssl gratuito",
+      "renovacion"
+    ]
+  },
+  {
+    "id": "g-desp-docker",
+    "title": "Docker & Contenedores",
+    "type": "Glosario · DESP",
+    "definition": "Aislamiento y empaquetado de aplicaciones web con todas sus dependencias mediante contenedores Linux.",
+    "url": "/ioc/desp/lecciones-desp/docker-contenedores-compose",
+    "external": false,
+    "keywords": [
+      "docker",
+      "contenedores",
+      "dockerfile",
+      "virtualizacion",
+      "imagenes"
+    ]
+  },
+  {
+    "id": "g-desp-compose",
+    "title": "Docker Compose",
+    "type": "Glosario · DESP",
+    "definition": "Orquestación multi-contenedor declarativa a través de un único archivo YAML (docker-compose.yml).",
+    "url": "/ioc/desp/lecciones-desp/docker-contenedores-compose",
+    "external": false,
+    "keywords": [
+      "docker compose",
+      "orquestacion",
+      "multi-contenedor",
+      "compose",
+      "yaml"
+    ]
+  },
+  {
+    "id": "g-digi-ind40",
+    "title": "Industria 4.0",
+    "type": "Glosario · DIGI",
+    "definition": "Cuarta Revolución Industrial: fábricas inteligentes, sensorización ubicua y toma de decisiones autónoma.",
+    "url": "/ioc/digi/lecciones-digi/industria-4-0-sistemas-ciberfisicos",
+    "external": false,
+    "keywords": [
+      "industria 4.0",
+      "cuarta revolucion",
+      "fabrica inteligente",
+      "transformacion digital"
+    ]
+  },
+  {
+    "id": "g-digi-cps",
+    "title": "Sistemas Ciberfísicos (CPS)",
+    "type": "Glosario · DIGI",
+    "definition": "Sistemas que integran computación algorítmica con maquinaria física y sensores en tiempo real.",
+    "url": "/ioc/digi/lecciones-digi/industria-4-0-sistemas-ciberfisicos",
+    "external": false,
+    "keywords": [
+      "cps",
+      "sistemas ciberfisicos",
+      "sensores",
+      "tiempo real",
+      "actuadores"
+    ]
+  },
+  {
+    "id": "g-digi-thd",
+    "title": "Tecnologías Habilitadoras (THD)",
+    "type": "Glosario · DIGI",
+    "definition": "Ecosistema tecnológico (Cloud, Edge, IoT, Gemelos Digitales, IA) que hace posible la digitalización.",
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd",
+    "external": false,
+    "keywords": [
+      "thd",
+      "tecnologias habilitadoras",
+      "innovacion",
+      "disrupcion tecnologica"
+    ]
+  },
+  {
+    "id": "g-digi-iot",
+    "title": "IoT & Industrial IoT (IIoT)",
+    "type": "Glosario · DIGI",
+    "definition": "Red de objetos físicos interconectados que emiten telemetría mediante protocolos como MQTT y CoAP.",
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd",
+    "external": false,
+    "keywords": [
+      "iot",
+      "iiot",
+      "internet de las cosas",
+      "mqtt",
+      "telemetria",
+      "sensores"
+    ]
+  },
+  {
+    "id": "g-digi-edge",
+    "title": "Edge Computing",
+    "type": "Glosario · DIGI",
+    "definition": "Procesamiento de datos en el extremo de la red (junto al sensor) para minimizar la latencia de respuesta.",
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd",
+    "external": false,
+    "keywords": [
+      "edge computing",
+      "computacion en el borde",
+      "baja latencia",
+      "procesamiento local"
+    ]
+  },
+  {
+    "id": "g-digi-twins",
+    "title": "Gemelos Digitales (Digital Twins)",
+    "type": "Glosario · DIGI",
+    "definition": "Réplica virtual en tiempo real de una máquina o proceso para simular escenarios y predecir fallos.",
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd",
+    "external": false,
+    "keywords": [
+      "gemelos digitales",
+      "digital twins",
+      "simulacion",
+      "mantenimiento predictivo"
+    ]
+  },
+  {
+    "id": "g-digi-bigdata",
+    "title": "Big Data (5 V's)",
+    "type": "Glosario · DIGI",
+    "definition": "Gestión analítica de datos masivos definidos por Volumen, Velocidad, Variedad, Veracidad y Valor.",
+    "url": "/ioc/digi/lecciones-digi/big-data-ciclo-vida-dato",
+    "external": false,
+    "keywords": [
+      "big data",
+      "5 vs",
+      "volumen",
+      "velocidad",
+      "variedad",
+      "veracidad",
+      "valor"
+    ]
+  },
+  {
+    "id": "g-digi-ia",
+    "title": "Inteligencia Artificial & Machine Learning",
+    "type": "Glosario · DIGI",
+    "definition": "Algoritmos para aprender patrones y automatizar decisiones (Supervisado, No Supervisado, LLMs).",
+    "url": "/ioc/digi/lecciones-digi/inteligencia-artificial-machine-learning",
+    "external": false,
+    "keywords": [
+      "inteligencia artificial",
+      "ia",
+      "machine learning",
+      "deep learning",
+      "llm"
+    ]
+  },
+  {
+    "id": "g-int-ux",
+    "title": "Usabilidad & Experiencia de Usuario (UX)",
+    "type": "Glosario · INT",
+    "definition": "Medida de eficacia, eficiencia y satisfacción con la que una persona interactúa con un producto web.",
+    "url": "/ioc/int/lecciones-int/usabilidad-ux-principios-diseno",
+    "external": false,
+    "keywords": [
+      "usabilidad",
+      "ux",
+      "experiencia de usuario",
+      "ui",
+      "interaccion"
+    ]
+  },
+  {
+    "id": "g-int-nielsen",
+    "title": "10 Heurísticas de Jakob Nielsen",
+    "type": "Glosario · INT",
+    "definition": "Principios empíricos para evaluar el diseño de interfaces y prevenir errores de interacción.",
+    "url": "/ioc/int/lecciones-int/usabilidad-ux-principios-diseno",
+    "external": false,
+    "keywords": [
+      "nielsen",
+      "heuristicas",
+      "usabilidad",
+      "evaluacion",
+      "prevencion de errores"
+    ]
+  },
+  {
+    "id": "g-int-flexbox",
+    "title": "CSS Flexbox",
+    "type": "Glosario · INT",
+    "definition": "Sistema de diseño unidimensional para distribuir componentes y alinear elementos sobre un eje.",
+    "url": "/ioc/int/lecciones-int/css-avanzado-flexbox-grid",
+    "external": false,
+    "keywords": [
+      "flexbox",
+      "css flexbox",
+      "display flex",
+      "justify-content",
+      "align-items"
+    ]
+  },
+  {
+    "id": "g-int-grid",
+    "title": "CSS Grid Layout",
+    "type": "Glosario · INT",
+    "definition": "Sistema de cuadrícula bidimensional en CSS para controlar simultáneamente filas y columnas.",
+    "url": "/ioc/int/lecciones-int/css-avanzado-flexbox-grid",
+    "external": false,
+    "keywords": [
+      "grid",
+      "css grid",
+      "cuadricula",
+      "display grid",
+      "bidimensional"
+    ]
+  },
+  {
+    "id": "g-int-wcag",
+    "title": "Accesibilidad Web (WCAG 2.2)",
+    "type": "Glosario · INT",
+    "definition": "Estándares del W3C que garantizan que la web sea usable para personas con discapacidades (Nivel AA).",
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria",
+    "external": false,
+    "keywords": [
+      "accesibilidad",
+      "wcag",
+      "a11y",
+      "wcag 2.2",
+      "nivel aa",
+      "inclusivo"
+    ]
+  },
+  {
+    "id": "g-int-pour",
+    "title": "Principios P.O.U.R.",
+    "type": "Glosario · INT",
+    "definition": "Los cuatro pilares de accesibilidad: Perceptible, Operable, Comprensible y Robusto.",
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria",
+    "external": false,
+    "keywords": [
+      "pour",
+      "perceptible",
+      "operable",
+      "comprensible",
+      "robusto",
+      "wcag"
+    ]
+  },
+  {
+    "id": "g-int-aria",
+    "title": "Atributos WAI-ARIA",
+    "type": "Glosario · INT",
+    "definition": "Atributos semánticos (aria-label, role, aria-expanded) para lectores de pantalla y tecnología asistiva.",
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria",
+    "external": false,
+    "keywords": [
+      "aria",
+      "wai-aria",
+      "aria-label",
+      "role",
+      "lectores de pantalla"
+    ]
+  },
+  {
+    "id": "g-ipo2-estatuto",
+    "title": "Estatuto de los Trabajadores",
+    "type": "Glosario · IPO2",
+    "definition": "Ley básica reguladora de los derechos individuales y mínimos inderogables en el ámbito laboral español.",
+    "url": "/ioc/ipo2/lecciones-ipo2/marco-laboral-contrato-trabajo",
+    "external": false,
+    "keywords": [
+      "estatuto de los trabajadores",
+      "ley laboral",
+      "derechos laborales",
+      "contrato"
+    ]
+  },
+  {
+    "id": "g-ipo2-convenio",
+    "title": "Convenio Colectivo",
+    "type": "Glosario · IPO2",
+    "definition": "Pacto laboral colectivo que fija salarios mínimos, jornadas y categorías en el sector tecnológico.",
+    "url": "/ioc/ipo2/lecciones-ipo2/marco-laboral-contrato-trabajo",
+    "external": false,
+    "keywords": [
+      "convenio colectivo",
+      "convenio tic",
+      "tablas salariales",
+      "jornada"
+    ]
+  },
+  {
+    "id": "g-ipo2-nomina",
+    "title": "Estructura de la Nómina",
+    "type": "Glosario · IPO2",
+    "definition": "Recibo justificativo de salario con desglose de Devengos brutos, Deducciones (SS e IRPF) y Neto.",
+    "url": "/ioc/ipo2/lecciones-ipo2/nominas-salario-seguridad-social",
+    "external": false,
+    "keywords": [
+      "nomina",
+      "salario neto",
+      "salario bruto",
+      "devengos",
+      "deducciones"
+    ]
+  },
+  {
+    "id": "g-ipo2-cotizacion",
+    "title": "Bases de Cotización (BCCC / BCCP)",
+    "type": "Glosario · IPO2",
+    "definition": "Bases salariales sobre las que se aplican los porcentajes de cotización a la Seguridad Social.",
+    "url": "/ioc/ipo2/lecciones-ipo2/nominas-salario-seguridad-social",
+    "external": false,
+    "keywords": [
+      "bases de cotizacion",
+      "bccc",
+      "bccp",
+      "seguridad social",
+      "irpf"
+    ]
+  },
+  {
+    "id": "g-ipo2-desconexion",
+    "title": "Desconexión Digital (LO 3/2018)",
+    "type": "Glosario · IPO2",
+    "definition": "Derecho legal a no atender comunicaciones ni mensajes de trabajo fuera del horario laboral.",
+    "url": "/ioc/ipo2/lecciones-ipo2/prl-ergonomia-riesgos-psicosociales",
+    "external": false,
+    "keywords": [
+      "desconexion digital",
+      "salud laboral",
+      "descanso",
+      "teletrabajo",
+      "burnout"
+    ]
+  },
+  {
+    "id": "eac-desp-eac1",
+    "title": "EAC 1: Servidores Web, ProFTPD y DNS (45% AC)",
+    "type": "EAC · DESP",
+    "definition": "Aprovisionamiento y configuración de servidores web Apache2 con Virtual Hosts múltiples (EverOffice Supplies), autenticación básica (.htpasswd) para recursos privados, servidor de transferencia ProFTPD con acceso anónimo, usuarios virtuales (comerciales y auditores), FTPS seguro mediante certificados OpenSSL y resolución DNS.",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "eac1",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Configuración de Apache2 y Virtual Hosts para dominios corporativos",
+      "Autenticación básica HTTP (.htpasswd) en /nomines",
+      "Servidor ProFTPD: acceso anónimo y usuarios virtuales diferenciados",
+      "Implementación de canal seguro FTPS con certificados TLS/SSL",
+      "Grabación del videotutorial con pruebas en vivo (FileZilla y navegador)"
+    ]
+  },
+  {
+    "id": "eac-desp-eac2",
+    "title": "EAC 2: Servidores de Aplicación y Docker (30% AC)",
+    "type": "EAC · DESP",
+    "definition": "Contenedorización integral de aplicaciones web mediante Docker. Creación y optimización de Dockerfiles multi-stage, orquestación de servicios auxiliares con Docker Compose y persistencia de datos mediante volúmenes.",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque3",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "eac2",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Construcción de imágenes Docker ligeras y seguras",
+      "Orquestación multi-contenedor con docker-compose.yml",
+      "Mapeo de puertos, variables de entorno y volúmenes",
+      "Puesta en marcha del entorno de aplicación reproducible"
+    ]
+  },
+  {
+    "id": "eac-desp-eac3",
+    "title": "EAC 3: Seguridad, SSL/TLS y Proxy Inverso (25% AC)",
+    "type": "EAC · DESP",
+    "definition": "Implementación de canales seguros en producción: emisión e instalación de certificados digitales SSL/TLS con Let's Encrypt y Certbot, configuración de cifrado HTTPS estricto y Nginx como Proxy Inverso de terminación TLS.",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "eac3",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Adquisición e instalación de certificados SSL/TLS con Certbot",
+      "Configuración de cabeceras de seguridad y redirección HTTP a HTTPS",
+      "Nginx como Reverse Proxy hacia servidores de aplicación",
+      "Auditoría de seguridad y cifrado con herramientas de análisis"
+    ]
+  },
+  {
+    "id": "eac-digi-eac1_p1",
+    "title": "Quiz EAC1 (Parte 1): Indústria 4.0 i THD (37.5% AC)",
+    "type": "EAC · DIGI",
+    "definition": "Evaluación tipo test sobre la Cuarta Revolución Industrial y Sistemas Ciberfísicos (CPS), Tecnologías Habilitadoras Digitales (Cloud, Edge, IoT, Digital Twins, Fabricación Aditiva) y Ciberseguridad industrial (norma IEC 62443 y convergencia IT/OT).",
+    "url": "/ioc/digi/lecciones-digi/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "eac1_p1",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Repaso del Bloque 1: Sistemas Ciberfísicos y Fábricas Inteligentes",
+      "Ecosistema de Tecnologías Habilitadoras (Cloud/Edge, IoT, Gemelos Digitales)",
+      "Fundamentos de Ciberseguridad y Protección de Infraestructuras Críticas",
+      "Realización del cuestionario tipo test en el campus virtual"
+    ]
+  },
+  {
+    "id": "eac-digi-eac1_p2",
+    "title": "Quiz EAC1 (Parte 2): Big Data, IA i Impacte (62.5% AC)",
+    "type": "EAC · DIGI",
+    "definition": "Cuestionario de evaluación sobre el ciclo de vida de los datos, las 5 V's del Big Data, modelos y tipologías de Inteligencia Artificial (Supervisado, No Supervisado, Deep Learning y LLMs), y el impacto ético y medioambiental de la transformación digital.",
+    "url": "/ioc/digi/lecciones-digi/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "eac1_p2",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Las 5 V's del Big Data y canalizaciones ETL en Data Lakes/Warehouses",
+      "Modelos de Machine Learning, IA Generativa y Visión por Computador",
+      "Consideraciones éticas, sesgos algorítmicos y gobernanza del dato",
+      "Realización del cuestionario tipo test en el campus virtual"
+    ]
+  },
+  {
+    "id": "eac-int-eac1",
+    "title": "EAC 1: Usabilidad, Planificación y Maquetación CSS (33% AC)",
+    "type": "EAC · INT",
+    "definition": "Aplicación de las 10 heurísticas de usabilidad de Jakob Nielsen, auditoría de Experiencia de Usuario (UX), arquitectura de la información y prototipado responsive de una interfaz web con maquetación CSS moderna y semántica HTML5.",
+    "url": "/ioc/int/lecciones-int/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "eac1",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Auditoría heurística del sistema y patrones de interacción UX",
+      "Diseño inicial con enfoque Mobile-First y diseño adaptativo",
+      "Estructura semántica HTML5 sin anidamientos innecesarios",
+      "Entrega de la memoria técnica y archivos de código fuente"
+    ]
+  },
+  {
+    "id": "eac-int-eac2",
+    "title": "EAC 2: Diseño Responsive, Flexbox y Grid (34% AC)",
+    "type": "EAC · INT",
+    "definition": "Maquetación espacial avanzada combinando CSS Flexbox (unidimensional) para cabeceras y tarjetas, con CSS Grid (bidimensional) para la rejilla global de contenidos, breakpoints fluidos y tipografía responsiva.",
+    "url": "/ioc/int/lecciones-int/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "eac2",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Implementación de layouts complejos con CSS Grid (grid-template-areas)",
+      "Alineación y distribución de componentes con Flexbox",
+      "Media Queries bien estructuradas para móviles, tablets y monitores",
+      "Comprobación multidispositivo y renderizado sin desbordamientos"
+    ]
+  },
+  {
+    "id": "eac-int-eac3",
+    "title": "EAC 3: Accesibilidad WCAG, Componentes y Multimedia (33% AC)",
+    "type": "EAC · INT",
+    "definition": "Auditoría e implementación de los principios P.O.U.R. de las pautas WCAG 2.2 nivel AA. Atributos WAI-ARIA, navegación completa mediante teclado, validación de contrastes de color, componentes interactivos accesibles y elementos multimedia inclusivos.",
+    "url": "/ioc/int/lecciones-int/intro-bloque3",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "eac3",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Cumplimiento de estándares de accesibilidad WCAG 2.2 (nivel AA)",
+      "Atributos ARIA (aria-expanded, aria-label, roles semánticos)",
+      "Navegación 100% por teclado con indicador visual de foco visible",
+      "Contraste cromático mínimo 4.5:1 verificado con analizadores de color"
+    ]
+  },
+  {
+    "id": "eac-ipo2-eaf1",
+    "title": "EAF 1: Marco Laboral y Derechos del Trabajador",
+    "type": "EAC · IPO2",
+    "definition": "Actividad formativa de autoevaluación: análisis de las fuentes del derecho del trabajo, jerarquía normativa, derechos y deberes fundamentales de la relación laboral y papel de los convenios colectivos.",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "eaf1",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Identificación de la jerarquía normativa laboral aplicable",
+      "Análisis de derechos irrenunciables en el Estatuto de los Trabajadores",
+      "Estudio de las condiciones del convenio colectivo del sector tecnológico",
+      "Entrega de las respuestas argumentadas en la plataforma Moodle"
+    ]
+  },
+  {
+    "id": "eac-ipo2-eac1",
+    "title": "EAC 1: Marco Laboral y Contratación",
+    "type": "EAC · IPO2",
+    "definition": "Estudio práctico de la relación laboral individual: análisis y redacción de contratos de trabajo (indefinido, formativo, fijo-discontinuo), periodo de prueba, cláusulas de confidencialidad/no competencia y causas de suspensión y extinción laboral con cálculo de indemnizaciones.",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "eac1",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Identificación de elementos esenciales del contrato (ajenidad, dependencia, retribución)",
+      "Análisis de tipologías de contratos para desarrolladores de software",
+      "Cálculo de indemnizaciones por despido y liquidación de finiquito",
+      "Elaboración de la memoria técnica de resolución de casos prácticos"
+    ]
+  },
+  {
+    "id": "eac-ipo2-eac2",
+    "title": "EAC 2: Seguridad en el Trabajo y Nóminas",
+    "type": "EAC · IPO2",
+    "definition": "Cálculo completo del recibo individual de salarios (nómina mensual), determinación de bases de cotización (BCCC, BCCP, Horas Extras), cálculo de deducciones a la Seguridad Social e IRPF, y plan de Prevención de Riesgos Laborales enfocado a desarrolladores (ergonomía, fatiga visual y desconexión digital).",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "eac2",
+      "eac",
+      "evaluacion",
+      "entrega",
+      "Desglose de devengos salariales y percepciones no salariales",
+      "Cálculo de bases de cotización a la Seguridad Social y retención IRPF",
+      "Determinación del líquido neto a percibir por el trabajador",
+      "Medidas preventivas frente a riesgos ergonómicos y psicosociales (Burnout)"
+    ]
+  },
+  {
+    "id": "topic-desp-intro-bloque1",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Introducción",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "introducción a la unidad",
+      "intro-bloque1",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-desp-arquitecturas-web-servidores",
+    "title": "1.1 · Arquitecturas Web y Servidores HTTP",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Tema 1: Servidores Web y Virtual Hosts",
+    "url": "/ioc/desp/lecciones-desp/arquitecturas-web-servidores",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "arquitecturas web y servidores http",
+      "arquitecturas-web-servidores",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Tema 1: Servidores Web y Virtual Hosts",
+      "1.1"
+    ]
+  },
+  {
+    "id": "topic-desp-apache-nginx-virtual-hosts",
+    "title": "1.2 · Apache HTTP Server: Virtual Hosts y Autenticación Básica",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Tema 1: Servidores Web y Virtual Hosts",
+    "url": "/ioc/desp/lecciones-desp/apache-nginx-virtual-hosts",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "apache http server: virtual hosts y autenticación básica",
+      "apache-nginx-virtual-hosts",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Tema 1: Servidores Web y Virtual Hosts",
+      "1.2"
+    ]
+  },
+  {
+    "id": "topic-desp-proftpd-ftps-transferencia-archivos",
+    "title": "2.1 · Servidor FTP ProFTPD y Acceso Anónimo",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Tema 2: Transferencia de Archivos (ProFTPD y FTPS)",
+    "url": "/ioc/desp/lecciones-desp/proftpd-ftps-transferencia-archivos",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "servidor ftp proftpd y acceso anónimo",
+      "proftpd-ftps-transferencia-archivos",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Tema 2: Transferencia de Archivos (ProFTPD y FTPS)",
+      "2.1"
+    ]
+  },
+  {
+    "id": "topic-desp-proftpd-usuarios-virtuales-ftps",
+    "title": "2.2 · Usuarios Virtuales y Cifrado Seguro con FTPS (TLS/SSL)",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Tema 2: Transferencia de Archivos (ProFTPD y FTPS)",
+    "url": "/ioc/desp/lecciones-desp/proftpd-usuarios-virtuales-ftps",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "usuarios virtuales y cifrado seguro con ftps (tls/ssl)",
+      "proftpd-usuarios-virtuales-ftps",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Tema 2: Transferencia de Archivos (ProFTPD y FTPS)",
+      "2.2"
+    ]
+  },
+  {
+    "id": "topic-desp-dns-resolucion-nombres",
+    "title": "3.1 · Sistema de Nombres de Dominio (DNS) y Resolución",
+    "type": "Lección · DESP",
+    "definition": "Bloque 1: Servidores Web, Transferencia de Archivos y DNS — Tema 3: Sistema de Nombres de Dominio (DNS)",
+    "url": "/ioc/desp/lecciones-desp/dns-resolucion-nombres",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "sistema de nombres de dominio (dns) y resolución",
+      "dns-resolucion-nombres",
+      "Bloque 1: Servidores Web, Transferencia de Archivos y DNS",
+      "Tema 3: Sistema de Nombres de Dominio (DNS)",
+      "3.1"
+    ]
+  },
+  {
+    "id": "topic-desp-intro-bloque2",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · DESP",
+    "definition": "Bloque 2: Protocolo HTTPS y Certificados Digitales — Introducción",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "introducción a la unidad",
+      "intro-bloque2",
+      "Bloque 2: Protocolo HTTPS y Certificados Digitales",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-desp-https-certificados-ssl-tls",
+    "title": "4.1 · Seguridad en Tránsito: HTTPS y Certificados SSL/TLS",
+    "type": "Lección · DESP",
+    "definition": "Bloque 2: Protocolo HTTPS y Certificados Digitales — Tema 4: Seguridad en Tránsito y HTTPS",
+    "url": "/ioc/desp/lecciones-desp/https-certificados-ssl-tls",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "seguridad en tránsito: https y certificados ssl/tls",
+      "https-certificados-ssl-tls",
+      "Bloque 2: Protocolo HTTPS y Certificados Digitales",
+      "Tema 4: Seguridad en Tránsito y HTTPS",
+      "4.1"
+    ]
+  },
+  {
+    "id": "topic-desp-intro-bloque3",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · DESP",
+    "definition": "Bloque 3: Servidores de Aplicación y Contenedores — Introducción",
+    "url": "/ioc/desp/lecciones-desp/intro-bloque3",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "introducción a la unidad",
+      "intro-bloque3",
+      "Bloque 3: Servidores de Aplicación y Contenedores",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-desp-docker-contenedores-compose",
+    "title": "5.1 · Contenedores Docker y Docker Compose",
+    "type": "Lección · DESP",
+    "definition": "Bloque 3: Servidores de Aplicación y Contenedores — Tema 5: Contenedores Docker y Orquestación",
+    "url": "/ioc/desp/lecciones-desp/docker-contenedores-compose",
+    "external": false,
+    "keywords": [
+      "desp",
+      "despliegue de aplicaciones web",
+      "contenedores docker y docker compose",
+      "docker-contenedores-compose",
+      "Bloque 3: Servidores de Aplicación y Contenedores",
+      "Tema 5: Contenedores Docker y Orquestación",
+      "5.1"
+    ]
+  },
+  {
+    "id": "topic-digi-intro-bloque1",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras — Introducción",
+    "url": "/ioc/digi/lecciones-digi/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "introducción a la unidad",
+      "intro-bloque1",
+      "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-digi-industria-4-0-sistemas-ciberfisicos",
+    "title": "1.1 · Industria 4.0 y Sistemas Ciberfísicos",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras — Tema 1: La Cuarta Revolución Industrial",
+    "url": "/ioc/digi/lecciones-digi/industria-4-0-sistemas-ciberfisicos",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "industria 4.0 y sistemas ciberfísicos",
+      "industria-4-0-sistemas-ciberfisicos",
+      "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras",
+      "Tema 1: La Cuarta Revolución Industrial",
+      "1.1"
+    ]
+  },
+  {
+    "id": "topic-digi-tecnologias-habilitadoras-thd",
+    "title": "1.2 · Tecnologías Habilitadoras Digitales (THD)",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras — Tema 1: La Cuarta Revolución Industrial",
+    "url": "/ioc/digi/lecciones-digi/tecnologias-habilitadoras-thd",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "tecnologías habilitadoras digitales (thd)",
+      "tecnologias-habilitadoras-thd",
+      "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras",
+      "Tema 1: La Cuarta Revolución Industrial",
+      "1.2"
+    ]
+  },
+  {
+    "id": "topic-digi-ciberseguridad-infraestructuras",
+    "title": "1.3 · Ciberseguridad y Continuidad Operacional",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras — Tema 1: La Cuarta Revolución Industrial",
+    "url": "/ioc/digi/lecciones-digi/ciberseguridad-infraestructuras",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "ciberseguridad y continuidad operacional",
+      "ciberseguridad-infraestructuras",
+      "Bloque 1: Industria 4.0 y Tecnologías Habilitadoras",
+      "Tema 1: La Cuarta Revolución Industrial",
+      "1.3"
+    ]
+  },
+  {
+    "id": "topic-digi-intro-bloque2",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 2: Datos Masivos e Inteligencia Artificial — Introducción",
+    "url": "/ioc/digi/lecciones-digi/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "introducción a la unidad",
+      "intro-bloque2",
+      "Bloque 2: Datos Masivos e Inteligencia Artificial",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-digi-big-data-ciclo-vida-dato",
+    "title": "2.1 · Big Data y el Ciclo de Vida del Dato",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 2: Datos Masivos e Inteligencia Artificial — Tema 2: Analítica de Datos e IA",
+    "url": "/ioc/digi/lecciones-digi/big-data-ciclo-vida-dato",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "big data y el ciclo de vida del dato",
+      "big-data-ciclo-vida-dato",
+      "Bloque 2: Datos Masivos e Inteligencia Artificial",
+      "Tema 2: Analítica de Datos e IA",
+      "2.1"
+    ]
+  },
+  {
+    "id": "topic-digi-inteligencia-artificial-machine-learning",
+    "title": "2.2 · Inteligencia Artificial y Machine Learning",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 2: Datos Masivos e Inteligencia Artificial — Tema 2: Analítica de Datos e IA",
+    "url": "/ioc/digi/lecciones-digi/inteligencia-artificial-machine-learning",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "inteligencia artificial y machine learning",
+      "inteligencia-artificial-machine-learning",
+      "Bloque 2: Datos Masivos e Inteligencia Artificial",
+      "Tema 2: Analítica de Datos e IA",
+      "2.2"
+    ]
+  },
+  {
+    "id": "topic-digi-impacto-sectorial-etica-sostenibilidad",
+    "title": "2.3 · Impacto Sectorial, Ética y Sostenibilidad",
+    "type": "Lección · DIGI",
+    "definition": "Bloque 2: Datos Masivos e Inteligencia Artificial — Tema 2: Analítica de Datos e IA",
+    "url": "/ioc/digi/lecciones-digi/impacto-sectorial-etica-sostenibilidad",
+    "external": false,
+    "keywords": [
+      "digi",
+      "digitalización aplicada",
+      "impacto sectorial, ética y sostenibilidad",
+      "impacto-sectorial-etica-sostenibilidad",
+      "Bloque 2: Datos Masivos e Inteligencia Artificial",
+      "Tema 2: Analítica de Datos e IA",
+      "2.3"
+    ]
+  },
+  {
+    "id": "topic-int-intro-bloque1",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · INT",
+    "definition": "Bloque 1: Planificación y Usabilidad — Introducción",
+    "url": "/ioc/int/lecciones-int/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "introducción a la unidad",
+      "intro-bloque1",
+      "Bloque 1: Planificación y Usabilidad",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-int-usabilidad-ux-principios-diseno",
+    "title": "1.1 · Usabilidad, Experiencia de Usuario (UX) y Heurísticas",
+    "type": "Lección · INT",
+    "definition": "Bloque 1: Planificación y Usabilidad — Tema 1: Fundamentos UX y Usabilidad",
+    "url": "/ioc/int/lecciones-int/usabilidad-ux-principios-diseno",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "usabilidad, experiencia de usuario (ux) y heurísticas",
+      "usabilidad-ux-principios-diseno",
+      "Bloque 1: Planificación y Usabilidad",
+      "Tema 1: Fundamentos UX y Usabilidad",
+      "1.1"
+    ]
+  },
+  {
+    "id": "topic-int-intro-bloque2",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · INT",
+    "definition": "Bloque 2: Maquetación Avanzada y Responsive — Introducción",
+    "url": "/ioc/int/lecciones-int/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "introducción a la unidad",
+      "intro-bloque2",
+      "Bloque 2: Maquetación Avanzada y Responsive",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-int-css-avanzado-flexbox-grid",
+    "title": "2.1 · Maquetación Moderna: Flexbox vs CSS Grid",
+    "type": "Lección · INT",
+    "definition": "Bloque 2: Maquetación Avanzada y Responsive — Tema 2: Layouts Espaciales y CSS Moderno",
+    "url": "/ioc/int/lecciones-int/css-avanzado-flexbox-grid",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "maquetación moderna: flexbox vs css grid",
+      "css-avanzado-flexbox-grid",
+      "Bloque 2: Maquetación Avanzada y Responsive",
+      "Tema 2: Layouts Espaciales y CSS Moderno",
+      "2.1"
+    ]
+  },
+  {
+    "id": "topic-int-intro-bloque3",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · INT",
+    "definition": "Bloque 3: Accesibilidad y Sistemas de Diseño — Introducción",
+    "url": "/ioc/int/lecciones-int/intro-bloque3",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "introducción a la unidad",
+      "intro-bloque3",
+      "Bloque 3: Accesibilidad y Sistemas de Diseño",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-int-accesibilidad-web-wcag-aria",
+    "title": "3.1 · Accesibilidad Web (WCAG 2.2) y Atributos WAI-ARIA",
+    "type": "Lección · INT",
+    "definition": "Bloque 3: Accesibilidad y Sistemas de Diseño — Tema 3: Inclusión y Accesibilidad Web",
+    "url": "/ioc/int/lecciones-int/accesibilidad-web-wcag-aria",
+    "external": false,
+    "keywords": [
+      "int",
+      "diseño de interfaces web",
+      "accesibilidad web (wcag 2.2) y atributos wai-aria",
+      "accesibilidad-web-wcag-aria",
+      "Bloque 3: Accesibilidad y Sistemas de Diseño",
+      "Tema 3: Inclusión y Accesibilidad Web",
+      "3.1"
+    ]
+  },
+  {
+    "id": "topic-ipo2-intro-bloque1",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 1: Legislación Laboral y Relación de Trabajo — Introducción",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque1",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "introducción a la unidad",
+      "intro-bloque1",
+      "Bloque 1: Legislación Laboral y Relación de Trabajo",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-ipo2-marco-laboral-contrato-trabajo",
+    "title": "1.1 · El Marco Normativo y Fuentes del Derecho Laboral",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 1: Legislación Laboral y Relación de Trabajo — Tema 1: Derecho Laboral y Contratación",
+    "url": "/ioc/ipo2/lecciones-ipo2/marco-laboral-contrato-trabajo",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "el marco normativo y fuentes del derecho laboral",
+      "marco-laboral-contrato-trabajo",
+      "Bloque 1: Legislación Laboral y Relación de Trabajo",
+      "Tema 1: Derecho Laboral y Contratación",
+      "1.1"
+    ]
+  },
+  {
+    "id": "topic-ipo2-modalidades-contrato-clausulas-tic",
+    "title": "1.2 · Modalidades de Contrato y Cláusulas en el Sector TIC",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 1: Legislación Laboral y Relación de Trabajo — Tema 1: Derecho Laboral y Contratación",
+    "url": "/ioc/ipo2/lecciones-ipo2/modalidades-contrato-clausulas-tic",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "modalidades de contrato y cláusulas en el sector tic",
+      "modalidades-contrato-clausulas-tic",
+      "Bloque 1: Legislación Laboral y Relación de Trabajo",
+      "Tema 1: Derecho Laboral y Contratación",
+      "1.2"
+    ]
+  },
+  {
+    "id": "topic-ipo2-suspension-extincion-contrato-indemnizaciones",
+    "title": "1.3 · Modificación, Suspensión y Extinción Contractual",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 1: Legislación Laboral y Relación de Trabajo — Tema 1: Derecho Laboral y Contratación",
+    "url": "/ioc/ipo2/lecciones-ipo2/suspension-extincion-contrato-indemnizaciones",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "modificación, suspensión y extinción contractual",
+      "suspension-extincion-contrato-indemnizaciones",
+      "Bloque 1: Legislación Laboral y Relación de Trabajo",
+      "Tema 1: Derecho Laboral y Contratación",
+      "1.3"
+    ]
+  },
+  {
+    "id": "topic-ipo2-intro-bloque2",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 2: Retribución y Seguridad Social — Introducción",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque2",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "introducción a la unidad",
+      "intro-bloque2",
+      "Bloque 2: Retribución y Seguridad Social",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-ipo2-nominas-salario-seguridad-social",
+    "title": "2.1 · Estructura del Salario y Conceptos Retributivos",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 2: Retribución y Seguridad Social — Tema 2: Salarios, Nóminas y Cotizaciones",
+    "url": "/ioc/ipo2/lecciones-ipo2/nominas-salario-seguridad-social",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "estructura del salario y conceptos retributivos",
+      "nominas-salario-seguridad-social",
+      "Bloque 2: Retribución y Seguridad Social",
+      "Tema 2: Salarios, Nóminas y Cotizaciones",
+      "2.1"
+    ]
+  },
+  {
+    "id": "topic-ipo2-bases-cotizacion-deducciones-irpf",
+    "title": "2.2 · Bases de Cotización a la Seguridad Social e IRPF",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 2: Retribución y Seguridad Social — Tema 2: Salarios, Nóminas y Cotizaciones",
+    "url": "/ioc/ipo2/lecciones-ipo2/bases-cotizacion-deducciones-irpf",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "bases de cotización a la seguridad social e irpf",
+      "bases-cotizacion-deducciones-irpf",
+      "Bloque 2: Retribución y Seguridad Social",
+      "Tema 2: Salarios, Nóminas y Cotizaciones",
+      "2.2"
+    ]
+  },
+  {
+    "id": "topic-ipo2-caso-practico-calculo-nomina",
+    "title": "2.3 · Caso Práctico: Desglose y Cálculo de Nómina Mensual",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 2: Retribución y Seguridad Social — Tema 2: Salarios, Nóminas y Cotizaciones",
+    "url": "/ioc/ipo2/lecciones-ipo2/caso-practico-calculo-nomina",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "caso práctico: desglose y cálculo de nómina mensual",
+      "caso-practico-calculo-nomina",
+      "Bloque 2: Retribución y Seguridad Social",
+      "Tema 2: Salarios, Nóminas y Cotizaciones",
+      "2.3"
+    ]
+  },
+  {
+    "id": "topic-ipo2-intro-bloque3",
+    "title": "Introducción a la Unidad",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 3: Prevención de Riesgos y Salud en el Trabajo — Introducción",
+    "url": "/ioc/ipo2/lecciones-ipo2/intro-bloque3",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "introducción a la unidad",
+      "intro-bloque3",
+      "Bloque 3: Prevención de Riesgos y Salud en el Trabajo",
+      "Introducción",
+      ""
+    ]
+  },
+  {
+    "id": "topic-ipo2-prl-ergonomia-riesgos-psicosociales",
+    "title": "3.1 · Prevención de Riesgos Laborales en el Sector TI",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 3: Prevención de Riesgos y Salud en el Trabajo — Tema 3: Seguridad y Salud Laboral",
+    "url": "/ioc/ipo2/lecciones-ipo2/prl-ergonomia-riesgos-psicosociales",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "prevención de riesgos laborales en el sector ti",
+      "prl-ergonomia-riesgos-psicosociales",
+      "Bloque 3: Prevención de Riesgos y Salud en el Trabajo",
+      "Tema 3: Seguridad y Salud Laboral",
+      "3.1"
+    ]
+  },
+  {
+    "id": "topic-ipo2-desconexion-digital-estres-burnout",
+    "title": "3.2 · Riesgos Psicosociales, Estrés y Desconexión Digital",
+    "type": "Lección · IPO2",
+    "definition": "Bloque 3: Prevención de Riesgos y Salud en el Trabajo — Tema 3: Seguridad y Salud Laboral",
+    "url": "/ioc/ipo2/lecciones-ipo2/desconexion-digital-estres-burnout",
+    "external": false,
+    "keywords": [
+      "ipo2",
+      "itinerario personal para la empleabilidad ii",
+      "riesgos psicosociales, estrés y desconexión digital",
+      "desconexion-digital-estres-burnout",
+      "Bloque 3: Prevención de Riesgos y Salud en el Trabajo",
+      "Tema 3: Seguridad y Salud Laboral",
+      "3.2"
+    ]
   }
 ]

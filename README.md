@@ -111,6 +111,17 @@ Esto activa el motor local en `http://localhost:3001` para que funcionen los bot
 
 ---
 
+### 🎒 Asignaturas ya incluidas listas para usar (`DESP` + `INT` + `IPO2` + `DIGI` + Plantillas)
+
+Esta versión compartida incluye de serie el material de cuatro asignaturas reales más dos plantillas limpias (sin rastro de entregas personales hechas):
+- 🟡 **Desplegament d'Aplicacions Web (`DESP` - `/ioc/desp`):** Libro Digital completo (`/ioc/desp/lecciones-desp`), panel de entregas (`EAC 1`, `EAC 2`, `EAC 3`), **Workbench Interactivo del EAC 2 (`/ioc/desp/eac2`)** con las 3 pestañas (*Paso a Paso para Mac M1/M2/M3 con Multipass, Guiones de los 2 vídeos palabra por palabra y Textos listos para el ODT/PDF*), apuntes y fuentes PDF en `public/fuentes/ioc/desp/` y `public/eacs/desp/`.
+- 🎨 **Desarrollo de Interfaces Web (`INT` - `/ioc/int`):** Libro Digital completo (`/ioc/int/lecciones-int` con Usabilidad/UX, Flexbox/Grid, Multimedia y Accesibilidad WCAG 2.2 AA), Plan de Trabajo en PDF (`public/fuentes/ioc/int/pt_interfaces.pdf`), enunciado oficial editable del EAC 2 (`public/eacs/int/INT_EAC2_Enunciat.odt` y traducción `INT_EAC2_Enunciado_ES.md`) y la **Guía de Prompting para elaborar la asignatura y tus EACs con estilo propio ([`public/eacs/int/README_PROMPTING_INTERFACES.md`](public/eacs/int/README_PROMPTING_INTERFACES.md))**.
+- 🟠 **Itinerario Personal para la Empleabilidad II (`IPO2` - `/ioc/ipo2`):** Incluye todos los **PDFs y enunciados oficiales** (`public/fuentes/ioc/ipo2/pt_ipo2.pdf`, `EAF2_indicaciones.pdf`, `Enunciat_EAC1_IPO2_2627S1_v01.odt`), el **Libro Digital de teoría (`/ioc/ipo2/lecciones-ipo2`)**, el **Blog interactivo de SEO en LinkedIn & Filtros de IA/ATS (`/ioc/ipo2/blog-linkedin`)** y la **Guía de Prompting para crear TU propio Proyecto Emprendedor ([`public/eacs/ipo2/README_PROMPTING_PROYECTO_IPO2.md`](public/eacs/ipo2/README_PROMPTING_PROYECTO_IPO2.md))** para que le cuentes a la IA de qué va tu idea de negocio y te genere a medida la Memoria de 8-12 páginas en PDF, la Infografía y el Guion de tu Vídeo-Pitch de 3 minutos.
+- 💡 **Digitalización Aplicada (`DIGI` - `/ioc/digi`):** Libro Digital completo (`/ioc/digi/lecciones-digi`) con podcasts, infografías de las 5 V del Big Data, Ciclo de Vida del Dato y Machine Learning, presentación interactiva Gamma, diagramas SVG (`public/eacs/digi/`) y la **Guía de Prompting para preparar los Quizzes EAC 1.1 y EAC 1.2 ([`public/eacs/digi/README_PROMPTING_QUIZ_DIGI.md`](public/eacs/digi/README_PROMPTING_QUIZ_DIGI.md))**.
+- 🔵 **Plantillas limpias IOC (`/ioc/asig-1`) y UOC (`/uoc/uoc-1`, `/uoc/uoc-2`):** Listas para duplicar y añadir el resto de tus asignaturas.
+
+---
+
 ## 4. Estructura de Carpetas del Proyecto (IOC y UOC separados)
 
 ```text
@@ -218,6 +229,8 @@ En el campus oficial del IOC/UOC los calendarios mezclan las fechas en que se pu
 
 - **[`.agents/prompts/01_PROMPTS_REALES_DE_BLANCA.md`](.agents/prompts/01_PROMPTS_REALES_DE_BLANCA.md)**: Recopilación completa de los prompts originales que Blanca utilizó para diseñar toda la plataforma.
 - **[`.agents/prompts/02_PROMPTS_RAPIDOS_COPIAR_Y_PEGAR.md`](.agents/prompts/02_PROMPTS_RAPIDOS_COPIAR_Y_PEGAR.md)**: Los 4 mensajes cortos listos para copiar y pegar en el chat de tu IA.
+- **[`.agents/prompts/03_COMO_CREAR_TU_PROYECTO_IPO2.md`](.agents/prompts/03_COMO_CREAR_TU_PROYECTO_IPO2.md)** *(también accesible desde la web en [`public/eacs/ipo2/README_PROMPTING_PROYECTO_IPO2.md`](public/eacs/ipo2/README_PROMPTING_PROYECTO_IPO2.md))*: Guía interactiva de prompting para explicarle a la IA de qué va **tu propio proyecto emprendedor de IPO II (`EAC 1` y `EAF 2`)** y que te genere la Memoria de 8-12 páginas en PDF, la Infografía y el Guion de tu Vídeo-Pitch de 3 minutos.
+- **[`.agents/prompts/04_COMO_TRABAJAR_INTERFACES_WEB.md`](.agents/prompts/04_COMO_TRABAJAR_INTERFACES_WEB.md)** *(también accesible desde la web en [`public/eacs/int/README_PROMPTING_INTERFACES.md`](public/eacs/int/README_PROMPTING_INTERFACES.md))*: Guía de prompting para ir alimentando la teoría de **Desarrollo de Interfaces Web (`INT`)** y elaborar tus entregas `EAC 1`, `EAC 2` (Multimedia, Audio JS, Vídeo jQuery UI, D3.js, Anime.js y Angular Material) y `EAC 3` (WCAG 2.2 AA) con tu propio estilo visual y código original.
 
 ---
 

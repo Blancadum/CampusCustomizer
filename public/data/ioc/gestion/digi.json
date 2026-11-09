@@ -1,0 +1,128 @@
+{
+  "id": "digi",
+  "title": "Digitalización Aplicada",
+  "themeColor": "#ec4899",
+  "icon": "💡",
+  "progress": 0,
+  "theoryRoute": "/ioc/digi/lecciones-digi",
+  "presentation": {
+    "title": "La revolución de los sistemas ciberfísicos y la inteligencia artificial",
+    "embedUrl": "https://gamma.app/embed/n0g9a8jrqxznk13",
+    "badge": "Presentación Ejecutiva Gamma",
+    "description": "Diapositivas interactivas con la hoja de ruta integral de la Industria 4.0, CPS, Big Data, IA y ética digital."
+  },
+  "blocks": [
+    { "id": "bloque1", "label": "BLOQUE 1: Indústria 4.0 & THD (Quiz EAC 1.1)" },
+    { "id": "bloque2", "label": "BLOQUE 2: Big Data & IA (Quiz EAC 1.2)" }
+  ],
+  "eacs": [
+    {
+      "id": "eac1_p1",
+      "title": "Quiz EAC1 (Parte 1): Indústria 4.0 i THD (37.5% AC)",
+      "status": "pending",
+      "dueDate": "2026-10-20",
+      "theorySlug": "intro-bloque1",
+      "weight": "37.5% AC",
+      "description": "Evaluación tipo test sobre la Cuarta Revolución Industrial y Sistemas Ciberfísicos (CPS), Tecnologías Habilitadoras Digitales (Cloud, Edge, IoT, Digital Twins, Fabricación Aditiva) y Ciberseguridad industrial (norma IEC 62443 y convergencia IT/OT).",
+      "checklist": [
+        "Repaso del Bloque 1 en el Libro Digital: Sistemas Ciberfísicos y Fábricas Inteligentes",
+        "Ecosistema de Tecnologías Habilitadoras (Cloud/Edge, IoT, Gemelos Digitales)",
+        "Fundamentos de Ciberseguridad y Protección de Infraestructuras Críticas",
+        "Realización del cuestionario tipo test en el campus virtual"
+      ],
+      "downloadUrl": "/fuentes/ioc/plan-trabajo/pt_digi.pdf",
+      "enunciatUrl": "/eacs/digi/README_PROMPTING_QUIZ_DIGI.md",
+      "exercicis": [
+        {
+          "num": 1,
+          "points": "12.5% AC",
+          "title": "Tema 1: Industria 4.0 y Sistemas Ciberfísicos (CPS)",
+          "desc": "Transición de la automatización a la digitalización integral. Fábricas inteligentes, sensores y actuadores ciberfísicos e interoperabilidad en tiempo real.",
+          "img": "/eacs/digi/diag1_industria40_cps.svg",
+          "deliverables": ["Bloque 1 · Test Moodle", "README_PROMPTING_QUIZ_DIGI.md"]
+        },
+        {
+          "num": 2,
+          "points": "15.0% AC",
+          "title": "Tema 2: Tecnologías Habilitadoras Digitales (THD)",
+          "desc": "Conectividad Cloud vs Edge Computing, gemelos digitales (Digital Twins), redes IIoT y robótica colaborativa (Cobots).",
+          "img": "/eacs/digi/diag2_thd_ecosistema.svg",
+          "deliverables": ["Bloque 1 · Test Moodle", "pt_digi.pdf"]
+        },
+        {
+          "num": 3,
+          "points": "10.0% AC",
+          "title": "Tema 3: Ciberseguridad y Resiliencia en Entornos Industriales",
+          "desc": "Protección de redes OT convergentes con IT, segmentación de redes industriales bajo la norma ISA/IEC 62443 y planes de continuidad de negocio.",
+          "img": "/eacs/digi/diag3_ciberseguridad_iec62443.svg",
+          "deliverables": ["Bloque 1 · Test Moodle"]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac1_p2",
+      "title": "Quiz EAC1 (Parte 2): Big Data, IA i Impacte (62.5% AC)",
+      "status": "pending",
+      "dueDate": "2026-11-13",
+      "theorySlug": "intro-bloque2",
+      "weight": "62.5% AC",
+      "description": "Cuestionario de evaluación sobre el ciclo de vida de los datos, las 5 V's del Big Data, modelos y tipologías de Inteligencia Artificial (Supervisado, No Supervisado, Deep Learning y LLMs), y el impacto ético y medioambiental de la transformación digital.",
+      "checklist": [
+        "Las 5 V's del Big Data y canalizaciones ETL en Data Lakes/Warehouses",
+        "Modelos de Machine Learning, IA Generativa y Visión por Computador",
+        "Consideraciones éticas, sesgos algorítmicos y gobernanza del dato",
+        "Realización del cuestionario tipo test en el campus virtual"
+      ],
+      "downloadUrl": "/fuentes/ioc/plan-trabajo/pt_digi.pdf",
+      "enunciatUrl": "/eacs/digi/README_PROMPTING_QUIZ_DIGI.md",
+      "exercicis": [
+        {
+          "num": 1,
+          "points": "20.0% AC",
+          "title": "Tema 4: Big Data y el Ciclo de Vida del Dato (Las 5 V's)",
+          "desc": "Volumen, Velocidad, Variedad, Veracidad y Valor. Ingestión con colas Kafka, almacenamiento en Data Lakes y agregación en Data Warehouses.",
+          "img": "/fuentes/ioc/digi/Ciclo_de_vida_del_dato.png",
+          "deliverables": ["Ciclo_de_vida_del_dato.png", "Las_5_V_del_Big_Data.png", "resumen-asignatura.pptx"]
+        },
+        {
+          "num": 2,
+          "points": "25.0% AC",
+          "title": "Tema 5: Modelos de Inteligencia Artificial y Machine Learning",
+          "desc": "Taxonomía de IA: Aprendizaje Supervisado (predicción y clasificación), No Supervisado (clustering), Aprendizaje por Refuerzo y Modelos LLM / Generativos.",
+          "img": "/fuentes/ioc/digi/Ramas_del_aprendizaje_automatico.png",
+          "deliverables": ["Ramas_del_aprendizaje_automatico.png"]
+        },
+        {
+          "num": 3,
+          "points": "17.5% AC",
+          "title": "Tema 6: Gobernanza Ética, Reglamento AI Act y Green IT",
+          "desc": "Clasificación de riesgo de la IA según el Reglamento Europeo AI Act, prevención de sesgos algorítmicos, explicabilidad XAI y Software Carbon Intensity (SCI).",
+          "img": "/eacs/digi/diag6_gobernanza_etica_greenit.svg",
+          "deliverables": ["Bloque 2 · Test Moodle", "README_PROMPTING_QUIZ_DIGI.md"]
+        }
+      ],
+      "nota": null
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Òscar",
+      "photoKey": "oscar",
+      "mailLink": "https://ioc.xtec.cat/campus/local/mail/view.php?t=drafts&c=18869&m=9380691"
+    }
+  ],
+  "events": [
+    { "date": "2026-09-25", "type": "leccion", "title": "Apertura U1 (Parte 1): Lecciones 1 y 2 (THD y Cloud)", "time": "00:00" },
+    { "date": "2026-09-29", "type": "inicio_eac", "title": "Apertura Quiz EAC1 (Parte 1 - 37.5% AC)", "time": "08:00" },
+    { "date": "2026-10-20", "type": "entrega", "title": "Entrega Quiz EAC1 (Parte 1 - 37.5% AC)", "time": "23:55" },
+    { "date": "2026-10-21", "type": "leccion", "title": "Apertura U1 (Parte 2): Lecciones 3 y 4 (Datos, IA y Proyecto)", "time": "00:00" },
+    { "date": "2026-10-22", "type": "inicio_eac", "title": "Apertura Quiz EAC1 (Parte 2 - 62.5% AC)", "time": "08:00" },
+    { "date": "2026-11-03", "type": "notas", "title": "Solución y calificaciones Quiz EAC1 (P1)", "time": "00:00" },
+    { "date": "2026-11-13", "type": "entrega", "title": "Entrega Quiz EAC1 (Parte 2 - 62.5% AC)", "time": "23:55" },
+    { "date": "2026-12-04", "type": "notas", "title": "Calificaciones Quiz EAC1 (P2) y final AC", "time": "00:00" },
+    { "date": "2027-01-16", "type": "entrega", "title": "PAF 1: Prueba Presencial DIGI", "time": "19:00" },
+    { "date": "2027-02-06", "type": "entrega", "title": "PAF 2: Recuperación DIGI", "time": "19:00" }
+  ]
+}
+

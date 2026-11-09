@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradHeaderDigi2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="cardGradDigi2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowDigi2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid Canvas -->
+  <rect width="1200" height="675" fill="#0b0f19"/>
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200"/>
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675"/>
+  </g>
+
+  <!-- Top Banner / Header -->
+  <rect x="50" y="35" width="1100" height="90" rx="16" fill="url(#cardGradDigi2)" stroke="#a855f7" stroke-width="2" filter="url(#shadowDigi2)"/>
+  <circle cx="95" cy="80" r="24" fill="url(#gradHeaderDigi2)"/>
+  <text x="95" y="87" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">2</text>
+  <text x="135" y="72" font-size="22" font-weight="800" fill="#f8fafc">TEMA 2: ECOSISTEMA DE TECNOLOGÍAS HABILITADORAS (THD)</text>
+  <text x="135" y="98" font-size="14" font-weight="500" fill="#c084fc">Cloud vs Edge Computing | Gemelos Digitales (Digital Twins) | IIoT &amp; Impresión 3D</text>
+
+  <!-- Left: Cloud vs Edge Computing Battlecard -->
+  <g transform="translate(50, 150)">
+    <rect width="520" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi2)"/>
+    <rect width="520" height="48" rx="16" fill="#0284c7" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38bdf8">☁️ CLOUD COMPUTING VS ⚡ EDGE COMPUTING</text>
+
+    <!-- Cloud Box -->
+    <g transform="translate(20, 65)">
+      <rect width="480" height="175" rx="12" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+      <rect width="480" height="30" rx="12" fill="#0284c7" fill-opacity="0.25"/>
+      <text x="16" y="21" font-size="13" font-weight="800" fill="#38bdf8">CLOUD COMPUTING (AWS / AZURE / GCP)</text>
+      <text x="16" y="55" font-size="12" fill="#cbd5e1">• Cómputo elástico masivo y almacenamiento casi ilimitado.</text>
+      <text x="16" y="80" font-size="12" fill="#cbd5e1">• Ideal para agregación histórica, BI y entrenamiento de modelos IA.</text>
+      <text x="16" y="105" font-size="12" fill="#cbd5e1">• Centralización de directivas y gobernanza corporativa global.</text>
+      <text x="16" y="130" font-size="12" fill="#94a3b8">⚠️ Desventaja: Latencia variable (100-300 ms) y dependencia de red.</text>
+    </g>
+
+    <!-- Edge Box -->
+    <g transform="translate(20, 260)">
+      <rect width="480" height="190" rx="12" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+      <rect width="480" height="30" rx="12" fill="#f59e0b" fill-opacity="0.25"/>
+      <text x="16" y="21" font-size="13" font-weight="800" fill="#fbbf24">EDGE COMPUTING (MICROCONTROLADORES &amp; GATEWAYS EN PLANTA)</text>
+      <text x="16" y="55" font-size="12" fill="#cbd5e1">• Procesamiento de señales a milisegundos de la máquina física.</text>
+      <text x="16" y="80" font-size="12" fill="#cbd5e1">• Seguridad crítica: Parada de emergencia sin depender de conexión.</text>
+      <text x="16" y="105" font-size="12" fill="#cbd5e1">• Ahorro masivo de ancho de banda: Solo envía anomalías al Cloud.</text>
+      <rect x="16" y="125" width="448" height="40" rx="8" fill="#78350f" fill-opacity="0.4" stroke="#d97706" stroke-width="1"/>
+      <text x="240" y="150" font-size="11" font-weight="700" fill="#fde68a" text-anchor="middle">Sinergia Híbrida: Inteligencia en el Edge + Escalabilidad en el Cloud</text>
+    </g>
+  </g>
+
+  <!-- Right: Digital Twins & Fabricación Aditiva -->
+  <g transform="translate(600, 150)">
+    <rect width="550" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi2)"/>
+    <rect width="550" height="48" rx="16" fill="#a855f7" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#c084fc">🔮 GEMELOS DIGITALES &amp; FABRICACIÓN ADITIVA</text>
+
+    <!-- Digital Twin card -->
+    <g transform="translate(20, 65)">
+      <rect width="510" height="185" rx="12" fill="#0f172a" stroke="#a855f7" stroke-width="1.5"/>
+      <rect width="510" height="30" rx="12" fill="#a855f7" fill-opacity="0.25"/>
+      <text x="16" y="21" font-size="13" font-weight="800" fill="#c084fc">GEMELOS DIGITALES (DIGITAL TWINS)</text>
+      <text x="16" y="55" font-size="12" fill="#cbd5e1">• Réplica virtual interactiva sincronizada en tiempo real mediante IoT.</text>
+      <text x="16" y="80" font-size="12" fill="#cbd5e1">• Simulación de estrés: Prueba de límites sin arriesgar máquinas reales.</text>
+      <text x="16" y="105" font-size="12" fill="#cbd5e1">• Reducción drástica de costes de diseño y puesta en marcha virtual.</text>
+      <rect x="16" y="125" width="478" height="35" rx="6" fill="#581c87" fill-opacity="0.3" stroke="#9333ea" stroke-width="1"/>
+      <text x="255" y="147" font-size="11" font-weight="700" fill="#e9d5ff" text-anchor="middle">Ejemplo: Turbinas eólicas con ajuste de inclinación predictivo</text>
+    </g>
+
+    <!-- 3D Printing / Additive card -->
+    <g transform="translate(20, 265)">
+      <rect width="510" height="180" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="1.5"/>
+      <rect width="510" height="30" rx="12" fill="#10b981" fill-opacity="0.25"/>
+      <text x="16" y="21" font-size="13" font-weight="800" fill="#34d399">FABRICACIÓN ADITIVA (IMPRESIÓN 3D INDUSTRIAL)</text>
+      <text x="16" y="55" font-size="12" fill="#cbd5e1">• Producción bajo demanda a partir de ficheros CAD directos.</text>
+      <text x="16" y="80" font-size="12" fill="#cbd5e1">• 'Almacén Digital': Eliminación de stock físico de repuestos críticos.</text>
+      <text x="16" y="105" font-size="12" fill="#cbd5e1">• Geometrías complejas imposibles de fresar o forjar con métodos clásicos.</text>
+      
+      <rect x="16" y="125" width="478" height="35" rx="6" fill="#064e3b" stroke="#059669" stroke-width="1"/>
+      <text x="255" y="147" font-size="11" font-weight="700" fill="#6ee7b7" text-anchor="middle">Evaluación: 15.0% de la nota continua (AC)</text>
+    </g>
+  </g>
+</svg>

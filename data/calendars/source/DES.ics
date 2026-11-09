@@ -1,0 +1,129 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Blanca//IOC DAW DESP//ES
+X-WR-CALNAME:DESP - Calendario
+X-WR-CALDESC:0614 Desplegament d'Aplicacions Web (IOC DAW)\nDocencia: Josep Maria Mirada Donisa\nCoord: Enric Badal\nAC = 45% EAC1 + 30% EAC2 + 25% EAC3\nFinal = 40% AC + 60% PAF (mínimo 5\,00 en PAF)
+BEGIN:VEVENT
+UID:des-u1-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟢 DESP · U1 · Apartados 1-3
+DESCRIPTION:U1: Servidores web y de transferencia de ficheros (26h)\n\n• Objetivos: RA1\, RA2 y RA4 (Arquitecturas web\, servidores web y servidores FTP)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Implantación de arquitecturas web (8h)\n• Apartado 2: Administración de servidores web (8h)\n• Apartado 3: Instalación y administración de servidores (10h)\n\n• Actividad asociada: EAC1 (45% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:3587921@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20260921T220000Z
+DTEND:20260921T220000Z
+SUMMARY:🟢 DESP · Inicio EAC1
+DESCRIPTION:Publicación del enunciado EAC1 (U1)\n• Ponderación: 45% de la Evaluación Continua (AC)\n• Entrega: 22-10-2026\n• Solución y notas: 29-10-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:des-fin-eac1-20261022@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T215500Z
+DTEND:20261022T215500Z
+SUMMARY:🟢 DESP · Fin EAC1
+DESCRIPTION:Límite de entrega de la EAC1 (U1)\n• Ponderación: 45% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 29-10-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:des-u2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261120
+SUMMARY:🟢 DESP · U2 · Apartados 1-2
+DESCRIPTION:U2: Servidores de aplicaciones web. Control de versiones (22h)\n\n• Objetivos: RA3 y RA6 (Servidores de aplicaciones y control de versiones)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Administración de servidores de aplicaciones (14h)\n• Apartado 2: Sistema de control de versiones (8h)\n\n• Actividad asociada: EAC2 (30% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:3587924@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T220000Z
+DTEND:20261022T220000Z
+SUMMARY:🟢 DESP · Inicio EAC2
+DESCRIPTION:Publicación del enunciado EAC2 (U2)\n• Ponderación: 30% de la Evaluación Continua (AC)\n• Entrega: 19-11-2026\n• Solución y notas: 26-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3587923@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261028T230000Z
+DTEND:20261028T230000Z
+SUMMARY:🟢 DESP · Notas EAC1
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC1 (U1)\n• Ponderación: 45% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:des-fin-eac2-20261119@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261119T225500Z
+DTEND:20261119T225500Z
+SUMMARY:🟢 DESP · Fin EAC2
+DESCRIPTION:Límite de entrega de la EAC2 (U2)\n• Ponderación: 30% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 26-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:des-u3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261217
+SUMMARY:🟢 DESP · U3 · Apartados 1-3
+DESCRIPTION:U3: Aplicaciones web y servicios. Documentación (18h)\n\n• Objetivos: RA5 y RA6 (Servicios de red\, integración continua y documentación)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Servicios de red (6h)\n• Apartado 2: Utilización de servicios de red y automatización (6h)\n• Apartado 3: Documentación de aplicaciones (6h)\n\n• Actividad asociada: EAC3 (25% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:3587927@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261119T230000Z
+DTEND:20261119T230000Z
+SUMMARY:🟢 DESP · Inicio EAC3
+DESCRIPTION:Publicación del enunciado EAC3 (U3)\n• Ponderación: 25% de la Evaluación Continua (AC)\n• Entrega: 16-12-2026\n• Solución y notas: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3587926@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261125T230000Z
+DTEND:20261125T230000Z
+SUMMARY:🟢 DESP · Notas EAC2
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC2 (U2)\n• Ponderación: 30% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:des-fin-eac3-20261216@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261216T225500Z
+DTEND:20261216T225500Z
+SUMMARY:🟢 DESP · Fin EAC3
+DESCRIPTION:Límite de entrega de la EAC3 (U3)\n• Ponderación: 25% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3587929@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261220T230000Z
+DTEND:20261220T230000Z
+SUMMARY:🟢 DESP · Notas EAC3
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC3 (U3)\n• Ponderación: 25% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:des-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T153000Z
+DTEND:20270116T170000Z
+SUMMARY:🟢 DESP · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Despliegue de Aplicaciones Web (60% nota final).
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:des-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T153000Z
+DTEND:20270206T170000Z
+SUMMARY:🟢 DESP · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Despliegue de Aplicaciones Web.
+COLOR:#34C759
+END:VEVENT
+END:VCALENDAR

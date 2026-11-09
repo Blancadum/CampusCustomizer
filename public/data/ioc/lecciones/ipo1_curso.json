@@ -1,0 +1,26 @@
+{
+  "subjectCode": "ipo1",
+  "subjectTitle": "Itinerari Personal per a l'Ocupabilitat I (IPO 1)",
+  "color": "#ea580c",
+  "blocks": [
+    {
+      "id": "bloque-1",
+      "title": "Bloque 1: Marco Legal y Relaciones Laborales",
+      "description": "El Estatuto de los Trabajadores, el convenio colectivo y las modalidades contractuales en el sector tecnológico.",
+      "keyConcepts": [
+        "Estatuto de los Trabajadores y jerarquía normativa laboral",
+        "Contratos de trabajo (indefinido, formativo, fijo-discontinuo)",
+        "Jornada laboral, descansos y desconexión digital",
+        "Suspensión, extinción e indemnizaciones por despido"
+      ],
+      "lessons": [
+        {
+          "id": "marco-laboral",
+          "title": "1.1 El contrato de trabajo y la jerarquía normativa",
+          "content": "### 📌 Concepto Clave\nEl **contrato de trabajo** es el acuerdo bilateral entre la persona trabajadora y la empresa por el cual la primera presta voluntariamente sus servicios retribuidos por cuenta ajena y dentro del ámbito de organización y dirección de la segunda.\n\n> [!NOTE] En espera de material\n> Puedes nutrir este tema con tus apuntes y PDFs oficiales de IPO 1 usando el prompt dedicado en `.agents/prompts/03_COMO_NUTRIR_TU_ASIGNATURA_IPO1.md`."
+        }
+      ]
+    }
+  ]
+}
+

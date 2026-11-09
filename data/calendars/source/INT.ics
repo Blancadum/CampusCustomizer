@@ -1,0 +1,162 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Blanca//IOC DAW INTER//ES
+X-WR-CALNAME:INTER - Calendario
+X-WR-CALDESC:0615_ICC0 Disseny d'Interfícies Web (IOC DAW)\nDocencia: Anna Bach\nCoord: Gemma Caballé\nAC = 33% EAC1 + 34% EAC2 + 33% EAC3\nFinal = 40% AC + 60% PAF (duración 1h 50min)
+BEGIN:VEVENT
+UID:int-u1-l1-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261009
+SUMMARY:🟡 INTER · U1 · L1-4
+DESCRIPTION:U1: Diseño de la interfaz. Estilos (13h)\n\n• Objetivo (RA1): Planifica la creación de una interfaz web aplicando especificaciones de diseño.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción al diseño web (3h)\n• L2: Prototipado y guías de estilo (3h)\n• L3: El lenguaje HTML (3h)\n• L4: Hojas de estilos CSS (4h)\n\n• Actividad asociada: EAC1 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3575395@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20260921T220000Z
+DTEND:20260921T220000Z
+SUMMARY:🟡 INTER · Inicio EAC1
+DESCRIPTION:Publicación del enunciado EAC1\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U1 y U2\n• Entrega: 22-10-2026\n• Solución y notas: 06-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u2-l1-3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟡 INTER · U2 · L1-3
+DESCRIPTION:U2: Patrones de diseño web adaptativo. Entornos de trabajo web (9h)\n\n• Objetivo (RA2): Crea interfaces web homogéneas definiendo y aplicando estilos.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Diseño web adaptativo / Responsive (3h)\n• L2: Modelos de diseño CSS (3h)\n• L3: Entornos de trabajo CSS / Frameworks (3h)\n\n• Actividad asociada: EAC1 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3523347@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T215500Z
+DTEND:20261022T215500Z
+SUMMARY:🟡 INTER · Fin EAC1
+DESCRIPTION:Límite de entrega de la EAC1\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U1 y U2\n• Calificaciones y soluciones: 06-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u3-l1-3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261110
+SUMMARY:🟡 INTER · U3 · L1-3
+DESCRIPTION:U3: Elementos multimedia en la web (12h)\n\n• Objetivo (RA3): Prepara archivos multimedia para la web y maneja herramientas específicas.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Elementos de imagen para la web (4h)\n• L2: Elementos de audio y vídeo en la web (4h)\n• L3: Elementos dinámicos en la web (4h)\n\n• Actividad asociada: EAC2 (34% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3575398@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T220000Z
+DTEND:20261022T220000Z
+SUMMARY:🟡 INTER · Inicio EAC2
+DESCRIPTION:Publicación del enunciado EAC2\n• Ponderación: 34% de la Evaluación Continua (AC)\n• Unidades evaluadas: U3 y U4\n• Entrega: 26-11-2026\n• Solución y notas: 11-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3575397@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261105T230000Z
+DTEND:20261105T230000Z
+SUMMARY:🟡 INTER · Notas EAC1
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC1 (U1 y U2)\n• Ponderación: 33% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u4-l1-2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261127
+SUMMARY:🟡 INTER · U4 · L1-2
+DESCRIPTION:U4: Contenidos interactivos para la web (10h)\n\n• Objetivo (RA4): Integra contenido multimedia y selecciona elementos interactivos en la web.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Librerías de UI para desarrollo web (5h)\n• L2: Integración de contenidos interactivos (5h)\n\n• Actividad asociada: EAC2 (34% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3523348@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261126T225500Z
+DTEND:20261126T225500Z
+SUMMARY:🟡 INTER · Fin EAC2
+DESCRIPTION:Límite de entrega de la EAC2\n• Ponderación: 34% de la Evaluación Continua (AC)\n• Unidades evaluadas: U3 y U4\n• Calificaciones y soluciones: 11-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u5-l1-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261212
+SUMMARY:🟡 INTER · U5 · L1-4
+DESCRIPTION:U5: Accesibilidad web (8h)\n\n• Objetivo (RA5): Desarrolla interfaces web accesibles y aplica técnicas de verificación (WCAG).\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción a la accesibilidad web (2h)\n• L2: Problemas comunes de accesibilidad y ayudas técnicas (2h)\n• L3: Principios de accesibilidad web / WCAG (2h)\n• L4: Evaluación de la accesibilidad web (2h)\n\n• Actividad asociada: EAC3 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3575401@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261126T230000Z
+DTEND:20261126T230000Z
+SUMMARY:🟡 INTER · Inicio EAC3
+DESCRIPTION:Publicación del enunciado EAC3\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U5 y U6\n• Entrega: 14-12-2026\n• Solución y notas: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3575400@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261210T230000Z
+DTEND:20261210T230000Z
+SUMMARY:🟡 INTER · Notas EAC2
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC2 (U3 y U4)\n• Ponderación: 34% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u6-l1-5-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261222
+SUMMARY:🟡 INTER · U6 · L1-5
+DESCRIPTION:U6: Usabilidad y posicionamiento web (14h)\n\n• Objetivo (RA6): Desarrolla interfaces amigables aplicando pautas de usabilidad y SEO.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción a la usabilidad web (2h)\n• L2: Orientación al cliente y tipos de usuario (3h)\n• L3: Análisis de la usabilidad web (3h)\n• L4: Marketing digital y SEO (3h)\n• L5: Analítica web (3h)\n\n• Actividad asociada: EAC3 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:int-fin-eac3-20261214@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261214T225500Z
+DTEND:20261214T225500Z
+SUMMARY:🟡 INTER · Fin EAC3
+DESCRIPTION:Límite de entrega de la EAC3\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U5 y U6\n• Calificaciones y soluciones: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3575403@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261220T230000Z
+DTEND:20261220T230000Z
+SUMMARY:🟡 INTER · Notas EAC3
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC3 (U5 y U6)\n• Ponderación: 33% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T130000Z
+DTEND:20270116T145000Z
+SUMMARY:🟡 INTER · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Diseño de Interfaces Web (60% nota final).
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:int-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T130000Z
+DTEND:20270206T145000Z
+SUMMARY:🟡 INTER · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Diseño de Interfaces Web.
+COLOR:#F5A623
+END:VEVENT
+END:VCALENDAR

@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradHeaderDigi1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f43f5e"/>
+    </linearGradient>
+    <linearGradient id="cardGradDigi1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowDigi1" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid Canvas -->
+  <rect width="1200" height="675" fill="#0b0f19"/>
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200"/>
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675"/>
+  </g>
+
+  <!-- Top Banner / Header -->
+  <rect x="50" y="35" width="1100" height="90" rx="16" fill="url(#cardGradDigi1)" stroke="#ec4899" stroke-width="2" filter="url(#shadowDigi1)"/>
+  <circle cx="95" cy="80" r="24" fill="url(#gradHeaderDigi1)"/>
+  <text x="95" y="87" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">1</text>
+  <text x="135" y="72" font-size="22" font-weight="800" fill="#f8fafc">TEMA 1: INDUSTRIA 4.0 Y SISTEMAS CIBERFÍSICOS (CPS)</text>
+  <text x="135" y="98" font-size="14" font-weight="500" fill="#f472b6">Evolución de las 4 Revoluciones | Fusión Físico-Digital | Mantenimiento Predictivo</text>
+
+  <!-- Left Column: Evolución de las 4 Revoluciones Industriales -->
+  <g transform="translate(50, 150)">
+    <rect width="360" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi1)"/>
+    <rect width="360" height="48" rx="16" fill="#ec4899" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#f472b6">⏳ EVOLUCIÓN INDUSTRIAL HISTÓRICA</text>
+
+    <!-- 1ª Rev -->
+    <g transform="translate(20, 65)">
+      <rect width="320" height="75" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="16" y="28" font-size="13" font-weight="800" fill="#cbd5e1">1ª Rev. (Finales s. XVIII) · Mecanización</text>
+      <text x="16" y="50" font-size="11" fill="#94a3b8">Máquina de vapor, telar mecánico y energía hidráulica.</text>
+    </g>
+
+    <!-- 2ª Rev -->
+    <g transform="translate(20, 150)">
+      <rect width="320" height="75" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="16" y="28" font-size="13" font-weight="800" fill="#cbd5e1">2ª Rev. (Finales s. XIX) · Masa y Electricidad</text>
+      <text x="16" y="50" font-size="11" fill="#94a3b8">Cadena de montaje fordiana, división del trabajo y petróleo.</text>
+    </g>
+
+    <!-- 3ª Rev -->
+    <g transform="translate(20, 235)">
+      <rect width="320" height="75" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="1"/>
+      <text x="16" y="28" font-size="13" font-weight="800" fill="#cbd5e1">3ª Rev. (Años 1970) · Automatización Rígida</text>
+      <text x="16" y="50" font-size="11" fill="#94a3b8">Electrónica, primeros computadores y autómatas PLC.</text>
+    </g>
+
+    <!-- 4ª Rev: Indústria 4.0 -->
+    <g transform="translate(20, 320)">
+      <rect width="320" height="135" rx="12" fill="#831843" fill-opacity="0.3" stroke="#ec4899" stroke-width="1.5"/>
+      <text x="16" y="30" font-size="14" font-weight="800" fill="#f472b6">4ª Rev. (Hoy) · Industria 4.0 &amp; CPS</text>
+      <text x="16" y="55" font-size="11" fill="#fce7f3">• Conectividad ubicua e interoperabilidad</text>
+      <text x="16" y="75" font-size="11" fill="#fce7f3">• Fusión integral entre activos físicos y algoritmos</text>
+      <text x="16" y="95" font-size="11" fill="#fce7f3">• Toma de decisiones autónoma y descentralizada</text>
+      <text x="16" y="115" font-size="11" font-weight="700" fill="#fbcfe8">• Telemetría continua a la nube en tiempo real</text>
+    </g>
+  </g>
+
+  <!-- Center Column: Arquitectura de un Sistema Ciberfísico (CPS) -->
+  <g transform="translate(435, 150)">
+    <rect width="400" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi1)"/>
+    <rect width="400" height="48" rx="16" fill="#0284c7" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#38bdf8">🤖 ANATOMÍA DE UN CPS INDUSTRIAL</text>
+
+    <!-- 3 Layers of CPS -->
+    <!-- Layer 1: Nube y Gemelo Digital -->
+    <g transform="translate(20, 65)">
+      <rect width="360" height="105" rx="10" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="28" rx="10" fill="#0284c7" fill-opacity="0.3"/>
+      <text x="16" y="20" font-size="12" font-weight="800" fill="#38bdf8">CAPA CIBERNÉTICA: NUBE Y ANALÍTICA IA</text>
+      <text x="16" y="48" font-size="11" fill="#cbd5e1">• Gemelo Digital (Digital Twin) de la planta completa</text>
+      <text x="16" y="68" font-size="11" fill="#cbd5e1">• Algoritmos de Machine Learning y simulación continua</text>
+      <text x="16" y="88" font-size="11" fill="#cbd5e1">• Conexión con ERP / MES y cadena de suministros</text>
+    </g>
+
+    <!-- Layer 2: Edge Computing & Redes -->
+    <g transform="translate(20, 185)">
+      <rect width="360" height="105" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="28" rx="10" fill="#8b5cf6" fill-opacity="0.3"/>
+      <text x="16" y="20" font-size="12" font-weight="800" fill="#c084fc">CAPA DE CONECTIVIDAD: EDGE &amp; GATEWAYS</text>
+      <text x="16" y="48" font-size="11" fill="#cbd5e1">• Protocolos ligeros industriales: MQTT, OPC UA, CoAP</text>
+      <text x="16" y="68" font-size="11" fill="#cbd5e1">• Computación Edge: latencia ultrabaja (&lt; 5 ms)</text>
+      <text x="16" y="88" font-size="11" fill="#cbd5e1">• Filtrado y anonimización de telemetría in situ</text>
+    </g>
+
+    <!-- Layer 3: Planta Física y Actuadores -->
+    <g transform="translate(20, 305)">
+      <rect width="360" height="150" rx="10" fill="#0f172a" stroke="#22c55e" stroke-width="1.5"/>
+      <rect x="0" y="0" width="360" height="28" rx="10" fill="#22c55e" fill-opacity="0.3"/>
+      <text x="16" y="20" font-size="12" font-weight="800" fill="#4ade80">CAPA FÍSICA: MAQUINARIA, SENSORES Y ACTUADORES</text>
+      <text x="16" y="48" font-size="11" fill="#cbd5e1">• Sensores de vibración, temperatura y par motor</text>
+      <text x="16" y="68" font-size="11" fill="#cbd5e1">• Servomotores y robots colaborativos (Cobots)</text>
+      <text x="16" y="88" font-size="11" fill="#cbd5e1">• Interacción segura hombre-máquina en planta</text>
+      <rect x="16" y="105" width="328" height="30" rx="6" fill="#14532d" stroke="#22c55e" stroke-width="1"/>
+      <text x="180" y="125" font-size="11" font-weight="700" fill="#86efac" text-anchor="middle">Mantenimiento Predictivo: Cero paradas no planificadas</text>
+    </g>
+  </g>
+
+  <!-- Right Column: Casos Prácticos & Evaluación EAC1.1 -->
+  <g transform="translate(860, 150)">
+    <rect width="290" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi1)"/>
+    <rect width="290" height="48" rx="16" fill="#ec4899" fill-opacity="0.2"/>
+    <text x="24" y="32" font-size="15" font-weight="800" fill="#f472b6">📋 CONCEPTOS CLAVE EVALUADOS</text>
+
+    <!-- Topic list -->
+    <g transform="translate(20, 65)">
+      <rect width="250" height="385" rx="12" fill="#0f172a" stroke="#ec4899" stroke-width="1.5"/>
+      <rect x="0" y="0" width="250" height="34" rx="12" fill="#831843" fill-opacity="0.3"/>
+      <text x="18" y="23" font-size="12" font-weight="800" fill="#f472b6">QUIZ EAC1 (PARTE 1)</text>
+
+      <text x="18" y="65" font-size="11" font-weight="600" fill="#f8fafc">• Diferencia PLC vs CPS</text>
+      <text x="18" y="95" font-size="11" font-weight="600" fill="#f8fafc">• Telemetría continua</text>
+      <text x="18" y="125" font-size="11" font-weight="600" fill="#f8fafc">• Gemelos Digitales (Simulación)</text>
+      <text x="18" y="155" font-size="11" font-weight="600" fill="#f8fafc">• Interoperabilidad de datos</text>
+      <text x="18" y="185" font-size="11" font-weight="600" fill="#f8fafc">• Sensores inteligentes piezoeléctricos</text>
+      <text x="18" y="215" font-size="11" font-weight="600" fill="#f8fafc">• Protocolos MQTT vs OPC UA</text>
+
+      <!-- Badge card -->
+      <rect x="15" y="255" width="220" height="105" rx="10" fill="#831843" stroke="#f43f5e" stroke-width="1.5"/>
+      <text x="125" y="285" font-size="12" font-weight="800" fill="#fbcfe8" text-anchor="middle">PESO EN LA EVALUACIÓN</text>
+      <text x="125" y="320" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">12.5% AC</text>
+      <text x="125" y="345" font-size="11" font-weight="600" fill="#fce7f3" text-anchor="middle">Cuestionario en Campus Moodle</text>
+    </g>
+  </g>
+</svg>

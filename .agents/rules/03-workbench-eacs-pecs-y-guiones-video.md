@@ -29,3 +29,16 @@ Cuando el usuario deposite un enunciado oficial (`.pdf`, `.odt` o `.docx`) en `p
 5. **Pestaña `📄 Textos para el PDF`:**
    - Todos los textos explicativos juntos y listos para copiar con un clic al documento de entrega.
 
+---
+
+## 3. Protocolo para IPO 1 (`/ioc/ipo1` - Itinerari Personal per a l'Ocupabilitat I)
+
+El estudiante cursa **IPO 1 (antiguo FOL)**, no IPO 2. La asignatura se nutre directamente con los materiales oficiales del estudiante:
+1. El estudiante coloca sus documentos oficiales en `public/fuentes/ioc/ipo1/` (Plan de Trabajo en PDF, apuntes y enunciados).
+2. Sigue el prompt de `.agents/prompts/03_COMO_NUTRIR_TU_ASIGNATURA_IPO1.md`:
+   - Extraer fechas reales de entrega y PAF sin inventar horas de examen.
+   - Generar el temario pedagógico estructurado (Marco laboral, nóminas, Seguridad Social, PRL).
+   - Crear las guías paso a paso de las actividades que publique el profesorado.
+
+
+

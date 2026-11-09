@@ -1,69 +1,312 @@
 BEGIN:VCALENDAR
 VERSION:2.0
-PRODID:-//MiCampus//NONSGML v1.0//EN
+PRODID:-//MiCampus//Calendario Unificado IOC-UOC//ES
+X-WR-CALNAME:🎯 Calendario MiCampus
+X-WR-CALDESC:Calendario Unificado de MiCampus (IOC / UOC) sin fechas de ruido, con colores por asignatura y alertas.
+X-WR-TIMEZONE:Europe/Madrid
+CALSCALE:GREGORIAN
+
 BEGIN:VEVENT
-UID:eac1-desp@micampus.local
-DTSTAMP:20261006T000000Z
-DTSTART;VALUE=DATE:20261022
-SUMMARY:Entrega EAC 1: Servidores Web, ProFTPD y DNS (45% AC) [DESP]
-DESCRIPTION:Entrega pendiente de la asignatura Despliegue de Aplicaciones Web
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio de entrega de DESP
-END:VALARM
+UID:des-u1-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟢 DESP · U1 · Apartados 1-3
+DESCRIPTION:U1: Servidores web y de transferencia de ficheros (26h)\n\n• Objetivos: RA1\, RA2 y RA4 (Arquitecturas web\, servidores web y servidores FTP)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Implantación de arquitecturas web (8h)\n• Apartado 2: Administración de servidores web (8h)\n• Apartado 3: Instalación y administración de servidores (10h)\n\n• Actividad asociada: EAC1 (45% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
 END:VEVENT
 BEGIN:VEVENT
-UID:eac2-desp@micampus.local
-DTSTAMP:20261006T000000Z
-DTSTART;VALUE=DATE:20261119
-SUMMARY:Entrega EAC 2: Git, WordPress (LAMP) y Apache Tomcat (30% AC) [DESP]
-DESCRIPTION:Entrega pendiente de la asignatura Despliegue de Aplicaciones Web
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio de entrega de DESP
-END:VALARM
+UID:des-fin-eac1-20261022@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T215500Z
+DTEND:20261022T215500Z
+SUMMARY:🟢 DESP · Fin EAC1
+DESCRIPTION:Límite de entrega de la EAC1 (U1)\n• Ponderación: 45% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 29-10-2026
 END:VEVENT
 BEGIN:VEVENT
-UID:eac1_p2-digi@micampus.local
-DTSTAMP:20261006T000000Z
-DTSTART;VALUE=DATE:20261113
-SUMMARY:Entrega Quiz EAC1 (Parte 2): Big Data, IA i Impacte (62.5% AC) [DIGI]
-DESCRIPTION:Entrega pendiente de la asignatura Digitalización Aplicada
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio de entrega de DIGI
-END:VALARM
+UID:des-u2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261120
+SUMMARY:🟢 DESP · U2 · Apartados 1-2
+DESCRIPTION:U2: Servidores de aplicaciones web. Control de versiones (22h)\n\n• Objetivos: RA3 y RA6 (Servidores de aplicaciones y control de versiones)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Administración de servidores de aplicaciones (14h)\n• Apartado 2: Sistema de control de versiones (8h)\n\n• Actividad asociada: EAC2 (30% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
 END:VEVENT
 BEGIN:VEVENT
-UID:eac2-ent@micampus.local
-DTSTAMP:20261006T000000Z
-DTSTART;VALUE=DATE:20261117
-SUMMARY:Entrega EAC 2: Desenvolupament de programari (Swing, Spring & Copilot) [ENT]
-DESCRIPTION:Entrega pendiente de la asignatura Entornos de Desarrollo
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio de entrega de ENT
-END:VALARM
+UID:3587923@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261028T230000Z
+DTEND:20261028T230000Z
+SUMMARY:🟢 DESP · Notas EAC1
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC1 (U1)\n• Ponderación: 45% de la AC
 END:VEVENT
 BEGIN:VEVENT
-UID:eaf2-ipo2@micampus.local
-DTSTAMP:20261006T000000Z
-DTSTART;VALUE=DATE:20261211
-SUMMARY:Entrega EAF 2: Proyecto Emprendedor & Video-Pitch [IPO2]
-DESCRIPTION:Entrega pendiente de la asignatura Itinerario Personal para la Empleabilidad II
-STATUS:CONFIRMED
-BEGIN:VALARM
-TRIGGER:-P2D
-ACTION:DISPLAY
-DESCRIPTION:Recordatorio de entrega de IPO2
-END:VALARM
+UID:des-fin-eac2-20261119@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261119T225500Z
+DTEND:20261119T225500Z
+SUMMARY:🟢 DESP · Fin EAC2
+DESCRIPTION:Límite de entrega de la EAC2 (U2)\n• Ponderación: 30% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 26-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:des-u3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261217
+SUMMARY:🟢 DESP · U3 · Apartados 1-3
+DESCRIPTION:U3: Aplicaciones web y servicios. Documentación (18h)\n\n• Objetivos: RA5 y RA6 (Servicios de red\, integración continua y documentación)\n• Docencia: Josep Maria Mirada Donisa | Coord: Enric Badal\n\nApartados:\n• Apartado 1: Servicios de red (6h)\n• Apartado 2: Utilización de servicios de red y automatización (6h)\n• Apartado 3: Documentación de aplicaciones (6h)\n\n• Actividad asociada: EAC3 (25% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:3587926@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261125T230000Z
+DTEND:20261125T230000Z
+SUMMARY:🟢 DESP · Notas EAC2
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC2 (U2)\n• Ponderación: 30% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:des-fin-eac3-20261216@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261216T225500Z
+DTEND:20261216T225500Z
+SUMMARY:🟢 DESP · Fin EAC3
+DESCRIPTION:Límite de entrega de la EAC3 (U3)\n• Ponderación: 25% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3587929@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261220T230000Z
+DTEND:20261220T230000Z
+SUMMARY:🟢 DESP · Notas EAC3
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC3 (U3)\n• Ponderación: 25% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:des-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T153000Z
+DTEND:20270116T170000Z
+SUMMARY:🟢 DESP · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Despliegue de Aplicaciones Web (60% nota final).
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:des-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T153000Z
+DTEND:20270206T170000Z
+SUMMARY:🟢 DESP · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Despliegue de Aplicaciones Web.
+COLOR:#34C759
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-u1-l1-2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260925
+DTEND;VALUE=DATE:20261021
+SUMMARY:🟣 DIG · U1 · L1-2
+DESCRIPTION:U1: Digitalización aplicada a los sectores productivos (Parte 1 - 16h)\n\n• Objetivos: RA1 y RA2 (Concepto de digitalización\, tecnologías habilitadoras THD y Cloud)\n• Coord: Iván Melendo Miró\n\nLecciones:\n• L1: La digitalización en los sectores productivos (8h)\n• L2: Tecnologías habilitadoras digitales. Sistemas en la nube (8h)\n\n• Actividad asociada: Quiz EAC1 P1 (37.5% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:3531379@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261020T215500Z
+DTEND:20261020T215500Z
+SUMMARY:🟣 DIG · Fin Quiz EAC1 (P1)
+DESCRIPTION:Límite de entrega / Cierre del Quiz EAC1 (Parte 1)\n• Ponderación: 37.5% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 03-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-u1-l3-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261114
+SUMMARY:🟣 DIG · U1 · L3-4
+DESCRIPTION:U1: Digitalización aplicada a los sectores productivos (Parte 2 - 17h)\n\n• Objetivos: RA3\, RA4\, RA5 y RA6 (IA en la empresa\, ciberseguridad y proyecto digital)\n• Coord: Iván Melendo Miró\n\nLecciones:\n• L3: Los datos y la Inteligencia Artificial en la empresa (8h)\n• L4: Proyecto de transformación digital (9h)\n\n• Actividad asociada: Quiz EAC1 P2 (62.5% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-notas-quiz1-20261103@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261102T230000Z
+DTEND:20261102T230000Z
+SUMMARY:🟣 DIG · Notas Quiz EAC1 (P1)
+DESCRIPTION:Publicación de calificaciones y soluciones del Quiz EAC1 (Parte 1)\n• Ponderación: 37.5% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:3531380@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261113T225500Z
+DTEND:20261113T225500Z
+SUMMARY:🟣 DIG · Fin Quiz EAC1 (P2)
+DESCRIPTION:Límite de entrega / Cierre del Quiz EAC1 (Parte 2)\n• Ponderación: 62.5% de la Evaluación Continua (AC)\n• Calificaciones y soluciones: 04-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-notas-quiz2-20261204@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261203T230000Z
+DTEND:20261203T230000Z
+SUMMARY:🟣 DIG · Notas Quiz EAC1 (P2)
+DESCRIPTION:Publicación de calificaciones y soluciones del Quiz EAC1 (Parte 2)\n• Ponderación: 62.5% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T180000Z
+DTEND:20270116T193000Z
+SUMMARY:🟣 DIG · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Digitalización Aplicada a los Sectores Productivos (60% nota final).
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:dig-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T180000Z
+DTEND:20270206T193000Z
+SUMMARY:🟣 DIG · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Digitalización Aplicada.
+COLOR:#AF52DE
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u1-l1-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20260922
+DTEND;VALUE=DATE:20261009
+SUMMARY:🟡 INTER · U1 · L1-4
+DESCRIPTION:U1: Diseño de la interfaz. Estilos (13h)\n\n• Objetivo (RA1): Planifica la creación de una interfaz web aplicando especificaciones de diseño.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción al diseño web (3h)\n• L2: Prototipado y guías de estilo (3h)\n• L3: El lenguaje HTML (3h)\n• L4: Hojas de estilos CSS (4h)\n\n• Actividad asociada: EAC1 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u2-l1-3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261023
+SUMMARY:🟡 INTER · U2 · L1-3
+DESCRIPTION:U2: Patrones de diseño web adaptativo. Entornos de trabajo web (9h)\n\n• Objetivo (RA2): Crea interfaces web homogéneas definiendo y aplicando estilos.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Diseño web adaptativo / Responsive (3h)\n• L2: Modelos de diseño CSS (3h)\n• L3: Entornos de trabajo CSS / Frameworks (3h)\n\n• Actividad asociada: EAC1 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3523347@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261022T215500Z
+DTEND:20261022T215500Z
+SUMMARY:🟡 INTER · Fin EAC1
+DESCRIPTION:Límite de entrega de la EAC1\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U1 y U2\n• Calificaciones y soluciones: 06-11-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u3-l1-3-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261110
+SUMMARY:🟡 INTER · U3 · L1-3
+DESCRIPTION:U3: Elementos multimedia en la web (12h)\n\n• Objetivo (RA3): Prepara archivos multimedia para la web y maneja herramientas específicas.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Elementos de imagen para la web (4h)\n• L2: Elementos de audio y vídeo en la web (4h)\n• L3: Elementos dinámicos en la web (4h)\n\n• Actividad asociada: EAC2 (34% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3575397@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261105T230000Z
+DTEND:20261105T230000Z
+SUMMARY:🟡 INTER · Notas EAC1
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC1 (U1 y U2)\n• Ponderación: 33% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u4-l1-2-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261110
+DTEND;VALUE=DATE:20261127
+SUMMARY:🟡 INTER · U4 · L1-2
+DESCRIPTION:U4: Contenidos interactivos para la web (10h)\n\n• Objetivo (RA4): Integra contenido multimedia y selecciona elementos interactivos en la web.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Librerías de UI para desarrollo web (5h)\n• L2: Integración de contenidos interactivos (5h)\n\n• Actividad asociada: EAC2 (34% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3523348@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261126T225500Z
+DTEND:20261126T225500Z
+SUMMARY:🟡 INTER · Fin EAC2
+DESCRIPTION:Límite de entrega de la EAC2\n• Ponderación: 34% de la Evaluación Continua (AC)\n• Unidades evaluadas: U3 y U4\n• Calificaciones y soluciones: 11-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u5-l1-4-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261212
+SUMMARY:🟡 INTER · U5 · L1-4
+DESCRIPTION:U5: Accesibilidad web (8h)\n\n• Objetivo (RA5): Desarrolla interfaces web accesibles y aplica técnicas de verificación (WCAG).\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción a la accesibilidad web (2h)\n• L2: Problemas comunes de accesibilidad y ayudas técnicas (2h)\n• L3: Principios de accesibilidad web / WCAG (2h)\n• L4: Evaluación de la accesibilidad web (2h)\n\n• Actividad asociada: EAC3 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:3575400@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261210T230000Z
+DTEND:20261210T230000Z
+SUMMARY:🟡 INTER · Notas EAC2
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC2 (U3 y U4)\n• Ponderación: 34% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-u6-l1-5-estudio@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART;VALUE=DATE:20261212
+DTEND;VALUE=DATE:20261222
+SUMMARY:🟡 INTER · U6 · L1-5
+DESCRIPTION:U6: Usabilidad y posicionamiento web (14h)\n\n• Objetivo (RA6): Desarrolla interfaces amigables aplicando pautas de usabilidad y SEO.\n• Docencia: Anna Bach | Coord: Gemma Caballé\n\nLecciones:\n• L1: Introducción a la usabilidad web (2h)\n• L2: Orientación al cliente y tipos de usuario (3h)\n• L3: Análisis de la usabilidad web (3h)\n• L4: Marketing digital y SEO (3h)\n• L5: Analítica web (3h)\n\n• Actividad asociada: EAC3 (33% AC)
+TRANSP:TRANSPARENT
+X-MICROSOFT-CDO-BUSYSTATUS:FREE
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:int-fin-eac3-20261214@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20261214T225500Z
+DTEND:20261214T225500Z
+SUMMARY:🟡 INTER · Fin EAC3
+DESCRIPTION:Límite de entrega de la EAC3\n• Ponderación: 33% de la Evaluación Continua (AC)\n• Unidades evaluadas: U5 y U6\n• Calificaciones y soluciones: 21-12-2026
+END:VEVENT
+BEGIN:VEVENT
+UID:3575403@ioc.xtec.cat/campus
+DTSTAMP:20260925T094358Z
+DTSTART:20261220T230000Z
+DTEND:20261220T230000Z
+SUMMARY:🟡 INTER · Notas EAC3
+DESCRIPTION:Publicación de calificaciones y soluciones de la EAC3 (U5 y U6)\n• Ponderación: 33% de la AC
+END:VEVENT
+BEGIN:VEVENT
+UID:int-paf1-20270116@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270116T130000Z
+DTEND:20270116T145000Z
+SUMMARY:🟡 INTER · PAF1 (Prueba Presencial)
+DESCRIPTION:Prueba de Evaluación Final (PAF 1) de Diseño de Interfaces Web (60% nota final).
+COLOR:#F5A623
+END:VEVENT
+BEGIN:VEVENT
+UID:int-paf2-20270206@ioc.xtec.cat
+DTSTAMP:20260925T094358Z
+DTSTART:20270206T130000Z
+DTEND:20270206T145000Z
+SUMMARY:🟡 INTER · PAF2 (Recuperación)
+DESCRIPTION:Prueba de Evaluación Final (PAF 2 - Recuperación) de Diseño de Interfaces Web.
+COLOR:#F5A623
 END:VEVENT
 END:VCALENDAR

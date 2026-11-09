@@ -1,0 +1,275 @@
+{
+  "id": "int",
+  "title": "Desarrollo de Interfaces Web",
+  "themeColor": "#eab308",
+  "icon": "🎨",
+  "progress": 0,
+  "theoryRoute": "/ioc/int/lecciones-int",
+  "blocks": [
+    { "id": "bloque1", "label": "BLOQUE 1: Usabilidad & UX (EAC 1)" },
+    { "id": "bloque2", "label": "BLOQUE 2: Multimedia y Contenidos Interactivos (EAC 2)" },
+    { "id": "bloque3", "label": "BLOQUE 3: Accesibilidad WCAG (EAC 3)" }
+  ],
+  "eacs": [
+    {
+      "id": "eac1",
+      "title": "EAC 1: Usabilidad, Planificación y Maquetación CSS (33% AC)",
+      "status": "pending",
+      "dueDate": "2026-10-22",
+      "theorySlug": "intro-bloque1",
+      "weight": "33% AC",
+      "description": "Aplicación de las 10 heurísticas de usabilidad de Jakob Nielsen, auditoría de Experiencia de Usuario (UX), arquitectura de la información y prototipado responsive de una interfaz web con maquetación CSS moderna y semántica HTML5. Abre la Guía de Prompting para elaborar tu diseño y código propio con la IA.",
+      "checklist": [
+        "Auditoría heurística del sistema y patrones de interacción UX",
+        "Diseño inicial de Wireframes con enfoque Mobile-First y diseño adaptativo",
+        "Guía de estilos (paleta cromática, tipografías y componentes UI)",
+        "Estructura semántica HTML5 y maquetación CSS Flexbox/Grid"
+      ],
+      "downloadUrl": "/fuentes/ioc/int/pt_interfaces.pdf",
+      "enunciatUrl": "/eacs/int/README_PROMPTING_INTERFACES.md",
+      "memoriaUrl": "/eacs/int/README_PROMPTING_INTERFACES.md",
+      "exercicis": [
+        {
+          "num": 1,
+          "points": "2.0 puntos",
+          "title": "Actividad 1: Wireframes Mobile-First y Desktop",
+          "desc": "Definición y bocetado de las pantallas principales: Home, menú desplegable, landing de subcategoría y ficha detallada de producto.",
+          "deliverables": ["README_PROMPTING_INTERFACES.md", "Wireframes Propios (Generar con IA)"]
+        },
+        {
+          "num": 2,
+          "points": "1.5 puntos",
+          "title": "Actividad 2: Arquitectura de la Información e Interlinking",
+          "desc": "Diseño del mapa de navegación del sitio web, taxonomía de categorías y jerarquía de enlaces internos con Mermaid.",
+          "deliverables": ["Diagrama de Arquitectura (Generar con IA)"]
+        },
+        {
+          "num": 3,
+          "points": "1.5 puntos",
+          "title": "Actividad 3: Maquetación Semántica y Layout Inicial",
+          "desc": "Estructura base en HTML5 semántico: <header>, <nav>, <main>, <aside> y <footer> con maquetación fluida y adaptativa.",
+          "deliverables": ["index.html", "estils.css"]
+        },
+        {
+          "num": 4,
+          "points": "2.0 puntos",
+          "title": "Actividad 4: Guía de Estilos y Diseño Visual",
+          "desc": "Definición de tokens de diseño, paleta tipográfica, escala cromática propia y componentes reutilizables de UI.",
+          "deliverables": ["guia_de_estilos.html", "tokens.css"]
+        },
+        {
+          "num": 5,
+          "points": "1.5 puntos",
+          "title": "Actividad 5: Animaciones y Microinteracciones CSS",
+          "desc": "Implementación de transiciones suaves, efectos hover y estados interactivos con CSS nativo.",
+          "deliverables": ["index.html", "estils.css"]
+        },
+        {
+          "num": 6,
+          "points": "1.5 puntos",
+          "title": "Actividad 6: Prototipado Interactivo y Catálogo de Productos",
+          "desc": "Ensamblado final de la tienda interactiva con rejilla de productos y comprobación multidispositivo.",
+          "deliverables": ["productes.html", "Memoria PDF (Generar con IA)"]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac2",
+      "title": "EAC 2: Elementos multimedia y contenidos interactivos (34% AC)",
+      "status": "pending",
+      "dueDate": "2026-11-26",
+      "theorySlug": "intro-bloque2",
+      "weight": "34% AC",
+      "folderPath": "/Users/blanca/CampusCustomizer/public/eacs/int",
+      "enunciatUrl": "/eacs/int/INT_EAC2_Enunciado_ES.md",
+      "downloadUrl": "/eacs/int/INT_EAC2_Enunciat.odt",
+      "memoriaUrl": "/eacs/int/README_PROMPTING_INTERFACES.md",
+      "description": "Preparación e integración avanzada de archivos multimedia (audio, vídeo, imágenes) y contenidos interactivos: diseño y edición de logo con GIMP, optimización de imágenes web, iconografía FontAwesome, grabación y mezcla de audio en Audacity con reproductor HTML5/JS personalizado, vídeo-tutorial de jQuery UI, transiciones CSS, gráficas interactivas con D3.js, animaciones con Anime.js y formulario reactivo validado con Angular y Material Design.",
+      "checklist": [
+        "Act 1.1: Diseño y formateo del logotipo corporativo con GIMP para la cabecera (index.html)",
+        "Act 1.2: Optimización, compresión y etiquetado de 2 fotos de producto en imatges.html",
+        "Act 1.3: Iconos FontAwesome en todos los enlaces del menú principal de navegación",
+        "Act 2.1: Grabación de voz (máx 10s AVI vs MP4) y mezcla en Audacity (projecte.aup3, MP4vsAVImix.mp3)",
+        "Act 2.2: Reproductor de audio personalizado con JavaScript (Play, Pause, Vol +, Vol -) en audio.html y conversión a .ogg con ffmpeg",
+        "Act 3.1 y 3.2: Grabación de vídeo-tutorial breve (30-40s) de un widget de jQuery UI e incrustación con <video> en video.html",
+        "Act 4.1: Transición CSS en el titular 'Promocions de la setmana' (hover) y 2 productos en movimiento en transicions.html",
+        "Act 4.2: Gráfica D3.js de cuota de mercado de navegadores en grafica.html (barras, pastel o donut)",
+        "Act 4.3: Galería animada de novedades de productos con la librería Anime.js en galeria.html",
+        "Act 5.1: Formulario interactivo de contacto con Angular y Material Design validado en tiempo real (contacte.html)",
+        "Entrega final: Documento de resolución .odt completado y paquete zip DAW_0615_EAC2_Apellido1_A.zip"
+      ],
+      "exercicis": [
+        {
+          "num": 1,
+          "label": "Actividad 1",
+          "points": "2.0 puntos",
+          "title": "Logos, imágenes e iconografía (GIMP, WebP y FontAwesome)",
+          "desc": "Creación del logotipo corporativo con GIMP, optimización web de dos fotografías de productos en la nueva página imatges.html y aplicación de iconografía FontAwesome en el menú de navegación.",
+          "deliverables": [
+            "INT_EAC2_Enunciat.odt",
+            "INT_EAC2_Enunciado_ES.md",
+            "README_PROMPTING_INTERFACES.md"
+          ],
+          "steps": [
+            {
+              "title": "1.1 Creación del Logotipo con GIMP (0,5 pts)",
+              "desc": "Abre GIMP y crea un lienzo transparente (ej: 400x120px) o utiliza Archivo > Crear > Logotipos. Diseña o formatea el logo de la tienda escolar utilizando capas independientes para el texto, símbolo y sombra paralela. Exporta la imagen a PNG con fondo transparente y colócala en la cabecera de index.html.",
+              "code": "<!-- Inclusión del logotipo en la cabecera (index.html) -->\n<header class=\"site-header\">\n  <div class=\"logo-container\">\n    <a href=\"index.html\">\n      <img src=\"img/logo_tienda.png\" alt=\"Logotipo Tienda Material Escolar\" class=\"site-logo\" width=\"220\" height=\"65\" />\n    </a>\n  </div>\n  <nav class=\"main-nav\"><!-- Menú de navegación --></nav>\n</header>"
+            },
+            {
+              "title": "1.2 Optimización de Imágenes de Producto (1,0 pt)",
+              "desc": "Crea la página 'imatges.html' enlazada desde el nuevo menú desplegable 'EAC2'. Selecciona dos imágenes de productos en alta resolución, reescala sus dimensiones máximas (ej: 800x600px a 72 dpi) y expórtalas en formato WebP o JPEG progresivo con calidad ~80% para minimizar el peso sin pérdida visual perceptible.",
+              "code": "<!-- Muestra optimizada en imatges.html con picture y WebP -->\n<figure class=\"product-showcase\">\n  <picture>\n    <source srcset=\"img/llapis_colors.webp\" type=\"image/webp\">\n    <img src=\"img/llapis_colors.jpg\" alt=\"Caja de 24 lápices de colores para dibujo escolar\" loading=\"lazy\" width=\"400\" height=\"300\">\n  </picture>\n  <figcaption>\n    <strong>Lápices 24 Colores</strong> - Peso optimizado: 48 KB (reducción del 82% desde 270 KB).\n  </figcaption>\n</figure>"
+            },
+            {
+              "title": "1.3 Iconos FontAwesome en el Menú Principal (0,5 pts)",
+              "desc": "Enlaza la librería FontAwesome mediante el CDN oficial en el <head> de todas las páginas y añade un icono representativo mediante la etiqueta <i> delante de cada opción del menú principal.",
+              "code": "<!-- CDN de FontAwesome en el <head> -->\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" />\n\n<!-- Menú principal con iconografía -->\n<nav class=\"navbar\">\n  <ul class=\"nav-list\">\n    <li><a href=\"index.html\"><i class=\"fa-solid fa-house\"></i> Inicio</a></li>\n    <li><a href=\"productes.html\"><i class=\"fa-solid fa-shapes\"></i> Catálogo</a></li>\n    <li class=\"dropdown\">\n      <a href=\"#\"><i class=\"fa-solid fa-cube\"></i> EAC2 <i class=\"fa-solid fa-chevron-down\"></i></a>\n      <ul class=\"dropdown-menu\">\n        <li><a href=\"imatges.html\"><i class=\"fa-solid fa-image\"></i> Imágenes</a></li>\n        <li><a href=\"audio.html\"><i class=\"fa-solid fa-headphones\"></i> Audio</a></li>\n        <li><a href=\"video.html\"><i class=\"fa-solid fa-video\"></i> Vídeo</a></li>\n        <li><a href=\"transicions.html\"><i class=\"fa-solid fa-wand-magic-sparkles\"></i> Transiciones</a></li>\n        <li><a href=\"grafica.html\"><i class=\"fa-solid fa-chart-column\"></i> Gráficas</a></li>\n        <li><a href=\"galeria.html\"><i class=\"fa-solid fa-photo-film\"></i> Galería</a></li>\n        <li><a href=\"contacte.html\"><i class=\"fa-solid fa-envelope\"></i> Contacto</a></li>\n      </ul>\n    </li>\n  </ul>\n</nav>"
+            }
+          ]
+        },
+        {
+          "num": 2,
+          "label": "Actividad 2",
+          "points": "1.0 punto",
+          "title": "Integración de audio en la web (Audacity, OGG/MP3 y reproductor JS personalizado)",
+          "desc": "Grabación de una locución de voz de máximo 10 segundos explicando las diferencias técnicas entre AVI y MP4, mezcla de fondo musical con Audacity y desarrollo de un reproductor HTML5 con controles personalizados mediante JavaScript en audio.html.",
+          "deliverables": [
+            "audio.html",
+            "projecte.aup3 (proyecto Audacity)",
+            "MP4vsAVImix.mp3 y MP4vsAVImix.ogg"
+          ],
+          "steps": [
+            {
+              "title": "2.1 Grabación y Mezcla en Audacity (0,5 pts)",
+              "desc": "Graba una locución de voz de 10 segundos explicando AVI vs MP4, añade una pista musical Creative Commons atenuada (-14 dB) en Audacity, guarda 'projecte.aup3', exporta 'MP4vsAVImix.mp3' y conviértelo a '.ogg' con ffmpeg.",
+              "code": "# Conversión a formato libre OGG Vorbis mediante ffmpeg:\nffmpeg -i MP4vsAVImix.mp3 -c:a libvorbis -q:a 4 MP4vsAVImix.ogg"
+            },
+            {
+              "title": "2.2 Reproductor de Audio con JavaScript Personalizado (0,5 pts)",
+              "desc": "Crea 'audio.html'. Inserta el elemento <audio> sin el atributo 'controls' y diseña 4 botones ('Play audio', 'Pause audio', 'Volume DOWN', 'Volume UP') controlados por JavaScript.",
+              "code": "<!-- Estructura del reproductor en audio.html -->\n<h2>Integración de Audio en la Web</h2>\n<audio id=\"miAudio\">\n  <source src=\"audio/MP4vsAVImix.ogg\" type=\"audio/ogg\">\n  <source src=\"audio/MP4vsAVImix.mp3\" type=\"audio/mpeg\">\n  Tu navegador no soporta la etiqueta de audio.\n</audio>\n\n<div class=\"custom-audio-controls\">\n  <button id=\"btnPlay\"><i class=\"fa-solid fa-play\"></i> Play audio</button>\n  <button id=\"btnPause\"><i class=\"fa-solid fa-pause\"></i> Pause audio</button>\n  <button id=\"btnVolDown\"><i class=\"fa-solid fa-volume-low\"></i> Volume DOWN</button>\n  <button id=\"btnVolUp\"><i class=\"fa-solid fa-volume-high\"></i> Volume UP</button>\n  <span id=\"volDisplay\">Volumen: 100%</span>\n</div>\n\n<script>\n  const audio = document.getElementById('miAudio');\n  const volDisplay = document.getElementById('volDisplay');\n  document.getElementById('btnPlay').onclick = () => audio.play();\n  document.getElementById('btnPause').onclick = () => audio.pause();\n  document.getElementById('btnVolDown').onclick = () => {\n    audio.volume = Math.max(0, audio.volume - 0.1);\n    volDisplay.textContent = `Volumen: ${Math.round(audio.volume * 100)}%`;\n  };\n  document.getElementById('btnVolUp').onclick = () => {\n    audio.volume = Math.min(1, audio.volume + 0.1);\n    volDisplay.textContent = `Volumen: ${Math.round(audio.volume * 100)}%`;\n  };\n</script>"
+            }
+          ]
+        },
+        {
+          "num": 3,
+          "label": "Actividad 3",
+          "points": "1.0 punto",
+          "title": "Integración de vídeo en la web (Screencast de jQuery UI y etiqueta <video>)",
+          "desc": "Grabación de un vídeo-tutorial breve (30-40 segundos) con OBS Studio explicando la integración de un widget de jQuery UI e incrustación en video.html.",
+          "deliverables": [
+            "video.html",
+            "tutorial_jquery.mp4"
+          ],
+          "steps": [
+            {
+              "title": "3.1 Elección del Widget y Código jQuery UI",
+              "desc": "Elige un widget visual como jQuery UI Datepicker, Accordion o Tabs e intégralo en tu página.",
+              "code": "<!-- Estructura del widget jQuery UI Datepicker en video.html -->\n<link rel=\"stylesheet\" href=\"https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css\">\n<script src=\"https://code.jquery.com/jquery-3.7.1.min.js\"></script>\n<script src=\"https://code.jquery.com/ui/1.13.2/jquery-ui.min.js\"></script>\n\n<p>Selecciona fecha de entrega de pedido: <input type=\"text\" id=\"datepicker\"></p>\n<script>\n  $(function() {\n    $(\"#datepicker\").datepicker({ dateFormat: 'dd/mm/yy' });\n  });\n</script>"
+            },
+            {
+              "title": "3.2 Incrustación del Vídeo en video.html",
+              "desc": "Añade la etiqueta estándar <video> con controles nativos y una imagen de portada (poster).",
+              "code": "<div class=\"video-container\">\n  <h2>Vídeo-Tutorial: Integración de jQuery UI</h2>\n  <video controls width=\"720\" poster=\"img/poster_video.webp\" preload=\"metadata\">\n    <source src=\"video/tutorial_jquery.mp4\" type=\"video/mp4\">\n    Tu navegador no soporta la reproducción de vídeos HTML5.\n  </video>\n</div>"
+            }
+          ]
+        },
+        {
+          "num": 4,
+          "label": "Actividad 4",
+          "points": "4.0 puntos",
+          "title": "Transiciones, animaciones y gráficas (CSS Hover, D3.js y Anime.js)",
+          "desc": "3 partes: transiciones CSS en transicions.html, gráfica dinámica de cuota de mercado de navegadores con D3.js en grafica.html y animación interactiva de galería de novedades con Anime.js en galeria.html.",
+          "deliverables": [
+            "transicions.html",
+            "grafica.html (D3.js)",
+            "galeria.html (Anime.js)"
+          ],
+          "steps": [
+            {
+              "title": "4.1 Transición CSS: Titular y Productos en Promoción (1,0 pt)",
+              "desc": "Crea 'transicions.html' con el titular 'Promocions de la setmana' animado con @keyframes y efecto hover de escala, más dos tarjetas de productos con transición.",
+              "code": "@keyframes aparicionTitular {\n  from { opacity: 0; transform: translateY(-20px); }\n  to { opacity: 1; transform: translateY(0); }\n}\n.titol-promocions {\n  font-size: 2rem;\n  animation: aparicionTitular 1.2s ease-out forwards;\n  transition: transform 0.35s ease, color 0.3s ease;\n  display: inline-block;\n}\n.titol-promocions:hover {\n  transform: scale(1.12);\n  color: #e11d48;\n}"
+            },
+            {
+              "title": "4.2 Gráfica de Cuota de Mercado con D3.js (1,5 pts)",
+              "desc": "Crea 'grafica.html' con D3.js v7 representando los datos de navegadores en Europa 2025: Chrome (62.66%), Safari (17.8%), Edge (6.66%), Firefox (4.61%), Samsung Internet (3.45%), Opera (2.17%).",
+              "code": "<div id=\"d3-chart\"></div>\n<script src=\"https://d3js.org/d3.v7.min.js\"></script>\n<script>\nconst dades = [\n  { navegador: \"Chrome\", percentatge: 62.66 },\n  { navegador: \"Safari\", percentatge: 17.80 },\n  { navegador: \"Edge\", percentatge: 6.66 },\n  { navegador: \"Firefox\", percentatge: 4.61 },\n  { navegador: \"Samsung\", percentatge: 3.45 },\n  { navegador: \"Opera\", percentatge: 2.17 }\n];\n</script>"
+            },
+            {
+              "title": "4.3 Galería Animada con Anime.js (1,5 pts)",
+              "desc": "Crea 'galeria.html' importando Anime.js para animar el paso entre novedades de productos.",
+              "code": "<script src=\"https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js\"></script>\n<script>\nfunction animarTarjeta(elemento, direccion) {\n  anime({\n    targets: elemento,\n    translateX: [direccion * 120, 0],\n    opacity: [0, 1],\n    scale: [0.85, 1],\n    easing: 'spring(1, 80, 10, 0)',\n    duration: 800\n  });\n}\n</script>"
+            }
+          ]
+        },
+        {
+          "num": 5,
+          "label": "Actividad 5",
+          "points": "2.0 puntos",
+          "title": "Uso de librerías de interfaces de usuario: Angular-Material",
+          "desc": "Implementación de un formulario interactivo de contacto en contacte.html utilizando Angular y componentes Material Design, con validación reactiva en tiempo real.",
+          "deliverables": [
+            "contacte.html",
+            "contacte.component.ts / .html / .css"
+          ],
+          "steps": [
+            {
+              "title": "5.1 Estructura del Formulario Angular y Material Design",
+              "desc": "Crea el formulario con ReactiveFormsModule y componentes Angular Material (mat-form-field, mat-input, mat-error, mat-raised-button) con validación de nombre, email, teléfono y mensaje.",
+              "code": "<form [formGroup]=\"contactForm\" (ngSubmit)=\"enviarFormulario()\">\n  <mat-form-field appearance=\"outline\">\n    <mat-label>Nombre y Apellidos</mat-label>\n    <input matInput formControlName=\"nom\" required>\n    <mat-error *ngIf=\"contactForm.get('nom')?.hasError('required')\">El nombre es obligatorio</mat-error>\n  </mat-form-field>\n</form>"
+            }
+          ]
+        }
+      ],
+      "nota": null
+    },
+    {
+      "id": "eac3",
+      "title": "EAC 3: Accesibilidad WCAG, Componentes y Multimedia (33% AC)",
+      "status": "pending",
+      "dueDate": "2026-12-14",
+      "theorySlug": "intro-bloque3",
+      "weight": "33% AC",
+      "enunciatUrl": "/eacs/int/README_PROMPTING_INTERFACES.md",
+      "memoriaUrl": "/eacs/int/README_PROMPTING_INTERFACES.md",
+      "description": "Auditoría e implementación de los principios P.O.U.R. de las pautas WCAG 2.2 nivel AA. Atributos WAI-ARIA, navegación completa mediante teclado, validación de contrastes de color y componentes interactivos accesibles.",
+      "checklist": [
+        "Cumplimiento de estándares de accesibilidad WCAG 2.2 (nivel AA)",
+        "Atributos ARIA (aria-expanded, aria-label, roles semánticos)",
+        "Navegación 100% por teclado con indicador visual de foco visible",
+        "Contraste cromático mínimo 4.5:1 verificado con analizadores de color"
+      ],
+      "nota": null
+    }
+  ],
+  "teachers": [
+    {
+      "name": "Anna",
+      "photoKey": "anna",
+      "mailLink": "https://ioc.xtec.cat/campus/local/mail/view.php?t=drafts&c=18755&m=9380633"
+    }
+  ],
+  "events": [
+    { "date": "2026-09-22", "type": "leccion", "title": "Apertura U1: Diseño de la interfaz y estilos (L1-L4)", "time": "00:00" },
+    { "date": "2026-09-22", "type": "inicio_eac", "title": "Enunciado EAC1 (U1 y U2)", "time": "00:00" },
+    { "date": "2026-10-09", "type": "leccion", "title": "Apertura U2: Diseño web adaptativo y frameworks (L1-L3)", "time": "00:00" },
+    { "date": "2026-10-22", "type": "entrega", "title": "Entrega EAC1 (U1 y U2 - 33% AC)", "time": "23:55" },
+    { "date": "2026-10-23", "type": "leccion", "title": "Apertura U3: Elementos multimedia en la web (L1-L3)", "time": "00:00" },
+    { "date": "2026-10-23", "type": "inicio_eac", "title": "Enunciado EAC2 (U3 y U4)", "time": "00:00" },
+    { "date": "2026-11-06", "type": "notas", "title": "Solución y calificaciones EAC1", "time": "00:00" },
+    { "date": "2026-11-10", "type": "leccion", "title": "Apertura U4: Contenidos interactivos para la web (L1-L2)", "time": "00:00" },
+    { "date": "2026-11-26", "type": "entrega", "title": "Entrega EAC2 (U3 y U4 - 34% AC)", "time": "23:55" },
+    { "date": "2026-11-27", "type": "leccion", "title": "Apertura U5: Accesibilidad web WCAG (L1-L4)", "time": "00:00" },
+    { "date": "2026-11-27", "type": "inicio_eac", "title": "Enunciado EAC3 (U5 y U6)", "time": "00:00" },
+    { "date": "2026-12-11", "type": "notas", "title": "Solución y calificaciones EAC2", "time": "00:00" },
+    { "date": "2026-12-12", "type": "leccion", "title": "Apertura U6: Usabilidad y posicionamiento SEO (L1-L5)", "time": "00:00" },
+    { "date": "2026-12-14", "type": "entrega", "title": "Entrega EAC3 (U5 y U6 - 33% AC)", "time": "23:55" },
+    { "date": "2026-12-21", "type": "notas", "title": "Calificaciones EAC3 y final AC", "time": "00:00" },
+    { "date": "2027-01-16", "type": "entrega", "title": "PAF 1: Prueba Presencial INT", "time": "14:00" },
+    { "date": "2027-02-06", "type": "entrega", "title": "PAF 2: Recuperación INT", "time": "14:00" }
+  ]
+}
+

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675" style="background:#0f172a; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="gradHeaderDigi5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#ec4899"/>
+    </linearGradient>
+    <linearGradient id="cardGradDigi5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadowDigi5" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Background Grid Canvas -->
+  <rect width="1200" height="675" fill="#0b0f19"/>
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <path d="M0 75 H1200 M0 150 H1200 M0 225 H1200 M0 300 H1200 M0 375 H1200 M0 450 H1200 M0 525 H1200 M0 600 H1200"/>
+    <path d="M100 0 V675 M200 0 V675 M300 0 V675 M400 0 V675 M500 0 V675 M600 0 V675 M700 0 V675 M800 0 V675 M900 0 V675 M1000 0 V675 M1100 0 V675"/>
+  </g>
+
+  <!-- Top Banner / Header -->
+  <rect x="50" y="35" width="1100" height="90" rx="16" fill="url(#cardGradDigi5)" stroke="#a855f7" stroke-width="2" filter="url(#shadowDigi5)"/>
+  <circle cx="95" cy="80" r="24" fill="url(#gradHeaderDigi5)"/>
+  <text x="95" y="87" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">5</text>
+  <text x="135" y="72" font-size="22" font-weight="800" fill="#f8fafc">TEMA 5: MODELOS DE INTELIGENCIA ARTIFICIAL Y MACHINE LEARNING</text>
+  <text x="135" y="98" font-size="14" font-weight="500" fill="#e9d5ff">Supervisado vs No Supervisado | Aprendizaje por Refuerzo | Deep Learning y Modelos LLM</text>
+
+  <!-- 3 Main Columns: The 3 Paradigms of Machine Learning -->
+  <g transform="translate(50, 150)">
+    <!-- Column 1: Supervisado -->
+    <g transform="translate(0, 0)">
+      <rect width="345" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi5)"/>
+      <rect width="345" height="48" rx="16" fill="#0284c7" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#38bdf8">1. APRENDIZAJE SUPERVISADO</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="309" height="120" rx="10" fill="#0f172a" stroke="#0284c7" stroke-width="1"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#7dd3fc">Datos Etiquetados Previamente (X ➔ Y)</text>
+        <text x="16" y="48" font-size="11" fill="#cbd5e1">• El algoritmo aprende de ejemplos con respuesta</text>
+        <text x="16" y="68" font-size="11" fill="#cbd5e1">• Clasificación: Detección de spam, fraude bancario</text>
+        <text x="16" y="88" font-size="11" fill="#cbd5e1">• Regresión: Predicción de precios, demanda futura</text>
+        <text x="16" y="108" font-size="11" fill="#94a3b8">Modelos: Árboles, Random Forest, XGBoost</text>
+      </g>
+
+      <g transform="translate(18, 200)">
+        <rect width="309" height="235" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="16" y="28" font-size="12" font-weight="700" fill="#38bdf8">Ejemplo Industrial Real:</text>
+        <text x="16" y="52" font-size="11" fill="#cbd5e1">Predecir la vida útil remanente (RUL) de un</text>
+        <text x="16" y="70" font-size="11" fill="#cbd5e1">rodamiento industrial analizando el histórico</text>
+        <text x="16" y="88" font-size="11" fill="#cbd5e1">etiquetado de fallos mecánicos pasados.</text>
+        
+        <rect x="15" y="120" width="279" height="85" rx="8" fill="#0c4a6e" fill-opacity="0.5" stroke="#0284c7" stroke-width="1"/>
+        <text x="139" y="145" font-size="12" font-weight="700" fill="#7dd3fc" text-anchor="middle">Métrica Clave de Validación</text>
+        <text x="139" y="170" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">F1-Score / RMSE</text>
+        <text x="139" y="190" font-size="10" fill="#bae6fd" text-anchor="middle">Precisión equilibrada ante clases desbalanceadas</text>
+      </g>
+    </g>
+
+    <!-- Column 2: No Supervisado y Refuerzo -->
+    <g transform="translate(370, 0)">
+      <rect width="345" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi5)"/>
+      <rect width="345" height="48" rx="16" fill="#8b5cf6" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#c084fc">2. NO SUPERVISADO &amp; REFUERZO</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="309" height="120" rx="10" fill="#0f172a" stroke="#8b5cf6" stroke-width="1"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#d8b4fe">Sin Etiquetas: Descubrir Patrones Ocultos</text>
+        <text x="16" y="48" font-size="11" fill="#cbd5e1">• Clustering: Segmentación de clientes (K-Means)</text>
+        <text x="16" y="68" font-size="11" fill="#cbd5e1">• Detección de anomalías en redes de control</text>
+        <text x="16" y="88" font-size="11" fill="#cbd5e1">• Reducción dimensional: PCA y t-SNE</text>
+        <text x="16" y="108" font-size="11" fill="#94a3b8">Aplicación: Detección de intrusiones zero-day</text>
+      </g>
+
+      <g transform="translate(18, 200)">
+        <rect width="309" height="235" rx="10" fill="#0f172a" stroke="#a855f7" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="16" y="28" font-size="12" font-weight="700" fill="#c084fc">Aprendizaje por Refuerzo (RL):</text>
+        <text x="16" y="52" font-size="11" fill="#cbd5e1">Un agente aprende a maximizar recompensas</text>
+        <text x="16" y="70" font-size="11" fill="#cbd5e1">mediante ensayo y error en un entorno simulado.</text>
+
+        <rect x="15" y="95" width="279" height="110" rx="8" fill="#3b0764" fill-opacity="0.5" stroke="#7e22ce" stroke-width="1"/>
+        <text x="139" y="125" font-size="12" font-weight="700" fill="#e9d5ff" text-anchor="middle">Ejemplo Industrial Real</text>
+        <text x="139" y="150" font-size="13" font-weight="900" fill="#f5d0fe" text-anchor="middle">Rutas Óptimas Robots AGV</text>
+        <text x="139" y="172" font-size="10" fill="#d8b4fe" text-anchor="middle">Almacenes logísticos inteligentes sin colisiones</text>
+        <text x="139" y="190" font-size="10" fill="#d8b4fe" text-anchor="middle">ni atascos en pasillos de picking</text>
+      </g>
+    </g>
+
+    <!-- Column 3: Deep Learning y Modelos Generativos LLM -->
+    <g transform="translate(740, 0)">
+      <rect width="360" height="475" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#shadowDigi5)"/>
+      <rect width="360" height="48" rx="16" fill="#ec4899" fill-opacity="0.2"/>
+      <text x="20" y="32" font-size="14" font-weight="800" fill="#f472b6">3. DEEP LEARNING &amp; MODELOS LLM</text>
+
+      <g transform="translate(18, 65)">
+        <rect width="324" height="120" rx="10" fill="#0f172a" stroke="#ec4899" stroke-width="1"/>
+        <text x="16" y="25" font-size="12" font-weight="800" fill="#f472b6">Redes Neuronales Profundas (Transformers)</text>
+        <text x="16" y="48" font-size="11" fill="#cbd5e1">• Visión por Computador (CNNs): Control de calidad</text>
+        <text x="16" y="68" font-size="11" fill="#cbd5e1">• Modelos de Lenguaje Masivos (LLMs): Asistentes,</text>
+        <text x="16" y="88" font-size="11" fill="#cbd5e1">  comprensión técnica y generación de código.</text>
+        <text x="16" y="108" font-size="11" fill="#94a3b8">Arquitectura: Mecanismos de Auto-Atención</text>
+      </g>
+
+      <g transform="translate(18, 200)">
+        <rect width="324" height="235" rx="10" fill="#0f172a" stroke="#ec4899" stroke-opacity="0.3" stroke-width="1"/>
+        <text x="16" y="28" font-size="12" font-weight="700" fill="#f472b6">IA Generativa en Desarrollo Web:</text>
+        <text x="16" y="52" font-size="11" fill="#cbd5e1">• Copilotos de código (GitHub Copilot, Cursor)</text>
+        <text x="16" y="72" font-size="11" fill="#cbd5e1">• Generación de tests unitarios y documentación</text>
+        <text x="16" y="92" font-size="11" fill="#cbd5e1">• Detección automática de vulnerabilidades</text>
+
+        <rect x="15" y="120" width="294" height="85" rx="8" fill="#831843" fill-opacity="0.4" stroke="#ec4899" stroke-width="1"/>
+        <text x="147" y="145" font-size="12" font-weight="800" fill="#fbcfe8" text-anchor="middle">EVALUACIÓN QUIZ EAC1 (P2)</text>
+        <text x="147" y="170" font-size="20" font-weight="900" fill="#ffffff" text-anchor="middle">25.0% AC</text>
+        <text x="147" y="190" font-size="10" fill="#fce7f3" text-anchor="middle">Cuestionario Online en Campus IOC</text>
+      </g>
+    </g>
+  </g>
+</svg>

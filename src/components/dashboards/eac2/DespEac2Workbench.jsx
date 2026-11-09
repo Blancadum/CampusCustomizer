@@ -85,7 +85,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             where: 'client',
             whereBadge: '💻 CLIENTE',
             label: 'Configurar tu nombre y correo oficial del IOC en Git',
-            cmd: 'git config --global user.name "Nombre Apellido" && git config --global user.email "tu_usuario@ioc.cat"'
+            cmd: 'git config --global user.name "Blanca de Uña" && git config --global user.email "bdeunam@ioc.cat"'
           },
           {
             letter: 'a.3)',
@@ -182,7 +182,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             where: 'browser',
             whereBadge: '🌐 GITLAB WEB',
             label: 'En el editor web de tu repositorio en GitLab, abre README.md → Edit → añade una línea y haz un commit',
-            cmd: 'Repositorio mantenido y actualizado por Nombre Apellido (DAW 0614).'
+            cmd: 'Repositorio mantenido y actualizado por Blanca de Uña (DAW 0614).'
           },
           {
             letter: 'j.2, k)',
@@ -209,24 +209,24 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
         id: 'ap-4',
         code: 'Apartado 4',
         letters: 'l, m, n, o)',
-        title: 'Rama de personalización y fusión (personalitzacio-cognom)',
+        title: 'Rama de personalización y fusión (personalitzacio-deuna)',
         score: '0,50 puntos',
         machine: 'client',
         machineLabel: '💻 Terminal CLIENTE',
-        desc: 'Crea la rama personalitzacio-cognom (tu primer apellido sin acentos), modifica ComandesServlet.java (constante RESPONSABLE, 1 producto del catálogo y mensaje de doPost()), explícalo en README.md, sube la rama y fusiónala en main.',
+        desc: 'Crea la rama personalitzacio-deuna (tu primer apellido sin acentos), modifica ComandesServlet.java (constante RESPONSABLE, 1 producto del catálogo y mensaje de doPost()), explícalo en README.md, sube la rama y fusiónala en main.',
         steps: [
           {
             letter: 'l)',
             where: 'client',
             whereBadge: '💻 CLIENTE',
-            label: 'Crear y activar la rama personalitzacio-cognom a partir de main',
-            cmd: 'git checkout main && git checkout -b personalitzacio-cognom && git branch'
+            label: 'Crear y activar la rama personalitzacio-deuna a partir de main',
+            cmd: 'git checkout main && git checkout -b personalitzacio-deuna && git branch'
           },
           {
             letter: 'm)',
             where: 'client',
             whereBadge: '💻 CLIENTE',
-            label: 'Abrir ComandesServlet.java: sustituir RESPONSABLE por tu primer apellido ("cognom"), cambiar 1 producto del catálogo y personalizar el mensaje de confirmación de doPost()',
+            label: 'Abrir ComandesServlet.java: sustituir RESPONSABLE por tu primer apellido ("deuna"), cambiar 1 producto del catálogo y personalizar el mensaje de confirmación de doPost()',
             cmd: 'find . -name "ComandesServlet.java" -exec nano {} +'
           },
           {
@@ -234,24 +234,24 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             where: 'client',
             whereBadge: '💻 CLIENTE',
             label: 'Explicar los cambios en README.md, hacer commit y subir la rama a GitLab',
-            cmd: 'printf "\\n## Personalización del Servlet\\n- Constante RESPONSABLE actualizada a deuna.\\n- Producto del catálogo y mensaje de confirmación de doPost() personalizados.\\n" >> README.md && git status && git add -A && git commit -m "feat: personalizar ComandesServlet y documentar cambios en README" && git push -u origin personalitzacio-cognom'
+            cmd: 'printf "\\n## Personalización del Servlet\\n- Constante RESPONSABLE actualizada a deuna.\\n- Producto del catálogo y mensaje de confirmación de doPost() personalizados.\\n" >> README.md && git status && git add -A && git commit -m "feat: personalizar ComandesServlet y documentar cambios en README" && git push -u origin personalitzacio-deuna'
           },
           {
             letter: 'o)',
             where: 'client',
             whereBadge: '💻 CLIENTE',
             label: 'Volver a main, comprobar que los cambios aún no están, fusionar con git merge, hacer push y mostrar el historial con grafo',
-            cmd: 'git checkout main && grep "RESPONSABLE" $(find . -name "ComandesServlet.java") && git merge personalitzacio-cognom && git push origin main && git log --oneline --graph --all'
+            cmd: 'git checkout main && grep "RESPONSABLE" $(find . -name "ComandesServlet.java") && git merge personalitzacio-deuna && git push origin main && git log --oneline --graph --all'
           }
         ],
         textCopy: {
           title: '✍️ Texto explicativo para el PDF (Apartado 4):',
-          content: `A partir de la rama "main" actualizada se ha creado y activado la rama "personalitzacio-cognom". En esta rama se ha editado ComandesServlet.java sustituyendo el valor de la constante RESPONSABLE por el primer apellido ("cognom"), se ha modificado un producto del catálogo y se ha personalizado el mensaje de confirmación de doPost(). Tras explicar los cambios en el archivo README.md, se ha realizado el commit y se ha subido la rama a GitLab ("git push -u origin personalitzacio-cognom"). Finalmente, se ha regresado a "main" (comprobando que antes del merge los cambios aún no estaban presentes), se ha fusionado la rama mediante "git merge personalitzacio-cognom", se han publicado los cambios en GitLab y se ha verificado el historial gráfico con "git log --oneline --graph --all".`
+          content: `A partir de la rama "main" actualizada se ha creado y activado la rama "personalitzacio-deuna". En esta rama se ha editado ComandesServlet.java sustituyendo el valor de la constante RESPONSABLE por el primer apellido ("deuna"), se ha modificado un producto del catálogo y se ha personalizado el mensaje de confirmación de doPost(). Tras explicar los cambios en el archivo README.md, se ha realizado el commit y se ha subido la rama a GitLab ("git push -u origin personalitzacio-deuna"). Finalmente, se ha regresado a "main" (comprobando que antes del merge los cambios aún no estaban presentes), se ha fusionado la rama mediante "git merge personalitzacio-deuna", se han publicado los cambios en GitLab y se ha verificado el historial gráfico con "git log --oneline --graph --all".`
         },
         deliverables: [
-          '📸 l, m) Captura creando la rama "personalitzacio-cognom" y de las modificaciones en ComandesServlet.java.',
+          '📸 l, m) Captura creando la rama "personalitzacio-deuna" y de las modificaciones en ComandesServlet.java.',
           '📸 n) Captura de los cambios en README.md, commit, push y comprobación de que la rama aparece tanto en la terminal como en GitLab.',
-          '📸 o) Captura volviendo a main, ejecutando "git merge personalitzacio-cognom", push a GitLab y "git log --oneline --graph --all".'
+          '📸 o) Captura volviendo a main, ejecutando "git merge personalitzacio-deuna", push a GitLab y "git log --oneline --graph --all".'
         ]
       },
       {
@@ -262,7 +262,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
         score: '0,50 puntos',
         machine: 'client',
         machineLabel: '💻 Terminal CLIENTE',
-        desc: 'Desde main crea la rama proposta-a ("Equip A - deuna") y la rama proposta-b ("Equip B - deuna") modificando la constante RESPONSABLE de ComandesServlet.java. Fusiona primero proposta-a y después proposta-b en main para provocar el conflicto y resuélvelo dejando "cognom".',
+        desc: 'Desde main crea la rama proposta-a ("Equip A - deuna") y la rama proposta-b ("Equip B - deuna") modificando la constante RESPONSABLE de ComandesServlet.java. Fusiona primero proposta-a y después proposta-b en main para provocar el conflicto y resuélvelo dejando "deuna".',
         steps: [
           {
             letter: 'p)',
@@ -289,18 +289,18 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             letter: 's)',
             where: 'client',
             whereBadge: '💻 CLIENTE',
-            label: 'Resolver manualmente dejando RESPONSABLE = "cognom", completar la fusión con commit y subir a GitLab',
-            cmd: 'perl -ni -e \'print unless /^(<<<<<<<|=======|>>>>>>>)/\' $(find . -name "ComandesServlet.java") && perl -pi -e \'s/RESPONSABLE = ".*"/RESPONSABLE = "cognom"/\' $(find . -name "ComandesServlet.java") && git add -A && git commit -m "merge: resolver conflicto en ComandesServlet dejando deuna" && git push origin main && git log --oneline --graph -n 6'
+            label: 'Resolver manualmente dejando RESPONSABLE = "deuna", completar la fusión con commit y subir a GitLab',
+            cmd: 'perl -ni -e \'print unless /^(<<<<<<<|=======|>>>>>>>)/\' $(find . -name "ComandesServlet.java") && perl -pi -e \'s/RESPONSABLE = ".*"/RESPONSABLE = "deuna"/\' $(find . -name "ComandesServlet.java") && git add -A && git commit -m "merge: resolver conflicto en ComandesServlet dejando deuna" && git push origin main && git log --oneline --graph -n 6'
           }
         ],
         textCopy: {
           title: '✍️ Texto explicativo para el PDF (Apartado 5 · Conflicto 1):',
-          content: `Se han creado dos ramas desde main ("proposta-a" y "proposta-b") que modifican la misma línea de la constante RESPONSABLE en ComandesServlet.java. Al volver a main y fusionar primero "proposta-a", la integración es directa (Fast-Forward), pero al fusionar seguidamente "proposta-b", Git detecta que ambas ramas han modificado la misma línea y detiene el proceso mostrando "CONFLICT (content): Merge conflict in ComandesServlet.java". Se ha editado manualmente el archivo eliminando las marcas de conflicto (<<<<<<<, =======, >>>>>>>), dejando como valor definitivo el apellido "cognom", y se ha completado la fusión con "git add" y "git commit".`
+          content: `Se han creado dos ramas desde main ("proposta-a" y "proposta-b") que modifican la misma línea de la constante RESPONSABLE en ComandesServlet.java. Al volver a main y fusionar primero "proposta-a", la integración es directa (Fast-Forward), pero al fusionar seguidamente "proposta-b", Git detecta que ambas ramas han modificado la misma línea y detiene el proceso mostrando "CONFLICT (content): Merge conflict in ComandesServlet.java". Se ha editado manualmente el archivo eliminando las marcas de conflicto (<<<<<<<, =======, >>>>>>>), dejando como valor definitivo el apellido "deuna", y se ha completado la fusión con "git add" y "git commit".`
         },
         deliverables: [
           '📸 p, q) Captura de la creación y commits en las ramas "proposta-a" y "proposta-b".',
           '📸 r) Captura del mensaje CONFLICT en la terminal y de las marcas de conflicto dentro de ComandesServlet.java.',
-          '📸 s) Captura de la resolución dejando RESPONSABLE = "cognom", el commit de fusión y la comprobación final.'
+          '📸 s) Captura de la resolución dejando RESPONSABLE = "deuna", el commit de fusión y la comprobación final.'
         ]
       },
       {
@@ -546,11 +546,11 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
         ],
         textCopy: {
           title: '✍️ Texto explicativo para el PDF (Apartado 9):',
-          content: `Desde la consola de administración de MariaDB se ha creado la base de datos "dundersdb". Siguiendo las buenas prácticas de seguridad de no utilizar el usuario root, se ha creado el usuario exclusivo "cognom"@'localhost' con contraseña y privilegios únicamente sobre la base de datos "dundersdb", comprobando a continuación que dicho usuario puede autenticarse y acceder correctamente a "dundersdb".`
+          content: `Desde la consola de administración de MariaDB se ha creado la base de datos "dundersdb". Siguiendo las buenas prácticas de seguridad de no utilizar el usuario root, se ha creado el usuario exclusivo "deuna"@'localhost' con contraseña y privilegios únicamente sobre la base de datos "dundersdb", comprobando a continuación que dicho usuario puede autenticarse y acceder correctamente a "dundersdb".`
         },
         deliverables: [
           '📸 ah) Captura creando la base de datos "dundersdb" (SHOW DATABASES).',
-          '📸 ai) Captura creando el usuario con tu primer apellido ("cognom") y comprobando su acceso a "dundersdb".'
+          '📸 ai) Captura creando el usuario con tu primer apellido ("deuna") y comprobando su acceso a "dundersdb".'
         ]
       },
       {
@@ -574,7 +574,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             letter: 'al, am)',
             where: 'browser',
             whereBadge: '🌐 NAVEGADOR CLIENTE',
-            label: 'Crear el nuevo usuario administrador de WordPress (diferente de "cognom", por ejemplo "admin_blanca"), finalizar la instalación y comprobar que carga la portada en www.dundersupplies.cat',
+            label: 'Crear el nuevo usuario administrador de WordPress (diferente de "deuna", por ejemplo "admin_blanca"), finalizar la instalación y comprobar que carga la portada en www.dundersupplies.cat',
             cmd: 'Usuario Admin WP: admin_blanca | Título del sitio: Dunder Supplies'
           },
           {
@@ -587,7 +587,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
         ],
         textCopy: {
           title: '✍️ Texto explicativo para el PDF (Apartado 10):',
-          content: `Se ha completado el asistente de instalación en http://www.dundersupplies.cat introduciendo las credenciales de la base de datos "dundersdb" y el usuario de MariaDB "cognom" en "localhost". A continuación, se ha creado una cuenta de administrador de WordPress independiente ("admin_blanca") para gestionar el panel web. Finalmente, desde http://www.dundersupplies.cat/wp-admin se ha configurado el título del sitio web exactamente como "Dunder Supplies" y se ha grabado el vídeo demostrativo.`
+          content: `Se ha completado el asistente de instalación en http://www.dundersupplies.cat introduciendo las credenciales de la base de datos "dundersdb" y el usuario de MariaDB "deuna" en "localhost". A continuación, se ha creado una cuenta de administrador de WordPress independiente ("admin_blanca") para gestionar el panel web. Finalmente, desde http://www.dundersupplies.cat/wp-admin se ha configurado el título del sitio web exactamente como "Dunder Supplies" y se ha grabado el vídeo demostrativo.`
         },
         deliverables: [
           '📸 ak) Captura del asistente introduciendo los datos de conexión a la base de datos (dundersdb y usuario deuna).',
@@ -636,7 +636,7 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             where: 'server',
             whereBadge: '🖥️ SERVIDOR',
             label: 'Configurar un usuario con tu nombre ("blanca") y el rol "manager-gui" en /etc/tomcat10/tomcat-users.xml',
-            cmd: 'sudo sed -i \'/<\\/tomcat-users>/i \\  <role rolename="manager-gui"/>\\n  <user username="alumne" password="Tomcat2026!" roles="manager-gui"/>\' /etc/tomcat10/tomcat-users.xml && tail -n 10 /etc/tomcat10/tomcat-users.xml'
+            cmd: 'sudo sed -i \'/<\\/tomcat-users>/i \\  <role rolename="manager-gui"/>\\n  <user username="blanca" password="Tomcat2026!" roles="manager-gui"/>\' /etc/tomcat10/tomcat-users.xml && tail -n 10 /etc/tomcat10/tomcat-users.xml'
           },
           {
             letter: 'aq.2)',
@@ -649,12 +649,12 @@ export const getEac2Parts = (serverIp = '192.168.1.100') => [
             letter: 'ar)',
             where: 'browser',
             whereBadge: '🌐 NAVEGADOR CLIENTE',
-            label: 'Acceder a Tomcat Manager desde el navegador del Cliente con el usuario "alumne" y contraseña "Tomcat2026!"',
+            label: 'Acceder a Tomcat Manager desde el navegador del Cliente con el usuario "blanca" y contraseña "Tomcat2026!"',
             cmd: `http://${serverIp}:8080/manager/html`
           }
         ],
         deliverables: [
-          '🎥 Mostrar en el vídeo de la Parte 3: Tomcat en funcionamiento en el servidor (puerto 8080), el usuario "alumne" en tomcat-users.xml y el acceso a Tomcat Manager desde el navegador del cliente.'
+          '🎥 Mostrar en el vídeo de la Parte 3: Tomcat en funcionamiento en el servidor (puerto 8080), el usuario "blanca" en tomcat-users.xml y el acceso a Tomcat Manager desde el navegador del cliente.'
         ]
       },
       {
@@ -862,14 +862,14 @@ export default function DespEac2Workbench() {
       {/* BARRA SUPERIOR STICKY */}
       <header className="eac2-header">
         <div className="eac2-header-left">
-          <Link to="/" className="eac2-back-btn">
-            ← Volver al Campus
+          <Link to="/ioc/desp" className="eac2-back-btn">
+            ← Volver a DESP
           </Link>
           <span className="eac2-badge">DAW 0614 · EAC 2</span>
           <div className="eac2-header-title">
             <h1>Guía Directa EAC 2: Git, LAMP (WordPress) y Tomcat (WAR)</h1>
             <p>
-              Archivo a entregar: <strong>DAW_0614_EAC2_Apellido_N.pdf</strong> · Fecha límite: <strong>19/11/2026 (23:55h)</strong>
+              Archivo a entregar: <strong>DAW_0614_EAC2_Deuna_M.pdf</strong> · Fecha límite: <strong>19/11/2026 (23:55h)</strong>
             </p>
           </div>
         </div>
@@ -1169,7 +1169,7 @@ export default function DespEac2Workbench() {
                 <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
-                  “Hola, soy Nombre Apellido. En este vídeo de la Parte 2 muestro el funcionamiento de WordPress sobre el servidor LAMP desde el ordenador cliente, donde he asociado el dominio <code>www.dundersupplies.cat</code> a la IP del servidor ({serverIp}) en el archivo <code>/etc/hosts</code>.”
+                  “Hola, soy Blanca Deuna. En este vídeo de la Parte 2 muestro el funcionamiento de WordPress sobre el servidor LAMP desde el ordenador cliente, donde he asociado el dominio <code>www.dundersupplies.cat</code> a la IP del servidor ({serverIp}) en el archivo <code>/etc/hosts</code>.”
                 </div>
               </div>
 
@@ -1220,12 +1220,12 @@ export default function DespEac2Workbench() {
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 1 (35 seg) · Tomcat 10 en el Servidor y acceso a Tomcat Manager (Apartado 11)</h3>
                 <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
-                  <strong>🖥️ En pantalla:</strong> En la terminal del <strong>Ubuntu Server</strong> muestras la salida de <code>sudo systemctl status tomcat10 --no-pager</code>, <code>sudo ss -tlnp | grep 8080</code> y <code>sudo tail -n 10 /etc/tomcat10/tomcat-users.xml</code>. Luego pasas al navegador de tu Mac, abres <code>http://{serverIp}:8080</code> y entras en <code>http://{serverIp}:8080/manager/html</code> con el usuario <code>alumne</code>.
+                  <strong>🖥️ En pantalla:</strong> En la terminal del <strong>Ubuntu Server</strong> muestras la salida de <code>sudo systemctl status tomcat10 --no-pager</code>, <code>sudo ss -tlnp | grep 8080</code> y <code>sudo tail -n 10 /etc/tomcat10/tomcat-users.xml</code>. Luego pasas al navegador de tu Mac, abres <code>http://{serverIp}:8080</code> y entras en <code>http://{serverIp}:8080/manager/html</code> con el usuario <code>blanca</code>.
                 </p>
                 <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
-                  “Hola, soy Nombre Apellido y en este vídeo presento la Parte 3 de la EAC 2 sobre implantación de aplicaciones Java web en Apache Tomcat. Primero, en la terminal del Ubuntu Server comprobamos que el servicio Tomcat 10 está activo y escuchando peticiones en el puerto 8080. También muestro el archivo <code>/etc/tomcat10/tomcat-users.xml</code>, donde he configurado mi usuario <code>alumne</code> con el rol <code>manager-gui</code>, además de habilitar el acceso desde la red local en el archivo <code>context.xml</code> del Manager. Ahora, desde el navegador del cliente accedemos a la página principal de Tomcat en <code>http://{serverIp}:8080</code> y entramos en la aplicación Tomcat Manager autenticándonos con el usuario <code>alumne</code>.”
+                  “Hola, soy Blanca Deuna y en este vídeo presento la Parte 3 de la EAC 2 sobre implantación de aplicaciones Java web en Apache Tomcat. Primero, en la terminal del Ubuntu Server comprobamos que el servicio Tomcat 10 está activo y escuchando peticiones en el puerto 8080. También muestro el archivo <code>/etc/tomcat10/tomcat-users.xml</code>, donde he configurado mi usuario <code>blanca</code> con el rol <code>manager-gui</code>, además de habilitar el acceso desde la red local en el archivo <code>context.xml</code> del Manager. Ahora, desde el navegador del cliente accedemos a la página principal de Tomcat en <code>http://{serverIp}:8080</code> y entramos en la aplicación Tomcat Manager autenticándonos con el usuario <code>blanca</code>.”
                 </div>
               </div>
 
@@ -1237,19 +1237,19 @@ export default function DespEac2Workbench() {
                 <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
-                  “En segundo lugar, en el ordenador cliente he importado en Apache NetBeans el proyecto <code>EverOfficeComandes</code> que trabajamos en la Parte 1. Dentro de la clase <code>ComandesServlet.java</code> localizamos sus dos métodos principales: el método <code>doGet</code>, que responde a las peticiones GET mostrando el catálogo y el formulario de pedido, y el método <code>doPost</code>, que procesa los datos enviados por el formulario mediante POST y genera la confirmación personalizada con mi apellido <code>cognom</code>. Al compilar el proyecto con <em>Clean and Build</em>, comprobamos que dentro de la carpeta <code>target</code> se ha generado el paquete <code>EverOfficeComandes.war</code> listo para desplegar.”
+                  “En segundo lugar, en el ordenador cliente he importado en Apache NetBeans el proyecto <code>EverOfficeComandes</code> que trabajamos en la Parte 1. Dentro de la clase <code>ComandesServlet.java</code> localizamos sus dos métodos principales: el método <code>doGet</code>, que responde a las peticiones GET mostrando el catálogo y el formulario de pedido, y el método <code>doPost</code>, que procesa los datos enviados por el formulario mediante POST y genera la confirmación personalizada con mi apellido <code>deuna</code>. Al compilar el proyecto con <em>Clean and Build</em>, comprobamos que dentro de la carpeta <code>target</code> se ha generado el paquete <code>EverOfficeComandes.war</code> listo para desplegar.”
                 </div>
               </div>
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 3 (50 seg) · Despliegue mediante Tomcat Manager + Peticiones GET/POST + Stop/Start (Apartado 13)</h3>
                 <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
-                  <strong>🖥️ En pantalla:</strong> En Tomcat Manager bajas a <em>WAR file to deploy</em>, seleccionas <code>EverOfficeComandes.war</code> y pulsas <strong>Deploy</strong>. Señalas <code>/EverOfficeComandes</code> en la lista. Entras en <code>http://{serverIp}:8080/EverOfficeComandes/</code> (se ve la petición GET), rellenas un pedido y pulsas Enviar (se ve la petición POST con tu apellido <code>cognom</code>). Vuelves a Tomcat Manager, pulsas <strong>Stop</strong> (pasa a <code>false</code>) y luego <strong>Start</strong> (vuelve a <code>true</code>).
+                  <strong>🖥️ En pantalla:</strong> En Tomcat Manager bajas a <em>WAR file to deploy</em>, seleccionas <code>EverOfficeComandes.war</code> y pulsas <strong>Deploy</strong>. Señalas <code>/EverOfficeComandes</code> en la lista. Entras en <code>http://{serverIp}:8080/EverOfficeComandes/</code> (se ve la petición GET), rellenas un pedido y pulsas Enviar (se ve la petición POST con tu apellido <code>deuna</code>). Vuelves a Tomcat Manager, pulsas <strong>Stop</strong> (pasa a <code>false</code>) y luego <strong>Start</strong> (vuelve a <code>true</code>).
                 </p>
                 <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
-                  “Para el primer procedimiento de despliegue, utilizamos la interfaz web de Tomcat Manager desde el navegador del cliente. En el apartado <em>WAR file to deploy</em> seleccionamos el archivo <code>EverOfficeComandes.war</code> y pulsamos <em>Deploy</em>. Vemos que la aplicación <code>/EverOfficeComandes</code> aparece desplegada en la lista y con estado activo. Al abrir la aplicación en el navegador, se ejecuta una petición GET que invoca el método <code>doGet</code> y nos muestra el formulario del catálogo. Si completamos los datos de un pedido y pulsamos enviar, se realiza una petición POST que ejecuta el método <code>doPost</code>, mostrando el resumen del pedido con mi apellido <code>cognom</code>. Finalmente, desde Tomcat Manager comprobamos que podemos detener la aplicación pulsando <em>Stop</em>, pasando su estado a <code>false</code>, y volver a ponerla en marcha pulsando <em>Start</em>.”
+                  “Para el primer procedimiento de despliegue, utilizamos la interfaz web de Tomcat Manager desde el navegador del cliente. En el apartado <em>WAR file to deploy</em> seleccionamos el archivo <code>EverOfficeComandes.war</code> y pulsamos <em>Deploy</em>. Vemos que la aplicación <code>/EverOfficeComandes</code> aparece desplegada en la lista y con estado activo. Al abrir la aplicación en el navegador, se ejecuta una petición GET que invoca el método <code>doGet</code> y nos muestra el formulario del catálogo. Si completamos los datos de un pedido y pulsamos enviar, se realiza una petición POST que ejecuta el método <code>doPost</code>, mostrando el resumen del pedido con mi apellido <code>deuna</code>. Finalmente, desde Tomcat Manager comprobamos que podemos detener la aplicación pulsando <em>Stop</em>, pasando su estado a <code>false</code>, y volver a ponerla en marcha pulsando <em>Start</em>.”
                 </div>
               </div>
 
@@ -1275,7 +1275,7 @@ export default function DespEac2Workbench() {
           <div className="eac2-document-wrapper">
             <div className="eac2-doc-header">
               <h1 className="eac2-doc-title">
-                Plantilla de Textos y Estructura · DAW_0614_EAC2_Apellido_N.pdf
+                Plantilla de Textos y Estructura · DAW_0614_EAC2_Deuna_M.pdf
               </h1>
               <p style={{ margin: '0.4rem 0 0', color: '#475569', fontSize: '0.92rem' }}>
                 Recuerda utilizar el fichero oficial <code>DAW_0614_EAC2_Enunciat_2627S1.odt</code>, poner tu nombre en la cabecera, eliminar los apartados preliminares (Presentación, Criterios, Uso de la IA, Forma de entrega y enunciado) y exportarlo en formato <strong>PDF</strong>.
