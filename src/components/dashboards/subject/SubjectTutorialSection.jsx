@@ -243,7 +243,7 @@ export default function SubjectTutorialSection({
                 <button
                   type="button"
                   onClick={() => {
-                    const targetFolder = eac.folderPath || (subjectId ? `/Users/blanca/Micampus/public/eacs/${subjectId}/${(eac.id || 'eac2').toUpperCase()}` : '/Users/blanca/Micampus/public/eacs/ent/EAC2');
+                    const targetFolder = eac.folderPath || (subjectId ? `public/eacs/${subjectId}/${(eac.id || 'eac2').toUpperCase()}` : 'public/eacs/ent/EAC2');
                     fetch(`/api/open-folder?path=${encodeURIComponent(targetFolder)}`);
                     setFinderOpened(true);
                     setTimeout(() => setFinderOpened(false), 3500);

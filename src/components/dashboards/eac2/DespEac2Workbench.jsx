@@ -835,7 +835,7 @@ export default function DespEac2Workbench() {
   }, []);
 
   const handleOpenFinder = () => {
-    fetch('/api/open-folder?path=/Users/blanca/Micampus/public/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1');
+    fetch('/api/open-folder?path=public/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1');
     setFinderToast(true);
     setTimeout(() => setFinderToast(false), 3500);
   };
