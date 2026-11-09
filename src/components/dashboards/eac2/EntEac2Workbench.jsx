@@ -662,10 +662,10 @@ export default function EntEac2Workbench() {
 
   const handleOpenFolder = () => {
     setFolderToast('Obrint la carpeta de resultats al Finder de macOS...');
-    fetch('/api/open-folder?path=/Users/blanca/Micampus/public/eacs/ent/EAC2')
+    fetch('/api/open-folder?path=public/eacs/ent/EAC2')
       .then((res) => res.json())
       .then(() => {
-        setFolderToast('✅ Carpeta oberta al Finder! (/Users/blanca/Micampus/public/eacs/ent/EAC2)');
+        setFolderToast('✅ Carpeta oberta al Finder! (public/eacs/ent/EAC2)');
         setTimeout(() => setFolderToast(null), 4000);
       })
       .catch(() => {
@@ -675,7 +675,7 @@ export default function EntEac2Workbench() {
   };
 
   const handleCopyPath = () => {
-    navigator.clipboard.writeText('/Users/blanca/Micampus/public/eacs/ent/EAC2');
+    navigator.clipboard.writeText('public/eacs/ent/EAC2');
     setCopiedPath(true);
     setFolderToast('📋 Ruta copiada al porta-retalls: /Users/blanca/Micampus/public/eacs/ent/EAC2');
     setTimeout(() => {

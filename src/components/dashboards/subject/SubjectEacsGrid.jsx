@@ -142,7 +142,7 @@ export default function SubjectEacsGrid({
                     <button
                       type="button"
                       onClick={() => {
-                        fetch('/api/open-folder?path=/Users/blanca/Micampus/public/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1');
+                        fetch('/api/open-folder?path=public/eacs/desp/DAW_0614_EAC2_Enunciat_2627S1');
                         setFinderOpened(true);
                         setTimeout(() => setFinderOpened(false), 3500);
                       }}
@@ -197,7 +197,7 @@ export default function SubjectEacsGrid({
                   <button
                     type="button"
                     onClick={() => {
-                      fetch('/api/open-folder?path=/Users/blanca/Micampus/public/eacs/ent/EAC2');
+                      fetch('/api/open-folder?path=public/eacs/ent/EAC2');
                       setFinderOpened(true);
                       setTimeout(() => setFinderOpened(false), 3500);
                     }}

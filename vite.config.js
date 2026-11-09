@@ -1,21 +1,6 @@
-import { exec } from 'child_process'
 import react from '@vitejs/plugin-react'
 import { defineConfig } from 'vite'
-
-function openFolderPlugin() {
-  return {
-    name: 'open-folder-plugin',
-    configureServer(server) {
-      server.middlewares.use('/api/open-folder', (req, res) => {
-        const url = new URL(req.url, 'http://localhost')
-        const folder = url.searchParams.get('path') || '/Users/blanca/Micampus/public/eacs/ent/EAC2'
-        exec(`open "${folder}"`)
-        res.writeHead(200, { 'Content-Type': 'application/json' })
-        res.end(JSON.stringify({ ok: true, path: folder }))
-      })
-    }
-  }
-}
+import { openFolderPlugin } from './vite-plugins/openFolderPlugin.js'
 
 // https://vite.dev/config/
 export default defineConfig({
@@ -53,7 +38,7 @@ export default defineConfig({
   },
   test: {
     environment: 'node',
-    include: ['src/**/*.test.{js,jsx}', 'backend/**/*.test.js'],
+    include: ['src/**/*.test.{js,jsx}', 'backend/**/*.test.js', 'vite-plugins/**/*.test.js'],
     coverage: {
       provider: 'v8',
       include: ['src/**/*.{js,jsx}', 'backend/**/*.js'],
