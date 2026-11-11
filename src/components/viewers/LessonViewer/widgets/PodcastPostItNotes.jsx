@@ -22,9 +22,9 @@ export default function PodcastPostItNotes({ promptText }) {
   return (
     <div style={{
       position: 'relative',
-      background: 'linear-gradient(180deg, #fef9c3 0%, #fef08a 100%)',
-      color: '#713f12',
-      border: '1px solid #fde047',
+      background: 'var(--dm-postit-bg, linear-gradient(180deg, #fef9c3 0%, #fef08a 100%))',
+      color: 'var(--dm-postit-text, #713f12)',
+      border: '1px solid var(--dm-postit-border, #fde047)',
       borderRadius: '12px',
       padding: isPromptExpanded ? '1.4rem 1.6rem 1.4rem 1.8rem' : '0.85rem 1.25rem',
       boxShadow: '0 4px 14px rgba(234, 179, 8, 0.18), 0 2px 5px rgba(0,0,0,0.06)',
@@ -39,7 +39,7 @@ export default function PodcastPostItNotes({ promptText }) {
         transform: 'translateX(-50%) rotate(1deg)',
         width: '90px',
         height: '22px',
-        background: 'rgba(255, 255, 255, 0.75)',
+        background: 'var(--dm-postit-tape, rgba(255, 255, 255, 0.75))',
         border: '1px solid rgba(253, 224, 71, 0.4)',
         borderRadius: '2px',
         boxShadow: '0 1px 3px rgba(0,0,0,0.08)',
@@ -65,7 +65,7 @@ export default function PodcastPostItNotes({ promptText }) {
           gap: '0.5rem',
           fontWeight: 800,
           fontSize: '0.88rem',
-          color: '#854d0e',
+          color: 'var(--dm-postit-title, #854d0e)',
           letterSpacing: '0.2px'
         }}>
           <span>📝</span>
@@ -73,8 +73,8 @@ export default function PodcastPostItNotes({ promptText }) {
           <span style={{
             fontSize: '0.74rem',
             fontWeight: 600,
-            color: '#a16207',
-            background: 'rgba(254, 240, 138, 0.9)',
+            color: 'var(--dm-postit-soft, #a16207)',
+            background: 'var(--dm-postit-chip, rgba(254, 240, 138, 0.9))',
             padding: '0.15rem 0.55rem',
             borderRadius: '12px',
             border: '1px solid rgba(202, 138, 4, 0.3)'
@@ -118,7 +118,7 @@ export default function PodcastPostItNotes({ promptText }) {
             alignItems: 'center',
             marginBottom: '0.5rem',
             fontSize: '0.78rem',
-            color: '#a16207',
+            color: 'var(--dm-postit-soft, #a16207)',
             fontWeight: 600
           }}>
             <span>💡 Puedes afinar o personalizar el prompt directamente aquí antes de copiarlo:</span>
@@ -131,7 +131,7 @@ export default function PodcastPostItNotes({ promptText }) {
               style={{
                 background: 'transparent',
                 border: '1px solid rgba(161, 98, 7, 0.4)',
-                color: '#854d0e',
+                color: 'var(--dm-postit-title, #854d0e)',
                 borderRadius: '4px',
                 padding: '0.15rem 0.45rem',
                 fontSize: '0.72rem',
@@ -151,12 +151,12 @@ export default function PodcastPostItNotes({ promptText }) {
               rows={8}
               style={{
                 width: '100%',
-                background: 'rgba(255, 255, 255, 0.85)',
+                background: 'var(--dm-postit-paper, rgba(255, 255, 255, 0.85))',
                 border: '1px solid #eab308',
                 borderRadius: '8px',
                 padding: '0.75rem',
                 fontSize: '0.88rem',
-                color: '#713f12',
+                color: 'var(--dm-postit-text, #713f12)',
                 fontFamily: 'inherit',
                 lineHeight: '1.6',
                 resize: 'vertical',
@@ -167,10 +167,10 @@ export default function PodcastPostItNotes({ promptText }) {
             <div style={{
               fontSize: '0.88rem',
               lineHeight: '1.65',
-              color: '#713f12',
+              color: 'var(--dm-postit-text, #713f12)',
               fontWeight: 500,
               whiteSpace: 'pre-wrap',
-              background: 'rgba(255, 255, 255, 0.35)',
+              background: 'var(--dm-postit-paper, rgba(255, 255, 255, 0.35))',
               padding: '0.75rem 0.9rem',
               borderRadius: '8px',
               border: '1px solid rgba(234, 179, 8, 0.25)'

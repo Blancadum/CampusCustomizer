@@ -122,7 +122,9 @@ export default function PresentationCard({
             href={externalUrl}
             target="_blank"
             rel="noreferrer"
+            className="accent-fill"
             style={{
+              '--accent': themeColor,
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.4rem',

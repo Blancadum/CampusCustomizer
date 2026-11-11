@@ -41,7 +41,8 @@ export default function PodcastPlayerControls({
           {isCurrentVideo ? '🎬' : '🎙️'}
         </div>
         <div>
-          <div style={{
+          <div className="accent-ink" style={{
+            '--accent': themeColor,
             fontSize: '0.74rem',
             textTransform: 'uppercase',
             fontWeight: 800,
@@ -79,7 +80,10 @@ export default function PodcastPlayerControls({
                   key={idx}
                   type="button"
                   onClick={() => onSelectIndex(idx)}
+                  aria-pressed={isSel}
+                  className="accent-toggle"
                   style={{
+                    '--accent': themeColor,
                     background: isSel ? themeColor : 'none',
                     color: isSel ? '#fff' : 'var(--text-muted)',
                     border: 'none',
@@ -109,7 +113,10 @@ export default function PodcastPlayerControls({
               key={rate}
               type="button"
               onClick={() => onSpeedChange(rate)}
+              aria-pressed={playbackRate === rate}
+              className="accent-toggle"
               style={{
+                '--accent': themeColor,
                 background: playbackRate === rate ? themeColor : 'var(--bg-input)',
                 color: playbackRate === rate ? '#fff' : 'var(--text-muted)',
                 border: '1px solid var(--border-subtle)',
@@ -132,7 +139,10 @@ export default function PodcastPlayerControls({
             type="button"
             onClick={onTogglePiP}
             title={isPiPActive ? "Salir de pantalla flotante (PiP)" : "Ver en pantalla flotante (PiP)"}
+            aria-pressed={isPiPActive}
+            className="accent-toggle"
             style={{
+              '--accent': themeColor,
               background: isPiPActive ? themeColor : 'var(--bg-input)',
               color: isPiPActive ? '#fff' : 'var(--text-muted)',
               border: '1px solid var(--border-subtle)',
@@ -158,7 +168,10 @@ export default function PodcastPlayerControls({
             type="button"
             onClick={onToggleFullWidth}
             title={isVideoFullWidth ? "Reducir a 80% de ancho" : "Ver en 100% de ancho"}
+            aria-pressed={isVideoFullWidth}
+            className="accent-toggle"
             style={{
+              '--accent': themeColor,
               background: isVideoFullWidth ? themeColor : 'var(--bg-input)',
               color: isVideoFullWidth ? '#fff' : 'var(--text-muted)',
               border: '1px solid var(--border-subtle)',

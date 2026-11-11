@@ -91,7 +91,8 @@ export default function PodcastMediaScreen({
             target="_blank"
             rel="noreferrer"
             download
-            style={{ color: themeColor, textDecoration: 'none', fontWeight: 600 }}
+            className="accent-ink"
+            style={{ '--accent': themeColor, color: themeColor, textDecoration: 'none', fontWeight: 600 }}
           >
             Descargar archivo ↗
           </a>

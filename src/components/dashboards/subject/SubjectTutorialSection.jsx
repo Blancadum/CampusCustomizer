@@ -302,8 +302,8 @@ export default function SubjectTutorialSection({
                       padding: '0.55rem 1rem',
                       fontSize: '0.85rem',
                       borderRadius: '8px',
-                      background: 'var(--subject-color)',
-                      color: '#ffffff',
+                      background: 'var(--dm-subject-fill, var(--subject-color))',
+                      color: 'var(--dm-on-accent, #ffffff)',
                       textDecoration: 'none',
                       fontWeight: 700,
                       boxShadow: '0 2px 8px rgba(0,0,0,0.18)'

@@ -90,6 +90,18 @@
   --dm-text-blue: #93c5fd;
   --dm-text-amber: #fcd34d;
   --dm-text-red: #fca5a5;
+  /* Texto encima del color de la asignatura: en oscuro se usa tinta oscura,
+     que contrasta con los colores vivos mejor que el blanco. */
+  --dm-on-accent: #0f141c;
+  /* Pósit de la pauta del pódcast: ámbar apagado en vez de amarillo vivo. */
+  --dm-postit-bg: linear-gradient(180deg, #2a2516 0%, #252012 100%);
+  --dm-postit-border: rgba(251, 191, 36, 0.35);
+  --dm-postit-tape: rgba(255, 255, 255, 0.1);
+  --dm-postit-text: #f3e7c3;
+  --dm-postit-title: #fcd34d;
+  --dm-postit-soft: #fde68a;
+  --dm-postit-chip: rgba(251, 191, 36, 0.16);
+  --dm-postit-paper: rgba(0, 0, 0, 0.22);
 }
 
 /* --- Portada ------------------------------------------------------------ */
@@ -172,4 +184,48 @@
 [data-theme="dark"] .lesson-topic-tag,
 [data-theme="dark"] button[aria-current="true"] {
   filter: brightness(1.55) saturate(1.1);
+}
+
+/* Insignia «Susceptible PAF / EAC»: el rosa vivo deja el blanco por debajo
+   del contraste mínimo; se usa un rosa más profundo. */
+[data-theme="dark"] .lesson-h3-eac-badge {
+  background: #be185d;
+}
+
+/* Diagramas e imágenes: conservan su fondo blanco (muchos son PNG
+   transparentes), pero se atenúan para no deslumbrar. */
+[data-theme="dark"] .lesson-img-container img {
+  filter: brightness(0.88);
+}
+
+/* Botones y días de entrega con el color de la asignatura de fondo: en
+   oscuro el relleno se aclara y el texto pasa a tinta oscura. Así contrasta
+   con cualquier color (el blanco no llegaba a 2:1 sobre el amarillo y los
+   tonos intermedios, como el azul, se quedaban en 3,6:1 con ambos). */
+[data-theme="dark"] .app-container {
+  --dm-subject-fill: color-mix(in srgb, var(--subject-color) 70%, #ffffff);
+}
+
+[data-theme="dark"] .header-btn-book,
+[data-theme="dark"] .calendar-day-cell.is-entrega {
+  background: var(--dm-subject-fill);
+  color: var(--dm-on-accent);
+}
+
+/* Utilidades para colores de asignatura que llegan en línea desde JS: el
+   componente pasa el color en --accent y añade la clase.
+   accent-ink: texto; accent-fill: relleno; accent-toggle: botón conmutable
+   (relleno solo cuando aria-pressed="true"). */
+[data-theme="dark"] .accent-ink {
+  color: color-mix(in srgb, var(--accent) 55%, #ffffff) !important;
+}
+
+[data-theme="dark"] .accent-fill,
+[data-theme="dark"] .accent-toggle[aria-pressed="true"] {
+  background: color-mix(in srgb, var(--accent) 70%, #ffffff) !important;
+  color: var(--dm-on-accent) !important;
+}
+
+[data-theme="dark"] .hljs-subst {
+  color: #e2e8f0;
 }
