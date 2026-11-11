@@ -145,7 +145,7 @@ export default function CampusRetosGrid() {
                 padding: '0.42rem 0.8rem',
                 fontSize: '0.78rem',
                 fontWeight: 700,
-                color: '#16a34a',
+                color: 'var(--dm-text-green, #16a34a)',
                 background: 'rgba(34, 197, 94, 0.12)',
                 border: '1px solid rgba(34, 197, 94, 0.35)',
                 borderRadius: '9px',

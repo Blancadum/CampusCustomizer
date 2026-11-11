@@ -78,7 +78,7 @@ export default function LessonContinuousScrollView({
                       {title}
                     </span>
                     {topic.moduleShort && (
-                      <span style={{ 
+                      <span className="lesson-topic-tag" style={{ 
                         background: `${themeColor}15`, 
                         border: `1px solid ${themeColor}35`, 
                         color: themeColor, 

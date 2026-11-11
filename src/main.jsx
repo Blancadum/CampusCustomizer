@@ -7,6 +7,8 @@ import './assets/css/global/tokens.css'
 import './assets/css/global/base.css'
 import './assets/css/home/Home.css'
 import './assets/css/components/components.css'
+import './assets/css/global/theme-dark.css'
+import './assets/css/global/theme-dark-workbench.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

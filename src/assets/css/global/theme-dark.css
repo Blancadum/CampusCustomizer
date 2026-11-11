@@ -1,0 +1,175 @@
+/* ==========================================================================
+   MiCampus · Modo oscuro
+   Todo va bajo [data-theme="dark"]: el modo claro de la plantilla no cambia.
+
+   Por qué `:root[data-theme="dark"]`: base.css y Home.css vuelven a declarar
+   los tokens claros en `:root` después de tokens.css, y con la misma
+   especificidad ganaban siempre al bloque oscuro. Este selector pesa más.
+
+   Paleta: pizarra profundo (no negro puro) y acentos aclarados para mantener
+   el contraste del texto sin deslumbrar.
+   ========================================================================== */
+
+:root[data-theme="dark"] {
+  --bg-primary: #0f141c;
+  --bg-secondary: #161d28;
+  --bg-header: rgba(15, 20, 28, 0.92);
+  --bg-nav: rgba(22, 29, 40, 0.95);
+  --bg-card: #18202c;
+  --bg-card-hover: #1f2937;
+  --bg-input: #222b38;
+  --bg-code: #0b1018;
+
+  --border-subtle: rgba(148, 163, 184, 0.2);
+  --border-focus: rgba(167, 139, 250, 0.55);
+
+  --accent-purple: #a78bfa;
+  --accent-purple-light: #c4b5fd;
+  --accent-blue: #60a5fa;
+  --accent-cyan: #38bdf8;
+  --accent-green: #34d399;
+  --accent-emerald: #10b981;
+  --accent-gold: #fbbf24;
+  --accent-rose: #fb7185;
+  --accent-orange: #fb923c;
+
+  --text-title: #e8edf4;
+  --text-main: #c3cbd6;
+  --text-muted: #94a0b2;
+  --text-dim: #6b7789;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 6px 20px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.55);
+
+  /* subject-layout.css */
+  --color-surface: #18202c;
+  --color-surface-alt: #161d28;
+  --color-border: rgba(148, 163, 184, 0.16);
+  --color-text: #e8edf4;
+  --color-text-muted: #94a0b2;
+  --color-text-subtle: #6b7789;
+
+  /* components.css */
+  --child-badge-color: #c4b5fd;
+  --child-badge-bg: rgba(167, 139, 250, 0.14);
+  --child-badge-border: rgba(167, 139, 250, 0.3);
+
+  /* Variables que la plantilla usa con valor de reserva pero no define:
+     sin ellas, los estilos en línea caían siempre en su reserva clara. */
+  --bg-subtle: rgba(148, 163, 184, 0.08);
+  --bg-hover: rgba(148, 163, 184, 0.12);
+  --bg-main: #0f141c;
+  --bg-body: #0f141c;
+  --bg-alt: #161d28;
+  --bg-card-header: #1f2937;
+  --text-secondary: #94a0b2;
+  --accent-red: #f87171;
+
+  /* Colores en línea de los componentes, escritos como
+     var(--dm-*, <color claro original>) por scripts/wrap_inline_light_colors.py.
+     Solo existen aquí: en modo claro se usa el color original tal cual. */
+  --dm-surface: #18202c;
+  --dm-surface-soft: #161d28;
+  --dm-surface-muted: #1f2937;
+  --dm-surface-strong: #273244;
+  --dm-tint-blue: rgba(96, 165, 250, 0.16);
+  --dm-tint-green: rgba(52, 211, 153, 0.14);
+  --dm-tint-amber: rgba(251, 191, 36, 0.16);
+  --dm-tint-red: rgba(248, 113, 113, 0.16);
+  --dm-tint-pink: rgba(244, 114, 182, 0.14);
+  --dm-tint-sky: rgba(56, 189, 248, 0.14);
+  --dm-border: rgba(148, 163, 184, 0.28);
+  --dm-border-blue: rgba(96, 165, 250, 0.4);
+  --dm-border-green: rgba(52, 211, 153, 0.4);
+  --dm-border-amber: rgba(251, 191, 36, 0.4);
+  --dm-border-red: rgba(248, 113, 113, 0.4);
+  --dm-text-strong: #e8edf4;
+  --dm-text: #c3cbd6;
+  --dm-text-green: #6ee7b7;
+  --dm-text-blue: #93c5fd;
+  --dm-text-amber: #fcd34d;
+  --dm-text-red: #fca5a5;
+}
+
+/* --- Portada ------------------------------------------------------------ */
+
+/* Filas de asignatura: tarjeta oscura en lugar del degradado brillante.
+   La sigla trae su color en línea (pensado para fondo claro): se aviva. */
+[data-theme="dark"] .btn-ioc-subject-row {
+  background: var(--bg-input);
+  border: 1px solid var(--border-subtle);
+  box-shadow: none;
+  color: var(--text-title) !important;
+}
+
+[data-theme="dark"] .btn-ioc-subject-row:hover {
+  background: var(--bg-card-hover);
+  box-shadow: var(--shadow-sm);
+  filter: none;
+}
+
+/* La sigla lleva el color de la asignatura en línea; se aclara mezclándolo
+   con blanco (--sigla-color lo pasa el componente). */
+[data-theme="dark"] .btn-ioc-subject-row .btn-ioc-sigla {
+  color: color-mix(in srgb, var(--sigla-color) 50%, #ffffff) !important;
+}
+
+[data-theme="dark"] .stat-icon-wrap {
+  background: var(--bg-input);
+}
+
+[data-theme="dark"] .retos-tab-btn.active {
+  box-shadow: none;
+}
+
+/* --- Aula de asignatura --------------------------------------------------- */
+
+/* El color de la asignatura llega en línea (--subject-color) y está pensado
+   para fondo claro: como texto se aclara para que se lea sobre oscuro.
+   Los estilos en línea de texto usan var(--subject-text, var(--subject-color)). */
+[data-theme="dark"] .app-container {
+  --subject-text: color-mix(in srgb, var(--subject-color) 55%, #ffffff);
+}
+
+[data-theme="dark"] .progress-percentage,
+[data-theme="dark"] .calendar-nav-btn,
+[data-theme="dark"] .calendar-day-cell.is-today,
+[data-theme="dark"] .calendar-day-cell.is-inicio,
+[data-theme="dark"] .calendar-day-cell.is-inicio-leccion,
+[data-theme="dark"] .calendar-day-cell.is-leccion,
+[data-theme="dark"] .calendar-day-cell.is-notas {
+  color: var(--subject-text);
+}
+
+[data-theme="dark"] .header-btn-select {
+  background: var(--bg-input);
+  color: var(--text-title);
+  border: 1px solid var(--border-subtle);
+}
+
+[data-theme="dark"] .progress-track {
+  background: rgba(148, 163, 184, 0.2);
+}
+
+/* Las EAC no activas se atenúan con opacidad en línea; en oscuro 0.6 deja el
+   texto ilegible. Se atenúan menos. */
+[data-theme="dark"] .activities-section .cards-grid > article:not(.is-active) {
+  opacity: 0.82 !important;
+}
+
+/* --- Libro Digital -------------------------------------------------------- */
+
+/* Código en línea: la píldora rosa pastel deslumbraba sobre fondo oscuro. */
+[data-theme="dark"] .topic-body code:not(pre code) {
+  background: rgba(244, 114, 182, 0.12);
+  color: #f9a8d4;
+  border-bottom-color: rgba(244, 114, 182, 0.3);
+}
+
+/* Etiqueta del tema y elemento activo del menú: llevan el color de la
+   asignatura en línea (pensado para fondo claro). Se avivan. */
+[data-theme="dark"] .lesson-topic-tag,
+[data-theme="dark"] button[aria-current="true"] {
+  filter: brightness(1.55) saturate(1.1);
+}

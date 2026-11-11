@@ -45,7 +45,7 @@ export default function IocDawRetoCard({ isArchived, onToggleArchive }) {
             >
               <span className="btn-ioc-icon">{sub.icon}</span>
               <div className="btn-ioc-info">
-                <span className="btn-ioc-sigla" style={{ color: sub.color }}>
+                <span className="btn-ioc-sigla" style={{ color: sub.color, '--sigla-color': sub.color }}>
                   {`IOC ${idx + 1}`}
                 </span>
                 <span className="btn-ioc-title">{sub.title}</span>

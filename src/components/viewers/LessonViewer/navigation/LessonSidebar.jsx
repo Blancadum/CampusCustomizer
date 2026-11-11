@@ -145,6 +145,7 @@ export default function LessonSidebar({
                         <div key={gIdx} style={{ display: 'flex', flexDirection: 'column' }}>
                           {showGroupHeading && (
                             <button 
+                              aria-current={isTemaActive ? 'true' : undefined}
                               onClick={() => {
                                 if (groupTopics.length > 0) {
                                   if (onSelectTopic) {

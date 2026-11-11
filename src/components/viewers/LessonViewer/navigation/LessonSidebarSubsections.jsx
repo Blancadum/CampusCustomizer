@@ -37,6 +37,7 @@ export default function LessonSidebarSubsections({
           <button
             key={subId || sIdx}
             data-sidebar-slug={subId}
+            aria-current={isSubActive ? 'true' : undefined}
             onClick={() => {
               scrollToSection(subId);
             }}

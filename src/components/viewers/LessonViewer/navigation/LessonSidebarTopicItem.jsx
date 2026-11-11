@@ -21,6 +21,7 @@ export default function LessonSidebarTopicItem({
     <div style={{ display: 'flex', flexDirection: 'column' }}>
       <button 
         data-sidebar-slug={topic.slug}
+        aria-current={isActive ? 'true' : undefined}
         onClick={() => {
           if (onSelectTopic) {
             onSelectTopic(topic.slug);

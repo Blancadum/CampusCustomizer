@@ -209,7 +209,7 @@ export default function LessonLightboxModal({
             transition: 'transform 0.15s ease-out',
             maxWidth: zoom <= 1 ? '92vw' : 'none',
             maxHeight: zoom <= 1 ? '82vh' : 'none',
-            background: '#ffffff',
+            background: 'var(--dm-surface, #ffffff)',
             borderRadius: '14px',
             padding: '1.2rem',
             boxShadow: '0 25px 60px rgba(0,0,0,0.6)',

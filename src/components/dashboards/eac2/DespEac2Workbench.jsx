@@ -1145,7 +1145,7 @@ export default function DespEac2Workbench() {
               <h1 className="eac2-doc-title">
                 🎥 Guiones Completos de los 2 Vídeos Obligatorios de la EAC 2
               </h1>
-              <p style={{ margin: '0.45rem 0 0', color: '#475569', fontSize: '0.94rem' }}>
+              <p style={{ margin: '0.45rem 0 0', color: 'var(--dm-text, #475569)', fontSize: '0.94rem' }}>
                 En toda la EAC 2 <strong>solo tienes que hacer 2 vídeos</strong> (la Parte 0 y la Parte 1 <strong>no llevan vídeo</strong>). Puedes grabarlos directamente en tu Mac con <code>Cmd + Shift + 5</code> (activando el micrófono en <em>Opciones</em>).
               </p>
             </div>
@@ -1163,10 +1163,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Escena 1 (5 seg) · Resolución en /etc/hosts del Cliente</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> Terminal de tu Mac mostrando <code>cat /etc/hosts</code> con la línea <code>{serverIp} www.dundersupplies.cat</code>.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Hola, soy Nombre Apellido. En este vídeo de la Parte 2 muestro el funcionamiento de WordPress sobre el servidor LAMP desde el ordenador cliente, donde he asociado el dominio <code>www.dundersupplies.cat</code> a la IP del servidor ({serverIp}) en el archivo <code>/etc/hosts</code>.”
@@ -1175,10 +1175,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Escena 2 (10 seg) · Panel de administración wp-admin</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> Navegador del cliente en <code>http://www.dundersupplies.cat/wp-admin/options-general.php</code> señalando con el cursor el campo <strong>Título del sitio: Dunder Supplies</strong>.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Aquí he accedido al panel de administración en <code>http://www.dundersupplies.cat/wp-admin</code> y, dentro de los ajustes generales, he modificado el título del sitio web para que sea exactamente <em>Dunder Supplies</em>.”
@@ -1187,10 +1187,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Escena 3 (10 seg) · Portada pública de Dunder Supplies</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> Cambias a la pestaña <code>http://www.dundersupplies.cat</code> y recargas la página (<code>Cmd + R</code>) para que se vea cargar con la cabecera <strong>Dunder Supplies</strong>.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Y si abrimos y recargamos la dirección principal <code>http://www.dundersupplies.cat</code> desde el navegador del cliente, comprobamos que el servidor Apache, PHP y MariaDB sirven correctamente la web de Dunder Supplies.”
@@ -1219,10 +1219,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 1 (35 seg) · Tomcat 10 en el Servidor y acceso a Tomcat Manager (Apartado 11)</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> En la terminal del <strong>Ubuntu Server</strong> muestras la salida de <code>sudo systemctl status tomcat10 --no-pager</code>, <code>sudo ss -tlnp | grep 8080</code> y <code>sudo tail -n 10 /etc/tomcat10/tomcat-users.xml</code>. Luego pasas al navegador de tu Mac, abres <code>http://{serverIp}:8080</code> y entras en <code>http://{serverIp}:8080/manager/html</code> con el usuario <code>alumne</code>.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Hola, soy Nombre Apellido y en este vídeo presento la Parte 3 de la EAC 2 sobre implantación de aplicaciones Java web en Apache Tomcat. Primero, en la terminal del Ubuntu Server comprobamos que el servicio Tomcat 10 está activo y escuchando peticiones en el puerto 8080. También muestro el archivo <code>/etc/tomcat10/tomcat-users.xml</code>, donde he configurado mi usuario <code>alumne</code> con el rol <code>manager-gui</code>, además de habilitar el acceso desde la red local en el archivo <code>context.xml</code> del Manager. Ahora, desde el navegador del cliente accedemos a la página principal de Tomcat en <code>http://{serverIp}:8080</code> y entramos en la aplicación Tomcat Manager autenticándonos con el usuario <code>alumne</code>.”
@@ -1231,10 +1231,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 2 (35 seg) · Proyecto en NetBeans, métodos doGet/doPost y archivo WAR (Apartado 12)</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> Muestras <strong>Apache NetBeans</strong> en tu Mac con el proyecto <code>EverOfficeComandes</code> abierto y el fichero <code>ComandesServlet.java</code> en pantalla, señalando <code>doGet()</code> y <code>doPost()</code>. Haces clic derecho en el proyecto → <em>Clean and Build</em> y muestras en la terminal o Finder el archivo <code>EverOfficeComandes.war</code> dentro de <code>target/</code>.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “En segundo lugar, en el ordenador cliente he importado en Apache NetBeans el proyecto <code>EverOfficeComandes</code> que trabajamos en la Parte 1. Dentro de la clase <code>ComandesServlet.java</code> localizamos sus dos métodos principales: el método <code>doGet</code>, que responde a las peticiones GET mostrando el catálogo y el formulario de pedido, y el método <code>doPost</code>, que procesa los datos enviados por el formulario mediante POST y genera la confirmación personalizada con mi apellido <code>cognom</code>. Al compilar el proyecto con <em>Clean and Build</em>, comprobamos que dentro de la carpeta <code>target</code> se ha generado el paquete <code>EverOfficeComandes.war</code> listo para desplegar.”
@@ -1243,10 +1243,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 3 (50 seg) · Despliegue mediante Tomcat Manager + Peticiones GET/POST + Stop/Start (Apartado 13)</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> En Tomcat Manager bajas a <em>WAR file to deploy</em>, seleccionas <code>EverOfficeComandes.war</code> y pulsas <strong>Deploy</strong>. Señalas <code>/EverOfficeComandes</code> en la lista. Entras en <code>http://{serverIp}:8080/EverOfficeComandes/</code> (se ve la petición GET), rellenas un pedido y pulsas Enviar (se ve la petición POST con tu apellido <code>cognom</code>). Vuelves a Tomcat Manager, pulsas <strong>Stop</strong> (pasa a <code>false</code>) y luego <strong>Start</strong> (vuelve a <code>true</code>).
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Para el primer procedimiento de despliegue, utilizamos la interfaz web de Tomcat Manager desde el navegador del cliente. En el apartado <em>WAR file to deploy</em> seleccionamos el archivo <code>EverOfficeComandes.war</code> y pulsamos <em>Deploy</em>. Vemos que la aplicación <code>/EverOfficeComandes</code> aparece desplegada en la lista y con estado activo. Al abrir la aplicación en el navegador, se ejecuta una petición GET que invoca el método <code>doGet</code> y nos muestra el formulario del catálogo. Si completamos los datos de un pedido y pulsamos enviar, se realiza una petición POST que ejecuta el método <code>doPost</code>, mostrando el resumen del pedido con mi apellido <code>cognom</code>. Finalmente, desde Tomcat Manager comprobamos que podemos detener la aplicación pulsando <em>Stop</em>, pasando su estado a <code>false</code>, y volver a ponerla en marcha pulsando <em>Start</em>.”
@@ -1255,10 +1255,10 @@ export default function DespEac2Workbench() {
 
               <div className="eac2-doc-task">
                 <h3 className="eac2-doc-item-title">Bloque 4 (45 seg) · Undeploy y Despliegue manual en webapps + Peticiones GET/POST (Apartado 14)</h3>
-                <p style={{ margin: '0.35rem 0', color: '#334155', fontSize: '0.9rem' }}>
+                <p style={{ margin: '0.35rem 0', color: 'var(--dm-text, #334155)', fontSize: '0.9rem' }}>
                   <strong>🖥️ En pantalla:</strong> En Tomcat Manager pulsas <strong>Undeploy</strong> sobre <code>/EverOfficeComandes</code>. Pasas a la terminal del <strong>Ubuntu Server</strong> y ejecutas <code>sudo cp /tmp/EverOfficeComandes.war /var/lib/tomcat10/webapps/</code> y tras 3 segundos <code>ls -la /var/lib/tomcat10/webapps/</code> señalando la carpeta <code>EverOfficeComandes</code>. Vuelves al navegador del cliente, abres <code>http://{serverIp}:8080/EverOfficeComandes/</code> y pruebas GET y POST.
                 </p>
-                <div className="eac2-doc-code" style={{ background: '#f0fdf4', borderColor: '#bbf7d0', color: '#14532d' }}>
+                <div className="eac2-doc-code" style={{ background: 'var(--dm-tint-green, #f0fdf4)', borderColor: 'var(--dm-border-green, #bbf7d0)', color: '#14532d' }}>
                   <strong>🎙️ Lo que dices:</strong>
                   <br />
                   “Por último, para realizar el despliegue manual, primero eliminamos el despliegue anterior desde Tomcat Manager pulsando <em>Undeploy</em> y comprobamos que desaparece del listado. Ahora, en la terminal del servidor copiamos el archivo <code>EverOfficeComandes.war</code> directamente dentro del directorio <code>/var/lib/tomcat10/webapps/</code>. Al listar el contenido con <code>ls -la</code>, observamos que Tomcat detecta automáticamente el archivo <code>.war</code> y lo descomprime en caliente creando la carpeta <code>EverOfficeComandes</code>. Si volvemos al navegador del cliente y entramos en <code>http://{serverIp}:8080/EverOfficeComandes/</code>, comprobamos que la aplicación vuelve a estar operativa tanto para la petición GET inicial como para la petición POST al enviar un pedido. Muchas gracias.”
@@ -1277,7 +1277,7 @@ export default function DespEac2Workbench() {
               <h1 className="eac2-doc-title">
                 Plantilla de Textos y Estructura · DAW_0614_EAC2_Apellido_N.pdf
               </h1>
-              <p style={{ margin: '0.4rem 0 0', color: '#475569', fontSize: '0.92rem' }}>
+              <p style={{ margin: '0.4rem 0 0', color: 'var(--dm-text, #475569)', fontSize: '0.92rem' }}>
                 Recuerda utilizar el fichero oficial <code>DAW_0614_EAC2_Enunciat_2627S1.odt</code>, poner tu nombre en la cabecera, eliminar los apartados preliminares (Presentación, Criterios, Uso de la IA, Forma de entrega y enunciado) y exportarlo en formato <strong>PDF</strong>.
               </p>
             </div>

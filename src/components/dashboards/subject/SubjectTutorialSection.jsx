@@ -201,9 +201,9 @@ export default function SubjectTutorialSection({
                           fontWeight: 700,
                           padding: '0.2rem 0.65rem',
                           borderRadius: '20px',
-                          background: isEac100 ? '#dcfce7' : 'rgba(37, 99, 235, 0.1)',
-                          color: isEac100 ? '#15803d' : '#2563eb',
-                          border: isEac100 ? '1px solid #86efac' : '1px solid rgba(37, 99, 235, 0.25)'
+                          background: isEac100 ? 'var(--dm-tint-green, #dcfce7)' : 'rgba(37, 99, 235, 0.1)',
+                          color: isEac100 ? 'var(--dm-text-green, #15803d)' : 'var(--dm-text-blue, #2563eb)',
+                          border: isEac100 ? '1px solid var(--dm-border-green, #86efac)' : '1px solid rgba(37, 99, 235, 0.25)'
                         }}>
                           {isEac100 ? '🎉 EAC 100% Completada' : `Progreso EAC: ${checkedEacCount}/${totalEacCount} partes`}
                         </span>
@@ -218,10 +218,10 @@ export default function SubjectTutorialSection({
                           })}
                           style={{
                             fontSize: '0.76rem',
-                            color: '#15803d',
+                            color: 'var(--dm-text-green, #15803d)',
                             fontWeight: 700,
-                            background: '#dcfce7',
-                            border: '1px solid #86efac',
+                            background: 'var(--dm-tint-green, #dcfce7)',
+                            border: '1px solid var(--dm-border-green, #86efac)',
                             borderRadius: '12px',
                             padding: '0.15rem 0.55rem',
                             cursor: 'pointer'
@@ -256,9 +256,9 @@ export default function SubjectTutorialSection({
                     padding: '0.55rem 1rem',
                     fontSize: '0.85rem',
                     borderRadius: '8px',
-                    background: finderOpened ? '#dcfce7' : '#f8fafc',
-                    color: finderOpened ? '#15803d' : '#0f172a',
-                    border: finderOpened ? '1px solid #86efac' : '1px solid #cbd5e1',
+                    background: finderOpened ? 'var(--dm-tint-green, #dcfce7)' : 'var(--dm-surface-soft, #f8fafc)',
+                    color: finderOpened ? 'var(--dm-text-green, #15803d)' : 'var(--dm-text-strong, #0f172a)',
+                    border: finderOpened ? '1px solid var(--dm-border-green, #86efac)' : '1px solid var(--dm-border, #cbd5e1)',
                     cursor: 'pointer',
                     fontWeight: 700,
                     boxShadow: '0 2px 6px rgba(0,0,0,0.05)',
@@ -323,7 +323,7 @@ export default function SubjectTutorialSection({
                 borderRadius: '10px',
                 padding: '1rem 1.25rem'
               }}>
-                <h4 style={{ margin: '0 0 0.5rem', fontSize: '0.92rem', color: 'var(--subject-color)', fontWeight: 700 }}>
+                <h4 style={{ margin: '0 0 0.5rem', fontSize: '0.92rem', color: 'var(--subject-text, var(--subject-color))', fontWeight: 700 }}>
                   📋 Criterios y Entregables Clave:
                 </h4>
                 <ul style={{ margin: 0, paddingLeft: '1.25rem', color: 'var(--text-main)', fontSize: '0.88rem', display: 'flex', flexDirection: 'column', gap: '0.35rem' }}>
@@ -375,7 +375,7 @@ export default function SubjectTutorialSection({
                             fontSize: '0.75rem', 
                             fontWeight: 800, 
                             textTransform: 'uppercase', 
-                            color: 'var(--subject-color)',
+                            color: 'var(--subject-text, var(--subject-color))',
                             background: 'rgba(59, 130, 246, 0.12)',
                             padding: '0.2rem 0.5rem',
                             borderRadius: '4px'
@@ -405,13 +405,13 @@ export default function SubjectTutorialSection({
                               to="/ent/eac2"
                               style={{
                                 fontSize: '0.82rem',
-                                color: '#2563eb',
+                                color: 'var(--dm-text-blue, #2563eb)',
                                 fontWeight: 700,
                                 textDecoration: 'none',
-                                background: '#eff6ff',
+                                background: 'var(--dm-tint-blue, #eff6ff)',
                                 padding: '0.3rem 0.65rem',
                                 borderRadius: '6px',
-                                border: '1px solid #bfdbfe'
+                                border: '1px solid var(--dm-border-blue, #bfdbfe)'
                               }}
                             >
                               Obrir Test Interactiu al Workbench →
@@ -420,7 +420,7 @@ export default function SubjectTutorialSection({
                           {ex.questions.map(q => (
                             <details key={q.num} style={{ background: 'var(--bg-primary, #f8fafc)', border: '1px solid var(--border-subtle, #e2e8f0)', borderRadius: '8px', padding: '0.65rem 0.85rem' }}>
                               <summary style={{ cursor: 'pointer', fontWeight: 700, fontSize: '0.88rem', color: 'var(--text-title)' }}>
-                                <span style={{ color: '#2563eb', marginRight: '0.4rem' }}>{q.num}.</span>
+                                <span style={{ color: 'var(--dm-text-blue, #2563eb)', marginRight: '0.4rem' }}>{q.num}.</span>
                                 {q.q}
                               </summary>
                               <div style={{ marginTop: '0.6rem', display: 'flex', flexDirection: 'column', gap: '0.35rem', fontSize: '0.83rem' }}>
@@ -430,7 +430,7 @@ export default function SubjectTutorialSection({
                                     <div key={oIdx} style={{
                                       padding: '0.4rem 0.7rem',
                                       borderRadius: '5px',
-                                      background: isCorrect ? '#ecfdf5' : 'transparent',
+                                      background: isCorrect ? 'var(--dm-tint-green, #ecfdf5)' : 'transparent',
                                       color: isCorrect ? '#065f46' : 'var(--text-main)',
                                       fontWeight: isCorrect ? 700 : 400,
                                       border: isCorrect ? '1px solid #a7f3d0' : '1px solid transparent'
@@ -453,7 +453,7 @@ export default function SubjectTutorialSection({
 
                       {ex.img && (
                         <div style={{ 
-                          background: '#ffffff', 
+                          background: 'var(--dm-surface, #ffffff)', 
                           borderTop: '1px solid var(--border-subtle)', 
                           borderBottom: '1px solid var(--border-subtle)',
                           padding: '0.75rem',
@@ -513,12 +513,12 @@ export default function SubjectTutorialSection({
                           {ex.steps.map((st, sIdx) => (
                             <details key={sIdx} style={{ background: 'var(--bg-primary, #f8fafc)', border: '1px solid var(--border-subtle, #e2e8f0)', borderRadius: '8px', padding: '0.6rem 0.85rem' }}>
                               <summary style={{ cursor: 'pointer', fontWeight: 700, fontSize: '0.85rem', color: 'var(--text-title)' }}>
-                                <span style={{ color: '#2563eb', marginRight: '0.4rem' }}>Paso {sIdx + 1}:</span> {st.title}
+                                <span style={{ color: 'var(--dm-text-blue, #2563eb)', marginRight: '0.4rem' }}>Paso {sIdx + 1}:</span> {st.title}
                               </summary>
                               <div style={{ marginTop: '0.5rem', fontSize: '0.82rem', color: 'var(--text-main)', lineHeight: 1.5 }}>
                                 {st.desc}
                                 {st.code && (
-                                  <pre style={{ background: '#f1f5f9', color: '#0f172a', border: '1px solid #cbd5e1', padding: '0.6rem 0.8rem', borderRadius: '6px', fontSize: '0.78rem', fontWeight: 600, overflowX: 'auto', margin: '0.5rem 0 0 0' }}>
+                                  <pre style={{ background: 'var(--dm-surface-muted, #f1f5f9)', color: 'var(--dm-text-strong, #0f172a)', border: '1px solid var(--dm-border, #cbd5e1)', padding: '0.6rem 0.8rem', borderRadius: '6px', fontSize: '0.78rem', fontWeight: 600, overflowX: 'auto', margin: '0.5rem 0 0 0' }}>
                                     {st.code}
                                   </pre>
                                 )}
@@ -561,12 +561,12 @@ export default function SubjectTutorialSection({
                                 gap: '0.35rem',
                                 padding: '0.45rem 0.8rem',
                                 borderRadius: '6px',
-                                background: '#f1f5f9',
-                                color: '#334155',
+                                background: 'var(--dm-surface-muted, #f1f5f9)',
+                                color: 'var(--dm-text, #334155)',
                                 textDecoration: 'none',
                                 fontSize: '0.8rem',
                                 fontWeight: 700,
-                                border: '1px solid #cbd5e1'
+                                border: '1px solid var(--dm-border, #cbd5e1)'
                               }}
                             >
                               📄 Descarregar Codi Font Java
@@ -606,9 +606,9 @@ export default function SubjectTutorialSection({
                                       fontWeight: 700,
                                       padding: '0.18rem 0.55rem',
                                       borderRadius: '12px',
-                                      background: '#dcfce7',
-                                      color: '#15803d',
-                                      border: '1px solid #86efac'
+                                      background: 'var(--dm-tint-green, #dcfce7)',
+                                      color: 'var(--dm-text-green, #15803d)',
+                                      border: '1px solid var(--dm-border-green, #86efac)'
                                     }}>
                                       ✓ Actividad completada
                                     </span>
@@ -746,8 +746,8 @@ export default function SubjectTutorialSection({
                 width: '52px',
                 height: '52px',
                 borderRadius: '14px',
-                background: '#dcfce7',
-                color: '#16a34a',
+                background: 'var(--dm-tint-green, #dcfce7)',
+                color: 'var(--dm-text-green, #16a34a)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -760,7 +760,7 @@ export default function SubjectTutorialSection({
                 <h3 style={{ margin: 0, fontSize: '1.25rem', color: 'var(--text-title)' }}>
                   ¡Toda la {completedModalEac.title} completada!
                 </h3>
-                <p style={{ margin: '0.2rem 0 0', fontSize: '0.85rem', color: '#16a34a', fontWeight: 600 }}>
+                <p style={{ margin: '0.2rem 0 0', fontSize: '0.85rem', color: 'var(--dm-text-green, #16a34a)', fontWeight: 600 }}>
                   Has marcado el 100% de las actividades y archivos requeridos.
                 </p>
               </div>
@@ -813,9 +813,9 @@ export default function SubjectTutorialSection({
                       style={{
                         fontSize: '0.8rem',
                         padding: '0.45rem 0.9rem',
-                        background: '#f1f5f9',
-                        color: '#334155',
-                        border: '1px solid #cbd5e1',
+                        background: 'var(--dm-surface-muted, #f1f5f9)',
+                        color: 'var(--dm-text, #334155)',
+                        border: '1px solid var(--dm-border, #cbd5e1)',
                         borderRadius: '6px',
                         cursor: 'pointer',
                         fontWeight: 600
@@ -829,9 +829,9 @@ export default function SubjectTutorialSection({
                       style={{
                         fontSize: '0.8rem',
                         padding: '0.45rem 0.8rem',
-                        background: '#fee2e2',
-                        color: '#b91c1c',
-                        border: '1px solid #fca5a5',
+                        background: 'var(--dm-tint-red, #fee2e2)',
+                        color: 'var(--dm-text-red, #b91c1c)',
+                        border: '1px solid var(--dm-border-red, #fca5a5)',
                         borderRadius: '6px',
                         cursor: 'pointer',
                         fontWeight: 600

@@ -34,7 +34,7 @@ export default function CardArchiveButton({ isArchived, onToggle, cardTitle = 'e
       ? {
           background: isHovered ? 'rgba(34, 197, 94, 0.22)' : 'rgba(34, 197, 94, 0.12)',
           border: '1px solid rgba(34, 197, 94, 0.45)',
-          color: '#16a34a',
+          color: 'var(--dm-text-green, #16a34a)',
           transform: isHovered ? 'translateY(-1px)' : 'none',
         }
       : {
