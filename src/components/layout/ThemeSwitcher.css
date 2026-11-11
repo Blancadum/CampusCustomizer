@@ -1,0 +1,43 @@
+/* Selector de tema (claro / oscuro / sistema) de la cabecera. */
+.theme-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  padding: 3px;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-full);
+  background: var(--bg-input);
+  flex-shrink: 0;
+}
+
+.theme-switcher__option {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  border-radius: var(--radius-full);
+  background: transparent;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: background 0.15s, opacity 0.15s, box-shadow 0.15s;
+}
+
+.theme-switcher__option:hover {
+  opacity: 1;
+}
+
+.theme-switcher__option.is-active {
+  background: color-mix(in srgb, var(--accent-purple-light) 22%, var(--bg-card));
+  box-shadow: var(--shadow-sm), inset 0 0 0 1px var(--accent-purple-light);
+  opacity: 1;
+}
+
+.theme-switcher__option:focus-visible {
+  outline: 2px solid var(--accent-purple-light);
+  outline-offset: 1px;
+}

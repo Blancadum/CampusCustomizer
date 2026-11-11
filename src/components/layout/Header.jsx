@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import iocIcon from '../../assets/img/icons/ioc.webp';
 import HeaderSearchBar from './HeaderSearchBar';
 import HeaderClock from './HeaderClock';
+import ThemeSwitcher from './ThemeSwitcher';
 import './Header.css';
 
 export default function Header() {
@@ -39,6 +40,8 @@ export default function Header() {
 
           <nav className="header-campus-nav" aria-label="Navegación principal de campus">
             <HeaderClock />
+
+            <ThemeSwitcher />
 
             <a
               href="https://ioc.xtec.cat/campus/my/"
